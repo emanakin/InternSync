@@ -1,0 +1,52 @@
+.navbar {
+    background-color: transparent;
+    width: 65%; /* Adjust this to your preferred width */
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+.navbar-picture {
+    width: 12vw; 
+    height: auto;
+    flex-shrink: 0;
+}
+
+.navbar-nav {
+    justify-content: center; 
+    flex-grow: 1; 
+}
+  
+.nav-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+}
+
+.nav-link:active {
+    opacity: 0.7;
+}
+
+.logIn {
+    color: #1B262C;
+    background-color: transparent; 
+    border: none; 
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+}
+
+.logIn:hover {
+    Opacity: 0.9;
+}
+
+.logIn:active {
+    opacity: 0.7;
+}
+
+
+
+

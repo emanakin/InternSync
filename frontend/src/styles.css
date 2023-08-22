@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Inter;
+    src: url(assets\fonts\Inter-VariableFont_slnt,wght.ttf) format('truetype');
+}
+
+body, h1, h2, h3, h4, h5, h6, p, span, a, input, button, textarea, select {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
