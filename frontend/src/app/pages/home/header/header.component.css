@@ -1,22 +1,64 @@
 .navbar {
-    background-color: transparent;
+    background-color: #FFF
+}
+
+.navbox {
     width: 65%; /* Adjust this to your preferred width */
     margin-left: auto;
     margin-right: auto; 
     
 }
 
+.nav-scrolled {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.151); /* Adjust to your design preference */
+}
+
+
 .navbar-picture {
-    width: 12vw; 
+    width: 180px; 
     height: auto;
     flex-shrink: 0;
 }
 
-.navbar-nav {
-    justify-content: center; 
-    flex-grow: 1; 
+
+/* Small devices */
+@media (max-width: 576px) {
+    .navbar-picture {
+        width: 100px;
+    }
+
+    .navbox {
+        width: 100%;       
+    }
 }
-  
+
+/* Medium devices */
+@media (max-width: 768px) {
+    .navbox {
+        width: 80%;       
+    }
+}
+
+/* Large devices */
+@media (max-width: 992px) {
+    .navbar-picture {
+        width: 140px;
+    }
+    
+    .navbox {
+        width: 100%;       
+    }
+
+}
+
+/* Extra large devices */
+@media (max-width: 1200px) {
+    .navbar-picture {
+        width: 150px;
+    }
+}
+
+ 
 .nav-link {
     color: #000;
     font-size: 16px;
@@ -45,7 +87,7 @@
 
 .logIn:active {
     opacity: 0.7;
-}
+} 
 
 
 

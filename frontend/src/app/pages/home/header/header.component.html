@@ -1,14 +1,30 @@
-<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href=""><img class ="navbar-picture" src="assets/intern-sync-logo.png" alt="InternSync Logo"></a>
 
-    <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="">Features</a>
-          <a class="nav-item nav-link" href="">Contact</a>
-          <a class="nav-item nav-link" href="">Design</a>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid navbox">
+        <a class="navbar-brand" href=""><img class ="navbar-picture" src="assets/intern-sync-logo.png" alt="InternSync Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">InternSync</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto">
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Design</a></li>
+            </ul>
+            <div class="">
+                <button class="logIn btn">Log In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+        </div>
     </div>
+</nav>
 
-    <div class="">
-        <button class="logIn btn">Log In</button>
-        <button class="btn btn-primary">Sign Up</button>
-    </div>
-  </nav>
+
+
+

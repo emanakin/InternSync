@@ -9,6 +9,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { HeaderComponent } from './pages/home/header/header.component';
 import { CtaComponent } from './pages/home/cta/cta.component';
+import { VectorGroupComponent } from './pages/home/vector-group/vector-group.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CtaComponent } from './pages/home/cta/cta.component';
     LoginComponent,
     SignupComponent,
     HeaderComponent,
-    CtaComponent
+    CtaComponent,
+    VectorGroupComponent
   ],
   imports: [
     BrowserModule,
