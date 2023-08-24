@@ -33,27 +33,29 @@
 }
 
 .ctaImage {
-    width: 400px;
+    width: 55.3125rem;
+    border-radius: 1.25rem;
+    box-shadow: 0px 4px 7px 4px rgba(0, 0, 0, 0.25);
 }
 
 
 /* Mobile (default) styles are already above */
 
 /* Tablet - for screens equal to or greater than 768px (typical for iPads) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .title {
         font-size: 45px;
     }
     .subtitle {
         font-size: 14px;
     }
-    .ctaButton {
-        font-size: 14px;
+    .ctaImage {
+        width: 1%
     }
 }
 
 /* Laptop - for screens equal to or greater than 992px */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .title {
         font-size: 50px;
     }
@@ -63,10 +65,13 @@
     .ctaButton {
         font-size: 15px;
     }
+    .ctaImage {
+        width: 80%
+    }
 }
 
 /* Desktop - for screens equal to or greater than 1200px */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .title {
         font-size: 54px;
     }
@@ -76,13 +81,9 @@
     .ctaButton {
         font-size: 16px;
     }
-}
-
-/* ... (your previous styles) ... */
-
-.ctaImage {
-    max-width: 100%;
-    height: auto;
+    .ctaImage {
+        width: 100%
+    }
 }
 
 

@@ -10,6 +10,10 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { HeaderComponent } from './pages/home/header/header.component';
 import { CtaComponent } from './pages/home/cta/cta.component';
 import { VectorGroupComponent } from './pages/home/vector-group/vector-group.component';
+import { FeaturesComponent } from './pages/home/features/features.component';
+import { FeatureComponent } from './pages/home/features/feature/feature.component';
+import { ContactComponent } from './pages/home/contact/contact.component';
+import { FooterComponent } from './pages/home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { VectorGroupComponent } from './pages/home/vector-group/vector-group.com
     SignupComponent,
     HeaderComponent,
     CtaComponent,
-    VectorGroupComponent
+    VectorGroupComponent,
+    FeaturesComponent,
+    FeatureComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
