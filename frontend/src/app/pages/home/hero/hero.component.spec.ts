@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CtaComponent } from './cta.component';
+import { HeroComponent } from './hero.component';
 
-describe('CtaComponent', () => {
-  let component: CtaComponent;
-  let fixture: ComponentFixture<CtaComponent>;
+describe('HeroComponent', () => {
+  let component: HeroComponent;
+  let fixture: ComponentFixture<HeroComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CtaComponent]
+      declarations: [HeroComponent]
     });
-    fixture = TestBed.createComponent(CtaComponent);
+    fixture = TestBed.createComponent(HeroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,23 +1,25 @@
 @font-face {
-    font-family: Inter;
-    src: url(assets\fonts\Inter-VariableFont_slnt,wght.ttf) format('truetype');
+  font-family: Inter;
+  src: url(assets\fonts\Inter-VariableFont_slnt,wght.ttf) format('truetype');
 }
 
 body, h1, h2, h3, h4, h5, h6, p, span, a, input, button, textarea, select {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn-primary {
-    background-color: #0F4C75;
-    color: #F8F8F8;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    border: none; 
-  }
-  .btn-primary:hover {
-    background-color: #0f4c75ee;
-  }
+  background-color: #0F4C75;
+  color: #F8F8F8;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  border: none; 
+}
+
+.btn-primary:hover {
+  background-color: #0f4c75ee;
+}
+
 .btn-primary:active, 
 .btn-primary.active {
     background-color: #092e47ee !important;

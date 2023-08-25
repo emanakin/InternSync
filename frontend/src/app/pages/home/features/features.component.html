@@ -1,16 +1,18 @@
-<div class="container">
-    <div class="row">
-        <div class="">
-            <h2 class="title">How it Works</h2>
-        </div>
-        <div class="col">
-            <app-feature [feature]="rankedKeywordSearch"></app-feature>
-        </div>
-        <div class="col">
-            <app-feature [feature]="jobFiltering"></app-feature>
-        </div>
-        <div class="col">
-            <app-feature [feature]="appTracking"></app-feature>
+<div class="d-flex text-center justify-content-center">
+    <div class="container my-5">
+        <div class="row p-5">
+            <div class="col-12">
+                <h2 class="title my-5">How it Works</h2>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <app-feature [feature]="rankedKeywordSearch"></app-feature>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <app-feature [feature]="jobFiltering"></app-feature>
+            </div>
+            <div class="col-12 col-md-4">
+                <app-feature [feature]="appTracking"></app-feature>
+            </div>
         </div>
     </div>
 </div>
