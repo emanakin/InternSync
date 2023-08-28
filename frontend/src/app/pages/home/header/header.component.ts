@@ -18,5 +18,9 @@ export class HeaderComponent {
     }
   }
 
+  goToSection(sectionId: string, event: MouseEvent) {
+    event.preventDefault();
+    document.getElementById(sectionId).scrollIntoView();
+  }
 
 }

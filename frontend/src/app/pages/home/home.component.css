@@ -1,17 +1,22 @@
 .gradientGroup1 {
-    position: absolute;     /* Position it absolutely within its containing element */
-    top: 0;                 /* Position at the top */
-    left: 0;               /* Position at the right */
-    max-width: 604px;       /* Maximum width it can expand to */
-    max-height: 1001px;     /* Maximum height it can expand to */
-    z-index: 10;            /* Control stacking order. Increase if the SVG goes behind other elements */
+    position: absolute;     
+    top: 0;                
+    left: 0;
+    width: 100vh;
+    max-width: 37rem;
+    height: auto;                   
+    overflow: hidden;
+    opacity: 60%;
+    pointer-events: none;
 }
 
 .gradientGroup2 {
-    position: absolute;     /* Position it absolutely within its containing element */
-    top: 0;                 /* Position at the top */
-    right: 0;               /* Position at the right */
-    max-width: 604px;       /* Maximum width it can expand to */
-    max-height: 1001px;     /* Maximum height it can expand to */
-    z-index: 10;            /* Control stacking order. Increase if the SVG goes behind other elements */
+    position: absolute;     
+    top: 0;                 
+    right: 0;
+    width: 100vh;
+    max-width: 47rem;
+    height: auto;               
+    overflow: hidden;
+    pointer-events: none;
 }

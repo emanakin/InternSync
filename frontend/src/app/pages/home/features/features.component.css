@@ -1,7 +1,19 @@
 .title {
-    color: #000;
-    font-size: 3rem;
+    color: #1B262C;
+    font-size: 2.5rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 3.75rem; 
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-lg {
+    display: flex;
+    justify-content: center;
 }

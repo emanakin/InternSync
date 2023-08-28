@@ -1,22 +1,16 @@
-<!-- feature.component.html -->
-
 <div class="feature-card">
-
-    <div class="feature-top-section">
-      <div class="feature-icon-wrapper">
-        <div class="feature-icon-bg">
-          <svg xmlns="http://www.w3.org/2000/svg" width="83" height="84" viewBox="0 0 83 84" fill="none" class="bg-icon">
-            <path d="M3 17C3 9.26801 9.26801 3 17 3H66C73.732 3 80 9.26801 80 17V67C80 74.732 73.732 81 66 81H17C9.26801 81 3 74.732 3 67V17Z" fill="#0F4C75" stroke="#F8F8F8" stroke-width="6"/>
-          </svg>
-          <img [src]="feature.iconPath" alt="Feature Icon" class="feature-icon">
-        </div>
+  <div class="feature-top-section">
+    <div class="feature-icon-wrapper">
+      <div class="feature-icon-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 83 84" fill="none" class="bg-icon">
+          <path d="M3 17C3 9.26801 9.26801 3 17 3H66C73.732 3 80 9.26801 80 17V67C80 74.732 73.732 81 66 81H17C9.26801 81 3 74.732 3 67V17Z" fill="#0F4C75" stroke="#F8F8F8" stroke-width="6"/>
+        </svg>
+        <img [src]="feature.iconPath" alt="Feature Icon" class="feature-icon">
       </div>
     </div>
-  
-    <h3 class="feature-title">{{ feature.title }}</h3>
-  
-    <p class="feature-subtitle">{{ feature.subtitle }}</p>
-  
   </div>
+  <h3 class="feature-title">{{ feature.title }}</h3>
+  <p class="feature-subtitle">{{ feature.subtitle }}</p>
+</div>
   
   
