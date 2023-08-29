@@ -7,13 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
-import { HeaderComponent } from './pages/home/header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
 import { HeroComponent } from './pages/home/hero/hero.component';
 import { VectorGroupComponent } from './pages/home/vector-group/vector-group.component';
 import { FeaturesComponent } from './pages/home/features/features.component';
 import { FeatureComponent } from './pages/home/features/feature/feature.component';
 import { ContactComponent } from './pages/home/contact/contact.component';
-import { FooterComponent } from './pages/home/footer/footer.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { SignupFormComponent } from './pages/signup/signup-form/signup-form.component';
+import { AuthFormComponent } from './shared/auth-form/auth-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FooterComponent } from './pages/home/footer/footer.component';
     FeaturesComponent,
     FeatureComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SignupFormComponent,
+    AuthFormComponent
   ],
   imports: [
     BrowserModule,

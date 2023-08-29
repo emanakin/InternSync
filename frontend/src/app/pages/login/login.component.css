@@ -1,0 +1,27 @@
+.background-wrapper {
+    position: relative; 
+}
+
+.left-gradient {
+    position: absolute;
+    z-index: 0; 
+    top: 0; 
+    left: 0; 
+    overflow: hidden;
+    opacity: 70%;
+}
+
+.right-gradient {
+    position: absolute;
+    z-index: 0; 
+    top: 0;
+    right: 0; 
+    overflow: hidden;
+    opacity: 70%;
+}
+
+app-auth-form {
+    z-index: 1; 
+    position: relative; 
+}
+

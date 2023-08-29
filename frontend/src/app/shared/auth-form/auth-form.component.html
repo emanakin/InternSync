@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-3">
+            <div class="card">
+                <div class="row align-items-start"> <!-- 'align-items-start' aligns the items at the top -->
+                    <div class="col text-start"> <!-- 'text-start' aligns the content to the left -->
+                        <h2 class="subtitle">Welcome</h2>
+                    </div>
+                    <div class="col text-end"> <!-- 'text-end' aligns the content to the right -->
+                        <h3 *ngIf="mode === 'signup'" class="subtext">
+                            Have an Account?<br>
+                            <a routerLink="/login">Log in</a>
+                        </h3>
+                        <h3 *ngIf="mode === 'login'" class="subtext">
+                            Don't have an Account?<br>
+                            <a routerLink="/signup">Sign up</a>
+                        </h3>
+                    </div>
+                </div>
+                <h1 *ngIf="mode === 'signup'">Sign Up</h1>
+                <h1 *ngIf="mode === 'login'">Log In</h1>
+                <form action="">
+                    <div class="form-group mb-3">
+                        <label for="email">Enter your email address</label>
+                        <input type="text" id="email" placeholder="Enter your email address" class="form-control">
+                    </div>
+            
+                    <div class="form-group mb-3">
+                        <label for="password">Enter your password</label>
+                        <input type="password" id="password" placeholder="Enter your password" class="form-control">
+                    </div>
+            
+                    <div *ngIf="mode === 'signup'" class="form-group mb-3">
+                        <label for="retype-password">Retype password</label>
+                        <input type="password" id="retype-password" placeholder="Retype password" class="form-control">
+                    </div>
+            
+                    <button *ngIf="mode == 'signup'" class="btn btn-primary">Sign up</button>
+                    <button *ngIf="mode == 'login'" class="btn btn-primary">Log in</button>
+                </form>
+            </div>
+        </div>            
+    </div>
+</div>
