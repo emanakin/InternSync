@@ -16,6 +16,12 @@ import { ContactComponent } from './pages/home/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SignupFormComponent } from './pages/signup/signup-form/signup-form.component';
 import { AuthFormComponent } from './shared/auth-form/auth-form.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,11 +38,14 @@ import { AuthFormComponent } from './shared/auth-form/auth-form.component';
     ContactComponent,
     FooterComponent,
     SignupFormComponent,
-    AuthFormComponent
+    AuthFormComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

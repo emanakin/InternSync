@@ -28,6 +28,15 @@
     margin: 0;
 }
 
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;            
+    width: 100%;
+}
+  
+
 /* Set button width */
 .btn {
     margin-top: 2rem;
@@ -38,6 +47,15 @@
     position: relative;
     top: 0;
     left: 0;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 0;
+}
+
+input {
+    margin-bottom: 0;
 }
 
 a {

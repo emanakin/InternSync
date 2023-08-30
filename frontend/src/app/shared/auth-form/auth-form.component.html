@@ -2,11 +2,11 @@
     <div class="row">
         <div class="col-md-6 mt-3">
             <div class="card">
-                <div class="row align-items-start"> <!-- 'align-items-start' aligns the items at the top -->
-                    <div class="col text-start"> <!-- 'text-start' aligns the content to the left -->
+                <div class="row align-items-start"> 
+                    <div class="col text-start"> 
                         <h2 class="subtitle">Welcome</h2>
                     </div>
-                    <div class="col text-end"> <!-- 'text-end' aligns the content to the right -->
+                    <div class="col text-end"> 
                         <h3 *ngIf="mode === 'signup'" class="subtext">
                             Have an Account?<br>
                             <a routerLink="/login">Log in</a>
@@ -17,26 +17,47 @@
                         </h3>
                     </div>
                 </div>
-                <h1 *ngIf="mode === 'signup'">Sign Up</h1>
-                <h1 *ngIf="mode === 'login'">Log In</h1>
-                <form action="">
+                <h1>{{ mode === 'signup'? 'Sign up' : 'Log in' }}</h1>
+                <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+                <div *ngIf="isLoading" class="spinner-container">
+                    <div class="spinner">
+                        <app-loading-spinner></app-loading-spinner>
+                    </div>
+                </div>
+                <form (ngSubmit)="onSubmit(form)" #form="ngForm" *ngIf="!isLoading">
                     <div class="form-group mb-3">
                         <label for="email">Enter your email address</label>
-                        <input type="text" id="email" placeholder="Enter your email address" class="form-control">
-                    </div>
-            
+                        <input
+                            type="email" 
+                            required
+                            email                            
+                            name="email"
+                            #emailField="ngModel" 
+                            ngModel
+                            required
+                            class="form-control"
+                            placeholder="Enter your email address">
+                        <p *ngIf="emailField.errors?.email && emailField.touched" class="text-danger">Invalid email</p>
+                    </div>        
                     <div class="form-group mb-3">
                         <label for="password">Enter your password</label>
-                        <input type="password" id="password" placeholder="Enter your password" class="form-control">
-                    </div>
-            
-                    <div *ngIf="mode === 'signup'" class="form-group mb-3">
-                        <label for="retype-password">Retype password</label>
-                        <input type="password" id="retype-password" placeholder="Retype password" class="form-control">
-                    </div>
-            
-                    <button *ngIf="mode == 'signup'" class="btn btn-primary">Sign up</button>
-                    <button *ngIf="mode == 'login'" class="btn btn-primary">Log in</button>
+                        <input
+                            type="password" 
+                            minlength="6"
+                            required
+                            name="password"
+                            #passwordField="ngModel"
+                            ngModel
+                            class="form-control" 
+                            placeholder="Enter your password">
+                        <p *ngIf="passwordField.errors?.required && passwordField.touched && mode === 'signup'" class="text-danger">Password is required.</p>
+                        <p *ngIf="passwordField.errors?.minlength && passwordField.touched && mode === 'signup'" class="text-danger">Weak password.</p>
+                    </div>          
+                    <button 
+                        class="btn btn-primary" 
+                        type="submit"
+                        [disabled]="!form.valid"> {{ mode === 'signup'? 'Sign up' : 'Log in' }}
+                    </button>
                 </form>
             </div>
         </div>            
