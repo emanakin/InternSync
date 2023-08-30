@@ -20,7 +20,7 @@ router.post('/signup', async (req: Request, res: Response, next: NextFunction) =
 
     await newUser.save();
     
-    const token = jwt.sign({ email, userId: newUser._id }, process.env.JWT_KEY!, { expiresIn: '6h' })
+    const token = jwt.sign({ email, userId: newUser._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
 
     req.session = {
         jwt: token

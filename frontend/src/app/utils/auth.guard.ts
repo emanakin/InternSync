@@ -3,8 +3,8 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
 import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 import jwt_decode from 'jwt-decode';
-
-
+import { JwtPayload } from 'jwt-decode';
+import { AuthToken } from '../dto/authToken.model';
 
 @Injectable({
     providedIn: 'root'
@@ -18,28 +18,19 @@ export class AuthGuard implements CanActivate {
         state: RouterStateSnapshot
     ): boolean | Observable<boolean> | Promise<boolean> {
 
-        interface JwtPayload {
-            exp: number;
-            email: string;
-            userId: string;
-        }
-
         const token = this.authService.getToken();
 
+        // If there is no token redirect to login page
         if (!token) {
-            // If user is trying to access login or signup, allow them.
-            if(state.url === '/login' || state.url === '/signup') {
-                return true;
-            }
             this.router.navigate(['/login']);
             return false;
         }
 
-        const decodedToken: JwtPayload = jwt_decode(token);
+        const decodedToken: AuthToken = jwt_decode(token);
         const currentTime = new Date().getTime() / 1000;
-
+        
+        // If token is invalid redirect to login page
         if (decodedToken.exp < currentTime) {
-            // token has expired
             this.router.navigate(['/login']);
             return false;
         }
@@ -53,5 +44,3 @@ export class AuthGuard implements CanActivate {
         return true;
     }
 }
-
-

@@ -2,7 +2,8 @@ import { Component, Input, NgModule } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { AuthService, AuthResponseData } from 'src/app/services/auth.service';
+import { AuthenticatedUser } from 'src/app/dto/user.model';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-auth-form',
@@ -22,15 +23,13 @@ export class AuthFormComponent {
   retypePassword: string;
   
   onSubmit(form: NgForm) {
-    if (!form.valid) {
-      return;
-    }
+    if (!form.valid) { return }
+
     const email = form.value.email;
     const password = form.value.password;
 
     this.isLoading = true;
-
-    let authObs: Observable<AuthResponseData>;
+    let authObs: Observable<AuthenticatedUser>;
 
     if (this.mode === 'login') {
       authObs = this.authService.login(email, password);
@@ -41,7 +40,7 @@ export class AuthFormComponent {
     authObs.subscribe(
       resData => {
         console.log(resData);
-        localStorage.setItem('token', resData.token);
+        localStorage.setItem('token', JSON.stringify(resData.token));
         this.isLoading = false;
         this.router.navigate(['/dashboard']);
       },

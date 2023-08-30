@@ -1,15 +1,10 @@
-export class User {
-  constructor(
-    public email: string,
-    public id: string,
-    private _token: string,
-    private _tokenExpirationDate: Date
-  ) {}
+import { JwtPayload } from "jwt-decode";
 
-  get token() {
-    if (!this._tokenExpirationDate || new Date() > this._tokenExpirationDate) {
-      return null;
-    }
-    return this._token;
-  }
+export interface User {
+  email: string,
+  password: string,
+}
+
+export interface AuthenticatedUser extends User {
+  token: JwtPayload; 
 }

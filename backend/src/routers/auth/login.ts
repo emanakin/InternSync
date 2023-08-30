@@ -18,7 +18,7 @@ router.post('/login', async (req: Request, res: Response, next: NextFunction) =>
         return res.status(409).send({ error: 'Wrong Credentials' });
     }
         
-    const token = jwt.sign({ email, userId: user._id }, process.env.JWT_KEY!, { expiresIn: '6h' })
+    const token = jwt.sign({ email, userId: user._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
 
     req.session = { jwt: token }
 
