@@ -3,7 +3,6 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
 import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 import jwt_decode from 'jwt-decode';
-import { JwtPayload } from 'jwt-decode';
 import { AuthToken } from '../dto/authToken.model';
 
 @Injectable({
@@ -14,7 +13,7 @@ export class AuthGuard implements CanActivate {
     constructor(private authService: AuthService, private router: Router) { }
     
     canActivate(
-        route: ActivatedRouteSnapshot,
+        _route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot
     ): boolean | Observable<boolean> | Promise<boolean> {
 
@@ -26,7 +25,16 @@ export class AuthGuard implements CanActivate {
             return false;
         }
 
-        const decodedToken: AuthToken = jwt_decode(token);
+        let decodedToken: AuthToken;
+
+        try {
+            decodedToken = jwt_decode(token);
+        } catch (error) {
+            console.error("Invalid token:", error);
+            this.router.navigate(['/login']);
+            return false;
+        }
+
         const currentTime = new Date().getTime() / 1000;
         
         // If token is invalid redirect to login page
@@ -37,10 +45,18 @@ export class AuthGuard implements CanActivate {
 
         // If token is valid and user is trying to access login or signup, redirect them to dashboard.
         if(state.url === '/login' || state.url === '/signup') {
+            console.log('Token expires: ' + this.unixTimestampToEST(decodedToken.exp))
             this.router.navigate(['/dashboard']);
             return false;
         }
 
         return true;
     }
+
+    private unixTimestampToEST(tokenTime: number): string {
+        const date = new Date(tokenTime * 1000);
+        const formattedDate = date.toLocaleString();
+        return formattedDate;
+    }
+
 }
