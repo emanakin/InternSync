@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service';
-import jwt_decode from 'jwt-decode';
+import jwt_decode, { JwtPayload } from 'jwt-decode';
 import { AuthToken } from '../dto/authToken.model';
 
 @Injectable({
@@ -13,45 +13,56 @@ export class AuthGuard implements CanActivate {
     constructor(private authService: AuthService, private router: Router) { }
     
     canActivate(
-        _route: ActivatedRouteSnapshot,
+        route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot
     ): boolean | Observable<boolean> | Promise<boolean> {
-
+    
         const token = this.authService.getToken();
-
-        // If there is no token redirect to login page
-        if (!token) {
-            this.router.navigate(['/login']);
-            return false;
-        }
-
+        console.log(token)
         let decodedToken: AuthToken;
-
+    
+        // Scenario 1: No token present
+        if (!token) {
+            if (state.url === '/dashboard') {
+                this.router.navigate(['/login']);
+                return false;
+            }
+            return true; // for routes like home, login, and signup
+        }
+    
+        // Decode token and handle exceptions
         try {
             decodedToken = jwt_decode(token);
         } catch (error) {
             console.error("Invalid token:", error);
+            this.authService.removeToken(); // Optionally, remove the invalid token from cache/storage
             this.router.navigate(['/login']);
             return false;
         }
-
+    
         const currentTime = new Date().getTime() / 1000;
-        
-        // If token is invalid redirect to login page
+    
+        // Scenario 2: Token is expired
         if (decodedToken.exp < currentTime) {
-            this.router.navigate(['/login']);
-            return false;
+            console.log('Token expired.');
+            this.authService.removeToken(); // Remove the expired token from cache/storage
+            if (state.url === '/dashboard') {
+                this.router.navigate(['/login']);
+                return false;
+            }
+            return true; // for routes like home, login, and signup
         }
-
-        // If token is valid and user is trying to access login or signup, redirect them to dashboard.
+    
+        // Scenario 3: Token is valid
         if(state.url === '/login' || state.url === '/signup') {
-            console.log('Token expires: ' + this.unixTimestampToEST(decodedToken.exp))
+            console.log('Token expires at: ' + this.unixTimestampToEST(decodedToken.exp));
             this.router.navigate(['/dashboard']);
             return false;
         }
-
-        return true;
+    
+        return true; // token is valid and user is trying to access other routes
     }
+    
 
     private unixTimestampToEST(tokenTime: number): string {
         const date = new Date(tokenTime * 1000);

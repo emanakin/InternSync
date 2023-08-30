@@ -75,6 +75,10 @@ export class AuthService {
         return localStorage.getItem('token');
     }
 
+    removeToken(): void {
+        localStorage.removeItem('token');
+    }
+
     getUserId(): string {
         const token = this.getToken();
         if (!token) return null;
