@@ -27,7 +27,7 @@ export class AuthGuard implements CanActivate {
                 this.router.navigate(['/login']);
                 return false;
             }
-            return true; // for routes like home, login, and signup
+            return true; 
         }
     
         // Decode token and handle exceptions
@@ -35,7 +35,7 @@ export class AuthGuard implements CanActivate {
             decodedToken = jwt_decode(token);
         } catch (error) {
             console.error("Invalid token:", error);
-            this.authService.removeToken(); // Optionally, remove the invalid token from cache/storage
+            this.authService.removeToken(); 
             this.router.navigate(['/login']);
             return false;
         }
@@ -45,12 +45,12 @@ export class AuthGuard implements CanActivate {
         // Scenario 2: Token is expired
         if (decodedToken.exp < currentTime) {
             console.log('Token expired.');
-            this.authService.removeToken(); // Remove the expired token from cache/storage
+            this.authService.removeToken(); 
             if (state.url === '/dashboard') {
                 this.router.navigate(['/login']);
                 return false;
             }
-            return true; // for routes like home, login, and signup
+            return true; 
         }
     
         // Scenario 3: Token is valid

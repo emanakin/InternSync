@@ -1,0 +1,15 @@
+.right-align-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;                
+}
+
+
+h2 {
+    color: #111827;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0;
+}

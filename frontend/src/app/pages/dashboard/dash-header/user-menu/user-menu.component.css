@@ -1,0 +1,22 @@
+.profile-picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 22.5rem;
+    border: 1px solid #1B262C;
+}
+
+h2 {
+    color: #111827;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-right: .5rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    
+}

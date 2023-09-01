@@ -1,0 +1,30 @@
+.search-bar {
+    display: flex;             
+    align-items: center;       
+    padding: 0 1rem 0 1.1rem;          
+    width: 21.5rem;
+    height: 3.0625rem;
+    flex-shrink: 0;
+    border-radius: 6.25rem;
+    background: #3282B8;
+}
+
+/* This is to remove default borders and styles from the input */
+.search-bar input {
+    border: none;              
+    background: transparent;   
+    outline: none;             
+    flex-grow: 1;              
+    padding-left: 1.3rem;      
+    color: #BBE1FA;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.search-bar input::placeholder {
+    color: #BBE1FA;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+}

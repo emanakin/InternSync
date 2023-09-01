@@ -1,0 +1,9 @@
+<div class="jobs-container" 
+     infinite-scroll 
+     [infiniteScrollDistance]="scrollDistance"
+     [infiniteScrollUpDistance]="scrollUpDistance"
+     [infiniteScrollThrottle]="throttle"
+     (scrolled)="onScrollDown()">
+    <app-job-card *ngFor="let job of jobs" [job]="job"></app-job-card>
+</div>
+

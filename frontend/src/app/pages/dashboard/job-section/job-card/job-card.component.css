@@ -1,0 +1,21 @@
+h4 {
+    color: #1B262C;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.03125rem;
+}
+
+h5 {
+    color: #0F4C75;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h6 {
+    color: #000;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+}

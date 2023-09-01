@@ -30,4 +30,53 @@ html {
   scroll-behavior: smooth;
 }
   
+.navbar {
+  background-color: #FFF;
+  padding: 0.35rem;
+}
 
+.navbox {
+  width: 80%; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.navbar-picture {
+  width: 15vw;
+  max-width: 9rem;
+  min-width: 7rem; 
+  height: auto;
+  flex-shrink: 0;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  height: 2.4375rem;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 2px solid #F8F8F8;
+  background: #0F4C75;
+  color: #FFF;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0 1.1rem; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+.dropdown-btn:hover {
+  background-color: #1B5E90;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}

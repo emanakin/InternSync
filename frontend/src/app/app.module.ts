@@ -19,7 +19,16 @@ import { AuthFormComponent } from './shared/auth-form/auth-form.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
-
+import { JobSectionComponent } from './pages/dashboard/job-section/job-section.component';
+import { UtilitiesBarComponent } from './pages/dashboard/utilities-bar/utilities-bar.component';
+import { DashHeaderComponent } from './pages/dashboard/dash-header/dash-header.component';
+import { JobsComponent } from './pages/dashboard/job-section/jobs/jobs.component';
+import { JobCardComponent } from './pages/dashboard/job-section/job-card/job-card.component';
+import { UserMenuComponent } from './pages/dashboard/dash-header/user-menu/user-menu.component';
+import { SortByComponent } from './pages/dashboard/utilities-bar/sort-by/sort-by.component';
+import { SearchBarComponent } from './pages/dashboard/utilities-bar/search-bar/search-bar.component';
+import { ApplicationTrackingComponent } from './pages/dashboard/utilities-bar/application-tracking/application-tracking.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -39,13 +48,23 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
     FooterComponent,
     SignupFormComponent,
     AuthFormComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    JobSectionComponent,
+    UtilitiesBarComponent,
+    DashHeaderComponent,
+    JobsComponent,
+    JobCardComponent,
+    UserMenuComponent,
+    SortByComponent,
+    SearchBarComponent,
+    ApplicationTrackingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
