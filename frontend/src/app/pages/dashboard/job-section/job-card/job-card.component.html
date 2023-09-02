@@ -1,5 +1,10 @@
-<div class="card">
-    <h4>{{ job.job_position }}</h4>
-    <h5>{{ job.company_name }}</h5>
-    <h6>{{ job.job_location }}</h6>
+<div 
+    class="job-card"
+    (click)="handleClick()"
+    [class.clicked]="job === selectedJob">
+    <div class="text">
+        <h4>{{ job.job_position? job.job_position : 'Intern Position' }}</h4>
+        <h5>{{ job.company_name }}</h5>
+        <h6>{{ job.job_location }}</h6>
+    </div>
 </div>

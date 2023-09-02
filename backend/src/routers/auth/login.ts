@@ -10,19 +10,22 @@ router.post('/login', async (req: Request, res: Response, next: NextFunction) =>
 
     const user = await User.findOne({ email })
     if (!user) {
-        return res.status(409).send({ error: 'Wrong Credentials' });
+        const err: CustomError = new Error('Wrong credentials');
+        err.status = 401
+        return next(err);
     } 
 
     const isEqual = await authenticationService.pwdCompare(user.password, password);
+
     if (!isEqual) {
-        return res.status(409).send({ error: 'Wrong Credentials' });
+        const err: CustomError = new Error('Wrong credentials');
+        err.status = 409
+        return next(err);
     }
         
     const token = jwt.sign({ email, userId: user._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
 
-    req.session = { jwt: token }
-
-    res.status(200).send({user, token})
+    res.status(200).send({ user, token })
 
 });
 

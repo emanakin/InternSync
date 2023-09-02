@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Observable, catchError, throwError } from 'rxjs';
+import { Observable, catchError, map, throwError } from 'rxjs';
 import { Job } from '../dto/job.model';
 import { AuthService } from './auth.service';
 import { JwtPayload } from 'jwt-decode';
@@ -9,8 +9,6 @@ import { JwtPayload } from 'jwt-decode';
   providedIn: 'root'
 })
 export class JobsService {
-
-  private readonly API_URL = '/api/jobs';
 
   constructor(private http: HttpClient, private authService: AuthService) { }
 
@@ -24,16 +22,34 @@ export class JobsService {
     const params = new HttpParams()
       .set('page', page.toString());
 
-    return this.http.get<Job>('http://localhost:3000/api/jobs', { params })
+    return this.http.get<Job>('http://localhost:3000/api/jobs', { headers, params })
       .pipe(
           catchError(errorRes => {
               let errorMessage = 'An unknown error occurred!';
-              if (errorRes.error && errorRes.error.error) {
-                  errorMessage = errorRes.error.error;
+              if (errorRes.error && errorRes.error.message) {
+                  errorMessage = errorRes.error.message;
               }
               console.log(errorMessage);
               return throwError(errorMessage);
           }) 
       );
   }
+
+  getTotalJobs(): Observable<number> {
+    const token = this.authService.getToken();
+
+    const headers = new HttpHeaders({
+        'Authorization': `Bearer ${token}`
+    });
+
+    return this.http.get<{ totalJobs: number }>('http://localhost:3000/api/jobs/count', { headers })
+      .pipe(
+        map(response => response.totalJobs),
+        catchError(error => {
+          console.error("Error fetching job count:", error);
+          return throwError('Error fetching job count');
+        })
+      );
+  }
+
 }

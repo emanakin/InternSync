@@ -8,6 +8,7 @@ import {  } from 'express';
 import { currentUser, requireAuth } from '../common';
 import { loginRouter, signupRouter } from './routers';
 import { logoutRouter } from './routers/auth/logout';
+import { jobsRouter } from './routers/jobs/fetch-jobs';
 
 dotenv.config();
 const app = express();
@@ -19,17 +20,13 @@ app.use(cookieSession({
     signed: false,
     secure: false
 }));
-
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
-
-app.use(currentUser);
-
 app.use(signupRouter);
 app.use(loginRouter);
 app.use(logoutRouter);
+app.use(jobsRouter);
 
 declare global {
     interface CustomError extends Error {
@@ -42,7 +39,7 @@ app.use((error: CustomError, req: Request, res: Response, next: NextFunction) =>
         return res.status(error.status).json({ message: error.message });
     }
 
-    res.status(500).json({ message: 'Something went wrong' })
+    res.status(500).json({ message: error.message })
 });
 
 const start = async () => {

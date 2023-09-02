@@ -29,6 +29,8 @@ import { SortByComponent } from './pages/dashboard/utilities-bar/sort-by/sort-by
 import { SearchBarComponent } from './pages/dashboard/utilities-bar/search-bar/search-bar.component';
 import { ApplicationTrackingComponent } from './pages/dashboard/utilities-bar/application-tracking/application-tracking.component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { JobDetailsComponent } from './pages/dashboard/job-section/job-details/job-details.component';
+import { QuickApplyComponent } from './pages/dashboard/job-section/quick-apply/quick-apply.component';
 
 
 
@@ -58,6 +60,8 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     SortByComponent,
     SearchBarComponent,
     ApplicationTrackingComponent,
+    JobDetailsComponent,
+    QuickApplyComponent,
   ],
   imports: [
     BrowserModule,

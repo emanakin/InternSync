@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Job, JobOverview } from 'src/app/dto/job.model';
 
 @Component({
@@ -7,5 +7,12 @@ import { Job, JobOverview } from 'src/app/dto/job.model';
   styleUrls: ['./job-card.component.css']
 })
 export class JobCardComponent {
-  @Input() job: JobOverview;
+  @Input() job: Job;
+  @Input() selectedJob: Job | null = null;
+  @Output() jobClicked = new EventEmitter<Job>();
+
+  handleClick(): void {
+    console.log('Card was clicked');
+    this.jobClicked.emit(this.job);
+  }
 }

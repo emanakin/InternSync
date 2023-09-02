@@ -29,8 +29,8 @@ export class AuthService {
         .pipe(  
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';
-                if (errorRes.error && errorRes.error.error) {
-                    errorMessage = errorRes.error.error;
+                if (errorRes.error && errorRes.error.message) {
+                    errorMessage = errorRes.error.message +': ' + errorRes.status;
                 }
                 console.log(errorMessage);
                 return throwError(errorMessage);
@@ -62,8 +62,8 @@ export class AuthService {
         .pipe(
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';
-                if (errorRes.error && errorRes.error.error) {
-                    errorMessage = errorRes.error.error;
+                if (errorRes.error && errorRes.error.message) {
+                    errorMessage = errorRes.error.message +': ' + errorRes.status;
                 }
                 console.log(errorMessage);
                 return throwError(errorMessage);
@@ -71,8 +71,12 @@ export class AuthService {
         );
     }
 
-    getToken(): string {
-        return localStorage.getItem('token');
+    getToken() {
+        const storedToken = localStorage.getItem('token');
+        if (!storedToken) {
+            return null;  // or handle this case as you see fit
+        }
+        return JSON.parse(storedToken);
     }
 
     removeToken(): void {

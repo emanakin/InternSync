@@ -1,9 +1,22 @@
-<div class="jobs-container" 
-     infinite-scroll 
-     [infiniteScrollDistance]="scrollDistance"
-     [infiniteScrollUpDistance]="scrollUpDistance"
-     [infiniteScrollThrottle]="throttle"
-     (scrolled)="onScrollDown()">
-    <app-job-card *ngFor="let job of jobs" [job]="job"></app-job-card>
+<div class="jobs mt-2">
+    <div class="top-bar">
+        <h5>Results: {{ jobCount }} out of {{ totalJobs }}</h5>
+     </div>
+     <div class="jobs-container" 
+        infinite-scroll 
+        [scrollWindow]="false"
+        [infiniteScrollDistance]="scrollDistance"
+        [infiniteScrollThrottle]="throttle"
+        (scrolled)="onScrollDown()">
+        
+        <app-job-card 
+        *ngFor="let job of jobs" 
+        [job]="job"
+        [selectedJob]="selectedJob"
+        (jobClicked)="selectJob($event)">
+        </app-job-card>
+    </div>
 </div>
+
+
 

@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 declare global {
     interface JwtPayload {
         email: string,
-        password: string
+        userId: string
     }
 
     namespace Express {
@@ -15,15 +15,19 @@ declare global {
 }
 
 export const currentUser = ( req: Request, res: Response, next: NextFunction) => {
-    if (!req.session?.jwt) {
-        return next()
+    const authHeader = req.headers.authorization;
+    if (!authHeader) {
+        return next();
     }
 
+    const token = authHeader.split(' ')[1]; 
+
     try {
-        const payload = (jwt.verify(req.session?.jwt, process.env.JWT_KEY!)) as JwtPayload;
+        const payload = jwt.verify(token, process.env.JWT_KEY!) as JwtPayload;
         req.currentUser = payload;
-    } catch(err) {
-        return next(err)
+    } catch (err) {
+        console.log(err)
+        return next(err);
     }
 
     next()

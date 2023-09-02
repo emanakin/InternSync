@@ -10,7 +10,9 @@ router.post('/signup', async (req: Request, res: Response, next: NextFunction) =
     const user = await User.findOne({ email });
 
     if (user) {
-        return res.status(409).send({ error: 'User with the same email already exist' });
+        const err: CustomError = new Error('User with the email already exist');
+        err.status = 409
+        return next(err);
     }    
 
     const newUser = new User({
@@ -22,14 +24,7 @@ router.post('/signup', async (req: Request, res: Response, next: NextFunction) =
     
     const token = jwt.sign({ email, userId: newUser._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
 
-    req.session = {
-        jwt: token
-    };
-
-    res.status(201).send({
-        ...newUser._doc,
-        token
-    });
+    res.status(201).send({ ...newUser._doc, token });
 
 });
 

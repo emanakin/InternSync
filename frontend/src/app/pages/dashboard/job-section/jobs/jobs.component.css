@@ -1,6 +1,27 @@
-.jobs-container {
+.jobs {
     width: 23.6875rem;
-    height: 52.75rem;
+    height: 36rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.22);
     
 }
+
+.jobs-container {
+    overflow-y: auto; 
+    height: calc(100% - 1.9375rem);  
+}
   
+.top-bar {
+    width: 100%;
+    height: 1.9375rem;
+    flex-shrink: 0;
+    background: #3282B8;
+    padding: .4rem;
+}
+
+h5 {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+}
