@@ -1,21 +1,33 @@
 <div class="jobs mt-2">
+    
     <div class="top-bar">
-        <h5>Results: {{ jobCount }} out of {{ totalJobs }}</h5>
-     </div>
-     <div class="jobs-container" 
+        <h5>Results: {{ jobCount$ | async }} out of {{ totalJobs$ | async }}</h5>
+    </div>
+
+    <app-loading-spinner 
+        *ngIf="(jobs$ | async)?.length === 0 && (isLoading$ | async)" 
+        class="spinner-container">
+    </app-loading-spinner>
+
+    <div 
+        class="jobs-container" 
         infinite-scroll 
         [scrollWindow]="false"
         [infiniteScrollDistance]="scrollDistance"
         [infiniteScrollThrottle]="throttle"
         (scrolled)="onScrollDown()">
-        
         <app-job-card 
-        *ngFor="let job of jobs" 
-        [job]="job"
-        [selectedJob]="selectedJob"
-        (jobClicked)="selectJob($event)">
+            *ngFor="let job of jobs$ | async" 
+            [job]="job"
+            [selectedJob]="selectedJob$ | async"
+            (jobClicked)="selectJob($event)">
         </app-job-card>
+        <app-loading-spinner 
+            *ngIf="(jobs$ | async)?.length > 1 && (isLoading$ | async)" 
+            class="spinner-container-bottom">
+        </app-loading-spinner>
     </div>
+
 </div>
 
 

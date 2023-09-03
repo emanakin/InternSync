@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgxsModule } from '@ngxs/store';
+import { JobState } from './states/job.state';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -16,8 +21,6 @@ import { ContactComponent } from './pages/home/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SignupFormComponent } from './pages/signup/signup-form/signup-form.component';
 import { AuthFormComponent } from './shared/auth-form/auth-form.component';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { JobSectionComponent } from './pages/dashboard/job-section/job-section.component';
 import { UtilitiesBarComponent } from './pages/dashboard/utilities-bar/utilities-bar.component';
@@ -28,11 +31,8 @@ import { UserMenuComponent } from './pages/dashboard/dash-header/user-menu/user-
 import { SortByComponent } from './pages/dashboard/utilities-bar/sort-by/sort-by.component';
 import { SearchBarComponent } from './pages/dashboard/utilities-bar/search-bar/search-bar.component';
 import { ApplicationTrackingComponent } from './pages/dashboard/utilities-bar/application-tracking/application-tracking.component';
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { JobDetailsComponent } from './pages/dashboard/job-section/job-details/job-details.component';
 import { QuickApplyComponent } from './pages/dashboard/job-section/quick-apply/quick-apply.component';
-
-
 
 @NgModule({
   declarations: [
@@ -68,7 +68,10 @@ import { QuickApplyComponent } from './pages/dashboard/job-section/quick-apply/q
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    NgxsModule.forRoot([
+      JobState
+  ])
   ],
   providers: [],
   bootstrap: [AppComponent]

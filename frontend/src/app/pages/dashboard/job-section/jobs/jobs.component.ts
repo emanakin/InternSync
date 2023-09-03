@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { JobsService } from 'src/app/services/jobs.service';
 import { Job } from 'src/app/dto/job.model';
+import { Select, Store } from '@ngxs/store';
+import { FetchTotalJobs, LoadJobs, SelectJob } from 'src/app/actions/job.action';
+import { JobState } from 'src/app/states/job.state';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-jobs',
@@ -8,46 +11,32 @@ import { Job } from 'src/app/dto/job.model';
   styleUrls: ['./jobs.component.css']
 })
 export class JobsComponent implements OnInit {
-  jobs: Job[] = [];  
+  @Select(JobState.jobs) jobs$: Observable<Job[]>;
+  @Select(JobState.selectedJob) selectedJob$: Observable<Job>;
+  
   currentPage = 1;
   scrollDistance = 0.1;
   throttle = 500;
-  isLoading = false;
-  totalJobs: number;
-  jobCount: number;
-  selectedJob: Job | null = null;
+  jobCount$: Observable<number>; 
+  isLoading$ = this.store.select(state => state.jobs.isLoading);
+  totalJobs$ = this.store.select(state => state.jobs.totalJobs);
+  
 
-  constructor(private jobsService: JobsService) { }
+  constructor(private store: Store) { }
 
   ngOnInit(): void {
-    this.fetchTotalJobs();
-    this.loadJobs();
+    this.store.dispatch(new LoadJobs(this.currentPage));
+    this.jobCount$ = this.jobs$.pipe(map(jobs => jobs.length));
+    this.fetchTotalJobs();  
   }
 
   selectJob(job: Job): void {
-    console.log('Job clicked:', job);
-    this.selectedJob = this.selectedJob === job ? null : job; 
+    this.store.dispatch(new SelectJob(job));
   }
-  
-  
-  loadJobs(): void {
-    if (this.isLoading) return; 
-  
-    this.isLoading = true;
-  
-    this.jobsService.getJobs(this.currentPage).subscribe(response => {
-      if (response.success) {
-        console.log(response.data);
-        this.jobs.push(...response.data); 
-        this.currentPage++;  
 
-        this.jobCount = this.jobs.length;
-      } else {
-        console.error("Error fetching jobs:", response.error);
-      }
-  
-      this.isLoading = false;
-    });
+  loadJobs(): void {
+    this.store.dispatch(new LoadJobs(this.currentPage));
+    this.currentPage++;
   }
 
   onScrollDown(): void {
@@ -55,15 +44,7 @@ export class JobsComponent implements OnInit {
   }
 
   fetchTotalJobs(): void {
-    this.jobsService.getTotalJobs().subscribe(
-      total => {
-        this.totalJobs = total;
-      },
-      error => {
-        console.error("Error fetching total jobs:", error);
-      }
-    );
-  }
-  
+    this.store.dispatch(new FetchTotalJobs());
+  } 
 
 }

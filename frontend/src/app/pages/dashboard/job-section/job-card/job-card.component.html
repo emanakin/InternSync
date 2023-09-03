@@ -1,7 +1,7 @@
 <div 
     class="job-card"
     (click)="handleClick()"
-    [class.clicked]="job === selectedJob">
+    [class.clicked]="job._id === selectedJob?._id">
     <div class="text">
         <h4>{{ job.job_position? job.job_position : 'Intern Position' }}</h4>
         <h5>{{ job.company_name }}</h5>

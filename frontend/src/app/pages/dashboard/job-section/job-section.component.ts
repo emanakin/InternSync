@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Job, JobDetail } from 'src/app/dto/job.model';
 
 @Component({
   selector: 'app-job-section',
@@ -6,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./job-section.component.css']
 })
 export class JobSectionComponent {
-
 }

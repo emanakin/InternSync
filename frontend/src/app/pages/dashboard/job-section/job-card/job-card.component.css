@@ -8,6 +8,7 @@ h4 {
     font-style: normal;
     font-weight: 600;
     letter-spacing: -0.03125rem;
+    margin-bottom: .45rem;
 }
 
 h5 {
@@ -15,6 +16,7 @@ h5 {
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
+    margin-bottom: .35rem;
 }
 
 h6 {

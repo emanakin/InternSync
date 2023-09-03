@@ -25,3 +25,11 @@ h5 {
     font-style: normal;
     font-weight: 600;
 }
+
+.spinner-container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;            
+    width: 100%;
+}

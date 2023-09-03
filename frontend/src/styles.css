@@ -107,3 +107,11 @@ html {
 .jobs-container {
   overflow-x: hidden;
 }
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;            
+  width: 100%;
+}

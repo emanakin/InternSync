@@ -1,1 +1,33 @@
-<p>job-details works!</p>
+<div class="job-container my-2">
+    <div class="top-section">
+        <img 
+            class="header-bg" 
+            src="assets/job-details-vector.png" 
+            alt="Header Gradient">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="61" 
+                    height="61" 
+                    viewBox="0 0 61 61" 
+                    fill="none">
+                    <path d="M23 42H39V38H23V42ZM23 34H39V30H23V34ZM19 50C17.9 50 16.958 49.608 16.174 48.824C15.39 48.04 14.9987 47.0987 15 46V14C15 12.9 15.392 11.958 16.176 11.174C16.96 10.39 17.9013 9.99867 19 10H35L47 22V46C47 47.1 46.608 48.042 45.824 48.826C45.04 49.61 44.0987 50.0013 43 50H19ZM33 24H43L33 14V24Z" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="info-container">
+        <app-loading-spinner 
+        *ngIf="(selectedJob$ | async) === null && (isLoading$ | async)" 
+        class="spinner-container">
+        </app-loading-spinner>
+        <div *ngIf="selectedJob$ | async as selectedJob">
+            <h1>{{ selectedJob.job_position }}</h1>
+        </div>
+    </div>
+
+    
+
+</div>
+

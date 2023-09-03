@@ -1,0 +1,63 @@
+.job-container {
+    width: 39rem;
+    height: 52.75rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+
+.top-section {
+    width: 39rem;
+    height: 8.5rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+    position: relative;
+    background: #3282B8;
+}
+
+.logo-wrapper { 
+    position: absolute;
+    bottom: -2.1875rem; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-bg {
+    width: 100%;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+
+}
+
+.logo {
+    width: 4.375rem;
+    height: 4.375rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 3px solid #FFF;
+    background: #3282B8;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo-icon { /* Actual icon inside the logo, if there's a separate icon */
+    width: 2.5rem;  /* You can adjust these values */
+    height: 2.5rem; /* You can adjust these values */
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.info-container {
+    height: 100%;
+}

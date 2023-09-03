@@ -7,9 +7,10 @@ import { Job, JobOverview } from 'src/app/dto/job.model';
   styleUrls: ['./job-card.component.css']
 })
 export class JobCardComponent {
-  @Input() job: Job;
+  @Input() job: JobOverview;
   @Input() selectedJob: Job | null = null;
-  @Output() jobClicked = new EventEmitter<Job>();
+  @Output() jobClicked: EventEmitter<JobOverview> = new EventEmitter<JobOverview>();
+  
 
   handleClick(): void {
     console.log('Card was clicked');
