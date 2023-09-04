@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -69,6 +70,7 @@ import { QuickApplyComponent } from './pages/dashboard/job-section/quick-apply/q
     FormsModule,
     HttpClientModule,
     InfiniteScrollModule,
+    ReactiveFormsModule,
     NgxsModule.forRoot([
       JobState
   ])

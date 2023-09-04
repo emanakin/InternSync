@@ -19,9 +19,11 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@aws-sdk/types": "^3.398.0",
     "@types/cookie-session": "^2.0.44",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/mongoose": "^5.11.97",
+    "aws-sdk": "^2.1450.0",
     "body-parser": "^1.20.2",
     "cookie-session": "^2.0.0",
     "cors": "^2.8.5",

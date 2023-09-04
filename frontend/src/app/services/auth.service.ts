@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http'
 import { catchError, tap, throwError } from "rxjs";
 import { Router } from '@angular/router';
-import { AuthenticatedUser } from "../dto/user.model";
+import { User } from "../dto/user.model";
 import jwt_decode from 'jwt-decode';
 import { AuthToken } from "../dto/authToken.model";
 
@@ -15,7 +15,7 @@ export class AuthService {
      *
      *   @param {string} email - The email address of the user to be registered.
      *   @param {string} password - The password for the user's account.
-     *   @returns {Observable<AuthenticatedUser>} 
+     *   @returns {Observable<User>} 
      * 
      *   An observable that emits the authenticated user data upon successful signup.
      *   It includes details such as user info and authentication token.
@@ -23,9 +23,9 @@ export class AuthService {
      * 
      *   @throws {string} - Throws an error message if the signup process encounters an error.
      */
-    signup(email: string, password: string) {
-        return this.http.post<AuthenticatedUser>(
-        'http://localhost:3000/signup', { email: email, password: password })
+    signup(user: User) {
+        return this.http.post<User>(
+        'http://localhost:3000/signup', { user })
         .pipe(  
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';
@@ -43,7 +43,7 @@ export class AuthService {
      *
      *   @param {string} email - The email address of the user to be registered.
      *   @param {string} password - The password for the user's account.
-     *   @returns {Observable<AuthenticatedUser>} 
+     *   @returns {Observable<User>} 
      * 
      *   An observable that emits the authenticated user data upon successful signup.
      *   It includes details such as user info and authentication token.
@@ -51,14 +51,10 @@ export class AuthService {
      * 
      *   @throws {string} - Throws an error message if the signup process encounters an error.
      */
-    login(email: string, password: string) {
-        return this.http.post<AuthenticatedUser>(
-            'http://localhost:3000/login',
-            {
-                email: email,
-                password: password,
-            }
-        )
+    login(user: User) {
+        console.log('user in auth service', user)
+        return this.http.post<User>(
+        'http://localhost:3000/login',{ user })
         .pipe(
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';
@@ -71,7 +67,7 @@ export class AuthService {
         );
     }
 
-    getToken() {
+    getToken(): string {
         const storedToken = localStorage.getItem('token');
         if (!storedToken) {
             return null;  // or handle this case as you see fit
@@ -88,6 +84,14 @@ export class AuthService {
         if (!token) return null;
         const decodedToken: AuthToken = jwt_decode(token);
         return decodedToken.userId;
+    }
+
+    getDecodedToken(): AuthToken {
+        const token = this.getToken();
+        if (!token) return null;
+        const decodedToken: AuthToken = jwt_decode(token);
+        console.log('token fetched:', decodedToken)
+        return decodedToken;
     }
 }
 

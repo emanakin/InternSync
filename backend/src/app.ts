@@ -3,12 +3,13 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import * as dotenv from 'dotenv';
+import * as AWS from 'aws-sdk';
 import cookieSession from 'cookie-session';
 import {  } from 'express';
-import { currentUser, requireAuth } from '../common';
 import { loginRouter, signupRouter } from './routers';
 import { logoutRouter } from './routers/auth/logout';
 import { jobsRouter } from './routers/jobs/fetch-jobs';
+import { s3Router } from './routers/aws/s3Routes';
 
 dotenv.config();
 const app = express();
@@ -23,10 +24,19 @@ app.use(cookieSession({
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+
+app.use(s3Router);
 app.use(signupRouter);
 app.use(loginRouter);
 app.use(logoutRouter);
 app.use(jobsRouter);
+
+AWS.config.update({
+    accessKeyId: process.env.AWS_ACCESS_KEY,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    region: 'us-east-1' 
+});
 
 declare global {
     interface CustomError extends Error {

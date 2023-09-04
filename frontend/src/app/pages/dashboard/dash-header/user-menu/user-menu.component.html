@@ -1,5 +1,11 @@
 <div class="menu">
-    <img src="" alt="">
-    <h2>Emmanuel Akinlosotu</h2>
-    <img class="profile-picture" src="assets\Profile Pic.jpeg" alt="profile pic">
+    <div class="user-info" (click)="toggleDropdown()">
+        <h2>{{ name }}</h2>
+        <img class="profile-picture" src="assets/Portrait_Placeholder.png" alt="profile pic"> 
+    </div>
+    <div class="dropdown" *ngIf="isDropdownVisible">
+        <a class="menu-link">Settings</a>
+        <a href="" (click)="onSignOut()" class="menu-link">Sign Out</a>
+    </div>
 </div>
+

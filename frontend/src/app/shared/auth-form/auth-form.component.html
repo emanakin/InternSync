@@ -24,42 +24,57 @@
                         <app-loading-spinner></app-loading-spinner>
                     </div>
                 </div>
-                <form (ngSubmit)="onSubmit(form)" #form="ngForm" *ngIf="!isLoading">
+                <form [formGroup]="form" (ngSubmit)="onSubmit()" *ngIf="!isLoading" style="overflow-y: auto; max-height: 400px;">
+                    <!-- Add your new form controls here -->
+                    <div class="form-group mb-3" *ngIf="mode === 'signup'">
+                        <label for="firstName">First Name</label>
+                        <input formControlName="firstName" type="text" class="form-control" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group mb-3" *ngIf="mode === 'signup'">
+                        <label for="lastName">Last Name</label>
+                        <input formControlName="lastName" type="text" class="form-control" placeholder="Enter your last name">
+                    </div>
                     <div class="form-group mb-3">
-                        <label for="email">Enter your email address</label>
-                        <input
-                            type="email" 
-                            required
-                            email                            
-                            name="email"
-                            #emailField="ngModel" 
-                            ngModel
-                            required
-                            class="form-control"
-                            placeholder="Enter your email address">
-                        <p *ngIf="emailField.errors?.email && emailField.touched" class="text-danger">Invalid email</p>
-                    </div>        
+                        <label for="email">Email</label>
+                        <input formControlName="email" type="email" class="form-control" placeholder="Enter your email" required>
+                        <p *ngIf="form.get('email')?.touched && form.get('email')?.errors?.required" class="text-danger">Email is required.</p>
+                    </div>
                     <div class="form-group mb-3">
-                        <label for="password">Enter your password</label>
-                        <input
-                            type="password" 
-                            minlength="6"
-                            required
-                            name="password"
-                            #passwordField="ngModel"
-                            ngModel
+                        <label for="password">Password</label>
+                        <input formControlName="password" type="password" class="form-control" placeholder="Enter your password">
+                        <p *ngIf="form.get('password')?.touched && form.get('password')?.errors?.required && mode === 'signup'" class="text-danger">Password is required.</p>
+                        <p *ngIf="form.get('password')?.errors?.minlength && mode === 'signup'" class="text-danger">Weak password.</p>
+                    </div>
+                    <div class="form-group mb-3" *ngIf="mode === 'signup'">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input formControlName="confirmPassword" type="password" class="form-control" placeholder="Confirm your password">
+                        <p *ngIf="form.errors?.mustMatch" class="text-danger">Passwords do not match.</p>
+                    </div>
+                    <div class="form-group mb-3" *ngIf="mode === 'signup'">
+                        <label for="profilePicture">Upload Profile Picture</label>
+                        <input 
+                            formControlName="profilePicture" 
+                            type="file" 
                             class="form-control" 
-                            placeholder="Enter your password">
-                        <p *ngIf="passwordField.errors?.required && passwordField.touched && mode === 'signup'" class="text-danger">Password is required.</p>
-                        <p *ngIf="passwordField.errors?.minlength && passwordField.touched && mode === 'signup'" class="text-danger">Weak password.</p>
-                    </div>          
+                            (change)="onFileSelected($event, 'profile_picture')" >
+                    </div>   
+                    <div class="form-group mb-3" *ngIf="mode === 'signup'">
+                        <label for="resume">Upload Resume</label>
+                        <input 
+                            formControlName="resume" 
+                            type="file" 
+                            class="form-control" 
+                            (change)="onFileSelected($event, 'resume')">
+                    </div>                 
                     <button 
                         class="btn btn-primary" 
-                        type="submit"
-                        [disabled]="!form.valid"> {{ mode === 'signup'? 'Sign up' : 'Log in' }}
+                        type="submit" 
+                        [class.pseudo-disabled]="!form.valid"
+                        (click)="checkForProfilePicture()"> 
+                        {{ mode === 'signup'? 'Sign up' : 'Log in' }}
                     </button>
                 </form>
             </div>
-        </div>            
+        </div>
     </div>
 </div>

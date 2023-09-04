@@ -6,8 +6,8 @@
 
 .col-md-6 {
     display: flex;
-    justify-content: center;  /* horizontal centering */
-    align-items: center;      /* vertical centering */
+    justify-content: center;  
+    align-items: center;      
     padding-top: 10rem;
     height: 80vh;
     flex: 0 0 auto;
@@ -28,6 +28,10 @@
     margin: 0;
 }
 
+input[type="file"] {
+    height: 100%; 
+}
+
 .spinner-container {
     display: flex;
     justify-content: center;
@@ -36,8 +40,6 @@
     width: 100%;
 }
   
-
-/* Set button width */
 .btn {
     margin-top: 2rem;
     width: 100%;
@@ -103,9 +105,28 @@ label {
     margin-bottom: 5px;
 }
 
+.pseudo-disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.btn-primary.pseudo-disabled:hover {
+    background-color: #0F4C75; 
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}  
+
 label, .form-control {
     width: 28.1875rem;
-    max-width: 100%; /* ensures it's responsive */
+    max-width: 100%; 
     flex-shrink: 0;
 }
 
@@ -115,4 +136,17 @@ label, .form-control {
     border: 1px solid #8e9094;
     background: #FFF;
     margin-bottom: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c9c9c96e;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9c9c9c;
 }

@@ -4,12 +4,29 @@ import { authenticationService } from "../../common";
 const userSchema: Schema = new mongoose.Schema({
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true  
     },
     password: {
         type: String,
         required: true
-    }
+    },
+    resume: {
+        type: String,
+        required: false
+    },
+    profile_picture: {
+        type: String,
+        required: true
+    },
+    first_name: {
+        type: String,
+        required: true
+    },
+    last_name: {
+        type: String,
+        required: true
+    },
 });
 
 userSchema.pre('save', async function(done) {
@@ -17,7 +34,6 @@ userSchema.pre('save', async function(done) {
         const hasedPwd = await authenticationService.pwdToHash(this.get('password'));
         this.set('password', hasedPwd);
     }
-
     done()
 });
 

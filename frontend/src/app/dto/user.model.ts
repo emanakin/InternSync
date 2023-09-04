@@ -2,9 +2,10 @@ import { JwtPayload } from "jwt-decode";
 
 export interface User {
   email: string,
-  password: string,
-}
-
-export interface AuthenticatedUser extends User {
-  token: JwtPayload; 
+  password: string
+  resume?: File,
+  profile_picture?: File,
+  first_name?: string,
+  last_name?: string
+  token?: JwtPayload; 
 }

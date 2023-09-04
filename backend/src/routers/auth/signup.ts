@@ -5,7 +5,9 @@ import jwt from 'jsonwebtoken';
 const router = Router();
 
 router.post('/signup', async (req: Request, res: Response, next: NextFunction) => {
-    const { email, password } = req.body;
+    
+    const { email, password, resume, profile_picture, first_name, last_name } = req.body.user;
+    
 
     const user = await User.findOne({ email });
 
@@ -15,14 +17,20 @@ router.post('/signup', async (req: Request, res: Response, next: NextFunction) =
         return next(err);
     }    
 
-    const newUser = new User({
+    const userData: any = {
         email,
-        password
-    });
+        password,
+        first_name,
+        last_name
+    };
 
+    if (resume) userData.resume = resume;
+    if (profile_picture) userData.profile_picture = profile_picture;
+
+    const newUser = new User(userData);
     await newUser.save();
     
-    const token = jwt.sign({ email, userId: newUser._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
+    const token = jwt.sign({ imgUrl: newUser.profile_picture, email, first_name: newUser.first_name, last_name: newUser.last_name, userId: newUser._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
 
     res.status(201).send({ ...newUser._doc, token });
 
