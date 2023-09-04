@@ -31,6 +31,7 @@ export class JobsComponent implements OnInit {
   }
 
   selectJob(job: Job): void {
+    console.log('New job selected', job)
     this.store.dispatch(new SelectJob(job));
   }
 

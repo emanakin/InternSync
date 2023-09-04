@@ -1,1 +1,32 @@
-<p>quick-apply works!</p>
+<div class="jobs mt-2">
+    <div class="top-bar">
+        <h5>{{ mode === 'similar jobs'? 'Similar Jobs' : 'People Also Viewed' }}</h5>
+    </div>
+    <div class="jobs-container">
+        <app-loading-spinner 
+            *ngIf="(isLoading$ | async) && isInitialLoad" 
+            class="spinner-container">
+        </app-loading-spinner>
+
+        <ng-container *ngIf="selectedJob$ | async as selectedJob">
+            <div *ngIf="mode === 'people also viewed'">
+                <app-job-card 
+                    *ngFor="let job of selectedJob.job_details[0].people_also_viewed" 
+                    [job]="job"
+                    [mode]="'quick apply'"
+                    [selectedJob]="selectedJob"
+                    (jobClicked)="selectJob($event)">
+                </app-job-card>  
+            </div>
+            <div *ngIf="mode === 'similar jobs'">
+                <app-job-card 
+                    *ngFor="let job of selectedJob.job_details[0].similar_jobs" 
+                    [job]="job"
+                    [mode]="'quick apply'"
+                    [selectedJob]="selectedJob"
+                    (jobClicked)="selectJob($event)">
+                </app-job-card>  
+            </div>
+        </ng-container>
+    </div>
+</div>

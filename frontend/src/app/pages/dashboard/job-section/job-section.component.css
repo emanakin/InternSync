@@ -1,0 +1,19 @@
+.container-fluid {
+    max-width: 90%;
+    width: 100%;
+}
+
+.custom-col {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.custom-col-1 {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 0;
+}

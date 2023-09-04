@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Job, JobDetail } from 'src/app/dto/job.model';
-import { Select, Store } from '@ngxs/store';
+import { Job } from 'src/app/dto/job.model';
+import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-job-details',
@@ -9,10 +10,25 @@ import { Observable } from 'rxjs';
   styleUrls: ['./job-details.component.css']
 })
 export class JobDetailsComponent {
-  selectedJob$ = this.store.select(state => state.jobs.selectedJob);
-  isLoading$ = this.store.select(state => state.jobs.isLoading);
+  selectedJob$: Observable<Job> = this.store.select(state => state.jobs.selectedJob);
+  isLoading$: Observable<boolean> = this.store.select(state => state.jobs.isLoading);
+
 
   constructor(private store: Store) { }
+
+  ngOnInit(): void { }
+
+  //TODO: when resume algo inplace format key words with highlight
+  formatDescription(desc: string | undefined): string[] {
+    if (!desc) { return []; }
+    const regex = /([.!?;,:])([A-Z])|([a-z])([A-Z])/g;
+    const formatted = desc.replace(regex, '$1$3|sep|$2$4');
+    return formatted.split('|sep|').map(paragraph => paragraph.trim());
+  }
+
+  openJobLink(url: string): void {
+      window.open(url, '_blank');
+  }
 
 }
 

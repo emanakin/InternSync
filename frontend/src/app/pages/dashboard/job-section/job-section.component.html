@@ -1,14 +1,15 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col">
+        <div class="col custom-col-1">
             <app-jobs></app-jobs>
         </div>
-        <div class="col">
+        <div class="col custom-col mx-3">
             <app-job-details></app-job-details>
         </div>
-        <div class="col">
-            <app-quick-apply></app-quick-apply>
-            <app-quick-apply></app-quick-apply>
+        <div class="col custom-col">
+            <app-quick-apply mode="similar jobs"></app-quick-apply>
+            <app-quick-apply mode="people also viewed"></app-quick-apply>
         </div>
     </div>
 </div>
+

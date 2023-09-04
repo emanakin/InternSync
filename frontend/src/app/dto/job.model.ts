@@ -6,7 +6,16 @@ export interface JobOverview {
     company_profile: string;
     job_location: string;
     job_posting_date: Date;
+    job_company?: string;
     job_details?: {}; 
+}
+
+export interface QuickApplyJobs {
+    job_company: string;
+    job_link: string;
+    job_location: string;
+    job_position: string;
+    job_posting_time: string;
 }
 
 export interface Recruiter {
@@ -14,6 +23,7 @@ export interface Recruiter {
     recruiter_title: string;
 }
 
+// TODO: fix data format remove capilization on keys
 export interface JobDetail {
     job_position: string;
     job_location: string;
@@ -21,19 +31,19 @@ export interface JobDetail {
     company_linkedin_id: string;
     job_posting_time: string; 
     job_description: string;
-    seniority_level: string;
-    employment_type: string;
-    job_function: string;
-    industries: string;
+    Seniority_level: string;
+    Employment_type: string;
+    Job_function: string;
+    Industries: string;
     recruiter_details: Recruiter;
-    similar_jobs: JobOverview[]; 
-    people_also_viewed: JobOverview[];
+    similar_jobs: QuickApplyJobs[]; 
+    people_also_viewed: QuickApplyJobs[];
     description: string;
     requirements: string;
 }
 
 export interface Job extends JobOverview {
-    job_details: JobDetail;
+    job_details: [JobDetail];
 }
 
 export interface JobStateModel {

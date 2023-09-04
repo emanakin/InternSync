@@ -40,7 +40,9 @@ export class JobState {
             tap(response => {
                 const state = ctx.getState();
                 const updatedJobs = [...state.jobs, ...response.data];
+                console.log('loaded jobs from store:', response.data)
                 const firstJob = !state.selectedJob && updatedJobs.length > 0 ? updatedJobs[0] : state.selectedJob;
+                console.log('First job: ', firstJob);
                 ctx.setState({
                     ...state,
                     jobs: updatedJobs,

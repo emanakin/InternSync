@@ -1,10 +1,18 @@
 <div 
     class="job-card"
-    (click)="handleClick()"
-    [class.clicked]="job._id === selectedJob?._id">
+    [class.clicked]="job._id === selectedJob?._id"
+    (click)="handleClick()">
     <div class="text">
         <h4>{{ job.job_position? job.job_position : 'Intern Position' }}</h4>
-        <h5>{{ job.company_name }}</h5>
+        <h5>{{ job.job_company? job.job_company : job.company_name }}</h5>
         <h6>{{ job.job_location }}</h6>
     </div>
+    <button 
+        *ngIf="mode === 'quick apply'"
+        class="btn btn-primary apply-button-container"
+        (click)="openJobLink(job); $event.stopPropagation()">
+        Apply
+    </button>
 </div>
+
+
