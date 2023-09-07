@@ -74,33 +74,40 @@ export class AuthFormComponent {
   onSubmit(): void {
     if (!this.form.valid) { return }
     this.isLoading = true;
-    let authObs: Observable<User>;
+    
     if (this.mode === 'login') {
-      const user = this.createUser()
-      authObs = this.authService.login(user);
+      const user = this.createUser();
+      const authObs = this.authService.login(user);
+      
+      this.handleAuthObservable(authObs);
     } else {
       this.sendFiles().subscribe(() => {
-        const user = this.createUser()
-        console.log('User dto created:', user)
-        authObs = this.authService.signup(user);
+        const user = this.createUser();
+        console.log('User dto created:', user);
+        const authObs = this.authService.signup(user);
+        
+        this.handleAuthObservable(authObs);
       });
     }
+  }
 
+  handleAuthObservable(authObs: Observable<User>) {
     authObs.subscribe(
-      resData => {
-        console.log(resData);
-        localStorage.setItem('token', JSON.stringify(resData.token));
-        this.isLoading = false;
-        this.router.navigate(['/dashboard']);
-      },
-      errorMessage => {
-        console.log(errorMessage);
-        this.error = errorMessage;
-        this.isLoading = false;
-      }
+        resData => {
+          console.log(resData);
+          localStorage.setItem('token', JSON.stringify(resData.token));
+          this.isLoading = false;
+          this.router.navigate(['/dashboard']);
+        },
+        errorMessage => {
+          console.log(errorMessage);
+          this.error = errorMessage;
+          this.isLoading = false;
+        }
     );
     this.form.reset();
   }
+
 
   createUser(): User {
     if (this.mode === 'login') {

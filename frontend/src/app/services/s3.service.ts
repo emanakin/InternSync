@@ -7,7 +7,7 @@ import { Observable } from "rxjs";
 })
 export class S3Service {
 
-    constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) {  }
 
     getUploadPresignedUrl(fileName: string, file: File): Observable<{ url: string }> {
         const params = new HttpParams()
