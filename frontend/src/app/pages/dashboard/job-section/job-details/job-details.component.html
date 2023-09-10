@@ -72,7 +72,7 @@
             <hr>
             <span class="inner-span hug-right">
                 <h3>Date posted: </h3>
-                <h4>{{ selectedJob.job_details[0].job_posting_time }}</h4>
+                <h4>{{ getHumanReadableDate(selectedJob.job_posting_date) }}</h4>
             </span>
             <h2>Job Description</h2>
             <div class="desc-container">

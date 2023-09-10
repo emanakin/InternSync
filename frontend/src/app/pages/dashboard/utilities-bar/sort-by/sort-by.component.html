@@ -1,16 +1,32 @@
-<button class="dropdown-btn" (click)="toggleDropdown()">
-    <span>{{ sortName }}</span>
-    <svg 
-        [ngClass]="{'rotated': isDropdownOpen}" 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="24" 
-        height="24" 
-        viewBox="0 0 24 24" 
-        fill="none">
-        <path d="M7 10L12 15L17 10H7Z" fill="white"/>
-    </svg>
-</button>
-
+<div class="menu">
+    <button class="dropdown-btn" (click)="toggleDropdown()">
+        <span>{{ sortName }}</span>
+        <svg 
+            [ngClass]="{'rotated': isDropdownOpen}" 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none">
+            <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+        </svg>
+    </button> 
+    <div 
+        *ngIf="isDropdownOpen" class="dropdown">
+        <div *ngFor="let option of getOptionsForSortName()" 
+            class="menu-link"
+            [class.active]="option.checked">
+            <div class="checkbox-container">
+                <input 
+                    type="checkbox"
+                    [(ngModel)]="option.checked"
+                    (change)="onOptionChange(option)"
+                    class="full-width-checkbox">
+                <label class="">{{ option.value }}</label>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

@@ -1,7 +1,7 @@
 .menu {
     display: flex;
     align-items: center;
-    position: relative; 
+    position: relative;  
 }
 
 .profile-picture {

@@ -1,18 +1,26 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { Job, JobStateModel } from '../dto/job.model';
-import { FetchTotalJobs, LoadJobs, SelectJob } from '../actions/job.action';
+import { FetchTopLocationAndCompanyData, FetchTotalJobs, LoadJobs, ResetFilter, ResetJobs, SelectJob, SetFilter, UpdateFilter } from '../actions/job.action';
 import { JobsService } from '../services/jobs.service';
 import { Injectable } from '@angular/core';
 import { catchError, of, tap } from 'rxjs';
 
 @State<JobStateModel>({
-  name: 'jobs',
-  defaults: {
-    jobs: [],
-    selectedJob: null,
-    isLoading: false,
-    totalJobs: 0
-  }
+    name: 'jobs',
+    defaults: {
+        jobs: [],
+        selectedJob: null,
+        isLoading: false,
+        totalJobs: 0,
+        topLocations: [],
+        topCompanies: [],
+        filter: {
+            'Resume': [],
+            'Date Posted': [],
+            "Location": [],
+            'Company': []
+        }
+    }
 })
 
 @Injectable({
@@ -36,7 +44,8 @@ export class JobState {
     loadJobs(ctx: StateContext<JobStateModel>, action: LoadJobs) {
         ctx.patchState({ isLoading: true });
         console.log('Loading started');
-        return this.jobsService.getJobs(action.page).pipe(
+        const filter = ctx.getState().filter;
+        return this.jobsService.getJobs(action.page, filter).pipe(
             tap(response => {
                 const state = ctx.getState();
                 const updatedJobs = [...state.jobs, ...response.data];
@@ -82,6 +91,61 @@ export class JobState {
                 return of(err);
             })
         );
+    }
+
+    @Action(FetchTopLocationAndCompanyData)
+    getTopLocationAndCompanyData(ctx: StateContext<JobStateModel>) {
+        return this.jobsService.getTopLocationAndCompanyData().pipe(
+            tap(data => {
+                const state = ctx.getState();
+                console.log("Data loaded:", data);
+                ctx.patchState({
+                    topLocations: data.topLocations,
+                    topCompanies: data.topCompanies
+                });
+            }),
+            catchError(err => {
+                console.error('Error fetching top locations and companies:', err);
+                return of(err);
+            })
+        );
+    }
+    
+    @Action(SetFilter)
+    setFilter(ctx: StateContext<JobStateModel>, action: SetFilter) {
+        const state = ctx.getState();
+        ctx.setState({
+            ...state,
+            filter: action.payload
+        });
+    }
+    
+    @Action(UpdateFilter)
+    updateFilter(ctx: StateContext<JobStateModel>, action: UpdateFilter) {
+        const state = ctx.getState();
+        const updatedFilter = {
+            ...state.filter,
+            ...action.payload
+        };
+        ctx.setState({
+            ...state,
+            filter: updatedFilter
+        });
+    }
+    
+    @Action(ResetFilter)
+    resetFilter(ctx: StateContext<JobStateModel>) {
+        const state = ctx.getState();
+        ctx.setState({
+            ...state,
+            filter: null
+        });
+    }
+    
+    @Action(ResetJobs)
+    resetJobs(ctx: StateContext<JobStateModel>) {
+        const state = ctx.getState();
+        ctx.patchState({ jobs: [] });
     }
     
 }

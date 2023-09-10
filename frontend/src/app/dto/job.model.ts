@@ -1,3 +1,5 @@
+import { FilterObj } from "./filterProps.model";
+
 export interface JobOverview {
     _id: string; 
     job_position: string;
@@ -51,4 +53,7 @@ export interface JobStateModel {
     selectedJob: Job | null;
     isLoading: boolean;
     totalJobs: number;
+    topLocations: string[];
+    topCompanies: string[];
+    filter: FilterObj
 }

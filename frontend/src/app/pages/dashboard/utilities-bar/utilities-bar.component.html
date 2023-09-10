@@ -3,7 +3,24 @@
         <app-search-bar></app-search-bar>
         <div class="sort-by-container">
             <h3>Sort By:</h3>
-            <app-sort-by *ngFor="let name of names" [sortName]="name"></app-sort-by>
+            <app-sort-by 
+                *ngFor="let name of names" 
+                [sortName]="name"
+                (optionSelected)="onOptionSelected($event)">
+            </app-sort-by>
+            <div class="multi-select">
+                <span class="select">
+                    <h3 (click)="toggleDropdown()">{{selectedOption}} <span class="arrow">▼</span></h3>
+                </span>
+                <div *ngIf="dropdownVisible" class="dropdown">
+                    <div class="menu-link">
+                        <button class="btn btn-primary" (click)="apply()">Apply</button>
+                    </div>
+                    <div class="menu-link">
+                        <button class="btn btn-primary" (click)="reset()">Reset</button>
+                    </div>
+                </div>
+            </div>            
         </div>
         <app-application-tracking></app-application-tracking>
     </div>

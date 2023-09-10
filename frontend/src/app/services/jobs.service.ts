@@ -4,6 +4,7 @@ import { Observable, catchError, map, throwError } from 'rxjs';
 import { Job } from '../dto/job.model';
 import { AuthService } from './auth.service';
 import { JwtPayload } from 'jwt-decode';
+import { FilterObj } from '../dto/filterProps.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,16 +13,21 @@ export class JobsService {
 
   constructor(private http: HttpClient, private authService: AuthService) { }
 
-  getJobs(page: number = 1): Observable<any> {
+  getJobs(page: number = 1, filter: FilterObj): Observable<any> {
     const token = this.authService.getToken();
 
     const headers = new HttpHeaders({
         'Authorization': `Bearer ${token}`
     });
 
-    const params = new HttpParams()
+    let params = new HttpParams()
       .set('page', page.toString());
-
+    Object.keys(filter).forEach(key => {
+      filter[key].forEach(value => {
+          params = params.append(key, value);
+      });
+    });
+    
     return this.http.get<Job>('http://localhost:3000/api/jobs', { headers, params })
       .pipe(
           catchError(errorRes => {
@@ -51,5 +57,23 @@ export class JobsService {
         })
       );
   }
+
+  getTopLocationAndCompanyData(): Observable<{ topLocations: string[], topCompanies: string[] }> {
+    const token = this.authService.getToken();
+
+    const headers = new HttpHeaders({
+        'Authorization': `Bearer ${token}`
+    });
+
+    return this.http.get<{ topLocations: string[], topCompanies: string[] }>(
+      'http://localhost:3000/api/jobs/topData', { headers })
+      .pipe(
+        catchError(error => {
+          console.error("Error fetching top data:", error);
+          return throwError('Error fetching top data');
+        })
+      );
+  }
+
 
 }

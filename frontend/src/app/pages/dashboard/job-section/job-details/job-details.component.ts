@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Job } from 'src/app/dto/job.model';
 import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
+import * as moment from 'moment';
 
 
 @Component({
@@ -29,6 +30,10 @@ export class JobDetailsComponent {
   openJobLink(url: string): void {
       window.open(url, '_blank');
   }
+
+  getHumanReadableDate(date: Date | string): string {
+    return moment(new Date(date)).fromNow();
+}
 
 }
 

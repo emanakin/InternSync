@@ -35,3 +35,21 @@ h3 {
 app-application-tracking {
     margin-left: auto;
 }
+
+.dropdown {
+    position: absolute;
+    top: 16%;
+    width: max-content;
+    background-color: #0F4C75;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+.arrow {
+    font-size: 0.65rem;
+}
+
+.select:hover {
+    cursor: pointer;
+}
