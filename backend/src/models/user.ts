@@ -12,8 +12,25 @@ const userSchema: Schema = new mongoose.Schema({
         required: true
     },
     resume: {
-        type: String,
-        required: false
+        reference: {
+            type: String,
+            required: false
+        },
+        tokens: {
+            Category: {
+                label: String,
+                score: Number
+            },
+            Topics: [{
+                label: String,
+                score: Number
+            }],
+            Entities: [{
+                entityId: String,
+                confidenceScore: Number,
+                relevanceScore: Number
+            }]
+        }
     },
     profile_picture: {
         type: String,

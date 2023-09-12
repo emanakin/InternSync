@@ -2,10 +2,19 @@
     <div class="container-fluid navbox">
         <a class="navbar-brand" href=""><img class ="navbar-picture" src="assets/intern-sync-logo.png" alt="InternSync Logo"></a>
         <div class="right-align-content">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 16V7.85L8.4 10.45L7 9L12 4L17 9L15.6 10.45L13 7.85V16H11ZM6 20C5.45 20 4.979 19.804 4.587 19.412C4.195 19.02 3.99934 18.5493 4 18V15H6V18H18V15H20V18C20 18.55 19.804 19.021 19.412 19.413C19.02 19.805 18.5493 20.0007 18 20H6Z" fill="#1B262C"/>
-            </svg>
-            <h2>Upload Resume</h2>
+            <input 
+                type="file" 
+                #fileInput 
+                style="display: none;" 
+                (change)="onFileSelected($event)">
+            <div 
+                class="resume-upload"
+                (click)="uploadResume()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 16V7.85L8.4 10.45L7 9L12 4L17 9L15.6 10.45L13 7.85V16H11ZM6 20C5.45 20 4.979 19.804 4.587 19.412C4.195 19.02 3.99934 18.5493 4 18V15H6V18H18V15H20V18C20 18.55 19.804 19.021 19.412 19.413C19.02 19.805 18.5493 20.0007 18 20H6Z" fill="#1B262C"/>
+                </svg>
+                <h2>Upload Resume</h2>
+            </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="45" viewBox="0 0 20 53" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2.64999C10.2652 2.64999 10.5196 2.92919 10.7071 3.42616C10.8946 3.92313 11 4.59717 11 5.29999V47.7C11 48.4028 10.8946 49.0769 10.7071 49.5738C10.5196 50.0708 10.2652 50.35 10 50.35C9.73478 50.35 9.48043 50.0708 9.29289 49.5738C9.10536 49.0769 9 48.4028 9 47.7V5.29999C9 4.59717 9.10536 3.92313 9.29289 3.42616C9.48043 2.92919 9.73478 2.64999 10 2.64999Z" fill="black" fill-opacity="0.46"/>
             </svg>

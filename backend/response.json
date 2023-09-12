@@ -1,0 +1,5094 @@
+{
+  "response": {
+    "coarseTopics": [
+      {
+        "id": 0,
+        "label": "Technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Technology",
+        "score": 1
+      },
+      {
+        "id": 1,
+        "label": "Science",
+        "wikiLink": "http://en.wikipedia.org/Category:Science",
+        "score": 0.7342
+      },
+      {
+        "id": 2,
+        "label": "Business",
+        "wikiLink": "http://en.wikipedia.org/Category:Business",
+        "score": 0.709
+      },
+      {
+        "id": 3,
+        "label": "Language",
+        "wikiLink": "http://en.wikipedia.org/Category:Language",
+        "score": 0.1399
+      },
+      {
+        "id": 4,
+        "label": "Nature",
+        "wikiLink": "http://en.wikipedia.org/Category:Nature",
+        "score": 0.05232
+      },
+      {
+        "id": 5,
+        "label": "Education",
+        "wikiLink": "http://en.wikipedia.org/Category:Education",
+        "score": 0.04801
+      }
+    ],
+    "language": "eng",
+    "languageIsReliable": true,
+    "topics": [
+      {
+        "id": 0,
+        "label": "Node.js",
+        "wikiLink": "http://en.wikipedia.org/Node.js",
+        "score": 1,
+        "wikidataId": "Q756100"
+      },
+      {
+        "id": 1,
+        "label": "Cloud computing",
+        "wikiLink": "http://en.wikipedia.org/Cloud_computing",
+        "score": 1,
+        "wikidataId": "Q483639"
+      },
+      {
+        "id": 2,
+        "label": "Amazon Web Services",
+        "wikiLink": "http://en.wikipedia.org/Amazon_Web_Services",
+        "score": 1,
+        "wikidataId": "Q456157"
+      },
+      {
+        "id": 3,
+        "label": "API",
+        "wikiLink": "http://en.wikipedia.org/API",
+        "score": 1,
+        "wikidataId": "Q165194"
+      },
+      {
+        "id": 4,
+        "label": "World Wide Web",
+        "wikiLink": "http://en.wikipedia.org/World_Wide_Web",
+        "score": 1,
+        "wikidataId": "Q466"
+      },
+      {
+        "id": 5,
+        "label": "Frontend and backend",
+        "wikiLink": "http://en.wikipedia.org/Frontend_and_backend",
+        "score": 1,
+        "wikidataId": "Q620167"
+      },
+      {
+        "id": 6,
+        "label": "Representational state transfer",
+        "wikiLink": "http://en.wikipedia.org/Representational_state_transfer",
+        "score": 1,
+        "wikidataId": "Q749568"
+      },
+      {
+        "id": 7,
+        "label": "Information technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_technology",
+        "score": 1,
+        "wikidataId": "Q11661"
+      },
+      {
+        "id": 8,
+        "label": "Computer programming",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_programming",
+        "score": 1,
+        "wikidataId": "Q80006"
+      },
+      {
+        "id": 9,
+        "label": "Software engineering",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_engineering",
+        "score": 1,
+        "wikidataId": "Q80993"
+      },
+      {
+        "id": 10,
+        "label": "Software",
+        "wikiLink": "http://en.wikipedia.org/Category:Software",
+        "score": 1,
+        "wikidataId": "Q7397"
+      },
+      {
+        "id": 11,
+        "label": "Computers",
+        "wikiLink": "http://en.wikipedia.org/Category:Computers",
+        "score": 1,
+        "wikidataId": "Q68"
+      },
+      {
+        "id": 12,
+        "label": "Systems engineering",
+        "wikiLink": "http://en.wikipedia.org/Category:Systems_engineering",
+        "score": 1,
+        "wikidataId": "Q682496"
+      },
+      {
+        "id": 13,
+        "label": "Technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Technology",
+        "score": 1,
+        "wikidataId": "Q11016"
+      },
+      {
+        "id": 14,
+        "label": "Computing",
+        "wikiLink": "http://en.wikipedia.org/Category:Computing",
+        "score": 1,
+        "wikidataId": "Q179310"
+      },
+      {
+        "id": 15,
+        "label": "Computer engineering",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_engineering",
+        "score": 1,
+        "wikidataId": "Q428691"
+      },
+      {
+        "id": 16,
+        "label": "Software development",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_development",
+        "score": 1,
+        "wikidataId": "Q638608"
+      },
+      {
+        "id": 17,
+        "label": "Computer science",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_science",
+        "score": 1,
+        "wikidataId": "Q21198"
+      },
+      {
+        "id": 18,
+        "label": "Amazon Elastic Compute Cloud",
+        "wikiLink": "http://en.wikipedia.org/Amazon_Elastic_Compute_Cloud",
+        "score": 0.9933,
+        "wikidataId": "Q2072356"
+      },
+      {
+        "id": 19,
+        "label": "Web application",
+        "wikiLink": "http://en.wikipedia.org/Web_application",
+        "score": 0.9905,
+        "wikidataId": "Q189210"
+      },
+      {
+        "id": 20,
+        "label": "Information technology management",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_technology_management",
+        "score": 0.9483,
+        "wikidataId": "Q1473265"
+      },
+      {
+        "id": 21,
+        "label": "Web service",
+        "wikiLink": "http://en.wikipedia.org/Web_service",
+        "score": 0.9166,
+        "wikidataId": "Q193424"
+      },
+      {
+        "id": 22,
+        "label": "Software architecture",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_architecture",
+        "score": 0.9126,
+        "wikidataId": "Q846636"
+      },
+      {
+        "id": 23,
+        "label": "Software industry",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_industry",
+        "score": 0.8824,
+        "wikidataId": "Q880371"
+      },
+      {
+        "id": 24,
+        "label": "IT infrastructure",
+        "wikiLink": "http://en.wikipedia.org/Category:IT_infrastructure",
+        "score": 0.8769,
+        "wikidataId": "Q15411548"
+      },
+      {
+        "id": 25,
+        "label": "Software design",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_design",
+        "score": 0.8709,
+        "wikidataId": "Q857102"
+      },
+      {
+        "id": 26,
+        "label": "Java (programming language)",
+        "wikiLink": "http://en.wikipedia.org/Java_(programming_language)",
+        "score": 0.8273,
+        "wikidataId": "Q251"
+      },
+      {
+        "id": 27,
+        "label": "Python (programming language)",
+        "wikiLink": "http://en.wikipedia.org/Python_(programming_language)",
+        "score": 0.8127,
+        "wikidataId": "Q28865"
+      },
+      {
+        "id": 28,
+        "label": "Systems theory",
+        "wikiLink": "http://en.wikipedia.org/Category:Systems_theory",
+        "score": 0.81,
+        "wikidataId": "Q269699"
+      },
+      {
+        "id": 29,
+        "label": "Systems science",
+        "wikiLink": "http://en.wikipedia.org/Category:Systems_science",
+        "score": 0.8055,
+        "wikidataId": "Q2167061"
+      },
+      {
+        "id": 30,
+        "label": "Database",
+        "wikiLink": "http://en.wikipedia.org/Database",
+        "score": 0.7944,
+        "wikidataId": "Q8513"
+      },
+      {
+        "id": 31,
+        "label": "MongoDB",
+        "wikiLink": "http://en.wikipedia.org/MongoDB",
+        "score": 0.7815,
+        "wikidataId": "Q1165204"
+      },
+      {
+        "id": 32,
+        "label": "JavaScript",
+        "wikiLink": "http://en.wikipedia.org/JavaScript",
+        "score": 0.7612,
+        "wikidataId": "Q2005"
+      },
+      {
+        "id": 33,
+        "label": "Information science",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_science",
+        "score": 0.7591,
+        "wikidataId": "Q16387"
+      },
+      {
+        "id": 34,
+        "label": "Digital media",
+        "wikiLink": "http://en.wikipedia.org/Category:Digital_media",
+        "score": 0.7545,
+        "wikidataId": "Q1076968"
+      },
+      {
+        "id": 35,
+        "label": "Application software",
+        "wikiLink": "http://en.wikipedia.org/Application_software",
+        "score": 0.7501,
+        "wikidataId": "Q166142"
+      },
+      {
+        "id": 36,
+        "label": "Big data",
+        "wikiLink": "http://en.wikipedia.org/Big_data",
+        "score": 0.7487,
+        "wikidataId": "Q858810"
+      },
+      {
+        "id": 37,
+        "label": "Technology development",
+        "wikiLink": "http://en.wikipedia.org/Category:Technology_development",
+        "score": 0.7393,
+        "wikidataId": "Q105688765"
+      },
+      {
+        "id": 38,
+        "label": "Programming interfaces",
+        "wikiLink": "http://en.wikipedia.org/Category:Programming_interfaces",
+        "score": 0.7342,
+        "wikidataId": "Q109175546"
+      },
+      {
+        "id": 39,
+        "label": "Agile software development",
+        "wikiLink": "http://en.wikipedia.org/Agile_software_development",
+        "score": 0.7319,
+        "wikidataId": "Q30232"
+      },
+      {
+        "id": 40,
+        "label": "Cyberspace",
+        "wikiLink": "http://en.wikipedia.org/Category:Cyberspace",
+        "score": 0.7293,
+        "wikidataId": "Q204606"
+      },
+      {
+        "id": 41,
+        "label": "Computer architecture",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_architecture",
+        "score": 0.7231,
+        "wikidataId": "Q173212"
+      },
+      {
+        "id": 42,
+        "label": "OpenText",
+        "wikiLink": "http://en.wikipedia.org/OpenText",
+        "score": 0.7132,
+        "wikidataId": "Q2025791"
+      },
+      {
+        "id": 43,
+        "label": "Amazon (company)",
+        "wikiLink": "http://en.wikipedia.org/Amazon_(company)",
+        "score": 0.7112,
+        "wikidataId": "Q3884"
+      },
+      {
+        "id": 44,
+        "label": "Scripting language",
+        "wikiLink": "http://en.wikipedia.org/Scripting_language",
+        "score": 0.6982,
+        "wikidataId": "Q187432"
+      },
+      {
+        "id": 45,
+        "label": "React (JavaScript library)",
+        "wikiLink": "http://en.wikipedia.org/React_(JavaScript_library)",
+        "score": 0.6952
+      },
+      {
+        "id": 46,
+        "label": "Information and communications technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_and_communications_technology",
+        "score": 0.6675,
+        "wikidataId": "Q5268834"
+      },
+      {
+        "id": 47,
+        "label": "CSS",
+        "wikiLink": "http://en.wikipedia.org/CSS",
+        "score": 0.6641,
+        "wikidataId": "Q46441"
+      },
+      {
+        "id": 48,
+        "label": "Digital technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Digital_technology",
+        "score": 0.6614,
+        "wikidataId": "Q5330608"
+      },
+      {
+        "id": 49,
+        "label": "Computer network",
+        "wikiLink": "http://en.wikipedia.org/Computer_network",
+        "score": 0.6603,
+        "wikidataId": "Q1301371"
+      },
+      {
+        "id": 50,
+        "label": "Oracle Corporation",
+        "wikiLink": "http://en.wikipedia.org/Oracle_Corporation",
+        "score": 0.6531,
+        "wikidataId": "Q19900"
+      },
+      {
+        "id": 51,
+        "label": "Centralized computing",
+        "wikiLink": "http://en.wikipedia.org/Category:Centralized_computing",
+        "score": 0.6521,
+        "wikidataId": "Q4139206"
+      },
+      {
+        "id": 52,
+        "label": "Systems architecture",
+        "wikiLink": "http://en.wikipedia.org/Category:Systems_architecture",
+        "score": 0.6404,
+        "wikidataId": "Q477538"
+      },
+      {
+        "id": 53,
+        "label": "Software framework",
+        "wikiLink": "http://en.wikipedia.org/Software_framework",
+        "score": 0.64,
+        "wikidataId": "Q271680"
+      },
+      {
+        "id": 54,
+        "label": "Product development",
+        "wikiLink": "http://en.wikipedia.org/Category:Product_development",
+        "score": 0.6327,
+        "wikidataId": "Q1395034"
+      },
+      {
+        "id": 55,
+        "label": "Engineer",
+        "wikiLink": "http://en.wikipedia.org/Engineer",
+        "score": 0.6291,
+        "wikidataId": "Q81096"
+      },
+      {
+        "id": 56,
+        "label": "Encryption",
+        "wikiLink": "http://en.wikipedia.org/Encryption",
+        "score": 0.6287,
+        "wikidataId": "Q141090"
+      },
+      {
+        "id": 57,
+        "label": "Automation",
+        "wikiLink": "http://en.wikipedia.org/Automation",
+        "score": 0.6246,
+        "wikidataId": "Q184199"
+      },
+      {
+        "id": 58,
+        "label": "Information economy",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_economy",
+        "score": 0.6164,
+        "wikidataId": "Q871337"
+      },
+      {
+        "id": 59,
+        "label": "Data management",
+        "wikiLink": "http://en.wikipedia.org/Category:Data_management",
+        "score": 0.6147,
+        "wikidataId": "Q1149776"
+      },
+      {
+        "id": 60,
+        "label": "Visual Basic for Applications",
+        "wikiLink": "http://en.wikipedia.org/Visual_Basic_for_Applications",
+        "score": 0.6016,
+        "wikidataId": "Q667566"
+      },
+      {
+        "id": 61,
+        "label": "Distributed computing architecture",
+        "wikiLink": "http://en.wikipedia.org/Category:Distributed_computing_architecture",
+        "score": 0.6007,
+        "wikidataId": "Q7470461"
+      },
+      {
+        "id": 62,
+        "label": "Bootstrap (front-end framework)",
+        "wikiLink": "http://en.wikipedia.org/Bootstrap_(front-end_framework)",
+        "score": 0.5991,
+        "wikidataId": "Q893195"
+      },
+      {
+        "id": 63,
+        "label": "HTML",
+        "wikiLink": "http://en.wikipedia.org/HTML",
+        "score": 0.5904,
+        "wikidataId": "Q8811"
+      },
+      {
+        "id": 64,
+        "label": "Patch (computing)",
+        "wikiLink": "http://en.wikipedia.org/Patch_(computing)",
+        "score": 0.5824,
+        "wikidataId": "Q208218"
+      },
+      {
+        "id": 65,
+        "label": "Web 2.0",
+        "wikiLink": "http://en.wikipedia.org/Category:Web_2.0",
+        "score": 0.5801,
+        "wikidataId": "Q131164"
+      },
+      {
+        "id": 66,
+        "label": "Computer data",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_data",
+        "score": 0.5779,
+        "wikidataId": "Q494756"
+      },
+      {
+        "id": 67,
+        "label": "Computer networking",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_networking",
+        "score": 0.5766,
+        "wikidataId": "Q9955162"
+      },
+      {
+        "id": 68,
+        "label": "TypeScript",
+        "wikiLink": "http://en.wikipedia.org/TypeScript",
+        "score": 0.563,
+        "wikidataId": "Q978185"
+      },
+      {
+        "id": 69,
+        "label": "Internet",
+        "wikiLink": "http://en.wikipedia.org/Category:Internet",
+        "score": 0.5587,
+        "wikidataId": "Q75"
+      },
+      {
+        "id": 70,
+        "label": "Web development",
+        "wikiLink": "http://en.wikipedia.org/Category:Web_development",
+        "score": 0.5542,
+        "wikidataId": "Q386275"
+      },
+      {
+        "id": 71,
+        "label": "Computer",
+        "wikiLink": "http://en.wikipedia.org/Computer",
+        "score": 0.5507,
+        "wikidataId": "Q68"
+      },
+      {
+        "id": 72,
+        "label": "Education",
+        "wikiLink": "http://en.wikipedia.org/Education",
+        "score": 0.5495,
+        "wikidataId": "Q8434"
+      },
+      {
+        "id": 73,
+        "label": "Integrated development environment",
+        "wikiLink": "http://en.wikipedia.org/Integrated_development_environment",
+        "score": 0.5487,
+        "wikidataId": "Q13741"
+      },
+      {
+        "id": 74,
+        "label": "LinkedIn",
+        "wikiLink": "http://en.wikipedia.org/LinkedIn",
+        "score": 0.5467,
+        "wikidataId": "Q213660"
+      },
+      {
+        "id": 75,
+        "label": "Automated teller machine",
+        "wikiLink": "http://en.wikipedia.org/Automated_teller_machine",
+        "score": 0.5465,
+        "wikidataId": "Q81235"
+      },
+      {
+        "id": 76,
+        "label": "GitHub",
+        "wikiLink": "http://en.wikipedia.org/GitHub",
+        "score": 0.527,
+        "wikidataId": "Q364"
+      },
+      {
+        "id": 77,
+        "label": "Scalability",
+        "wikiLink": "http://en.wikipedia.org/Scalability",
+        "score": 0.5267,
+        "wikidataId": "Q727490"
+      },
+      {
+        "id": 78,
+        "label": "Hypertext",
+        "wikiLink": "http://en.wikipedia.org/Category:Hypertext",
+        "score": 0.5255,
+        "wikidataId": "Q93241"
+      },
+      {
+        "id": 79,
+        "label": "SQL",
+        "wikiLink": "http://en.wikipedia.org/SQL",
+        "score": 0.5227,
+        "wikidataId": "Q47607"
+      },
+      {
+        "id": 80,
+        "label": "Data",
+        "wikiLink": "http://en.wikipedia.org/Category:Data",
+        "score": 0.5101,
+        "wikidataId": "Q42848"
+      },
+      {
+        "id": 81,
+        "label": "Telecommunications",
+        "wikiLink": "http://en.wikipedia.org/Category:Telecommunications",
+        "score": 0.5098,
+        "wikidataId": "Q418"
+      },
+      {
+        "id": 82,
+        "label": "Service industries",
+        "wikiLink": "http://en.wikipedia.org/Category:Service_industries",
+        "score": 0.5093,
+        "wikidataId": "Q6143409"
+      },
+      {
+        "id": 83,
+        "label": "Information management",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_management",
+        "score": 0.5075,
+        "wikidataId": "Q579488"
+      },
+      {
+        "id": 84,
+        "label": "Git",
+        "wikiLink": "http://en.wikipedia.org/Git",
+        "score": 0.4977,
+        "wikidataId": "Q186055"
+      },
+      {
+        "id": 85,
+        "label": "Management",
+        "wikiLink": "http://en.wikipedia.org/Category:Management",
+        "score": 0.4951,
+        "wikidataId": "Q2920921"
+      },
+      {
+        "id": 86,
+        "label": "Data science",
+        "wikiLink": "http://en.wikipedia.org/Data_science",
+        "score": 0.4898,
+        "wikidataId": "Q2374463"
+      },
+      {
+        "id": 87,
+        "label": "Communication",
+        "wikiLink": "http://en.wikipedia.org/Communication",
+        "score": 0.4884,
+        "wikidataId": "Q11024"
+      },
+      {
+        "id": 88,
+        "label": "Information retrieval",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_retrieval",
+        "score": 0.4829,
+        "wikidataId": "Q816826"
+      },
+      {
+        "id": 89,
+        "label": "Business",
+        "wikiLink": "http://en.wikipedia.org/Category:Business",
+        "score": 0.4644,
+        "wikidataId": "Q4830453"
+      },
+      {
+        "id": 90,
+        "label": "Organization",
+        "wikiLink": "http://en.wikipedia.org/Category:Organization",
+        "score": 0.4582,
+        "wikidataId": "Q32514771"
+      },
+      {
+        "id": 91,
+        "label": "Distributed computing",
+        "wikiLink": "http://en.wikipedia.org/Category:Distributed_computing",
+        "score": 0.4526,
+        "wikidataId": "Q180634"
+      },
+      {
+        "id": 92,
+        "label": "Traceability",
+        "wikiLink": "http://en.wikipedia.org/Traceability",
+        "score": 0.447,
+        "wikidataId": "Q899704"
+      },
+      {
+        "id": 93,
+        "label": "Cybernetics",
+        "wikiLink": "http://en.wikipedia.org/Category:Cybernetics",
+        "score": 0.4373,
+        "wikidataId": "Q123637"
+      },
+      {
+        "id": 94,
+        "label": "Websites",
+        "wikiLink": "http://en.wikipedia.org/Category:Websites",
+        "score": 0.4356,
+        "wikidataId": "Q35127"
+      },
+      {
+        "id": 95,
+        "label": "Engineering",
+        "wikiLink": "http://en.wikipedia.org/Category:Engineering",
+        "score": 0.4245,
+        "wikidataId": "Q11023"
+      },
+      {
+        "id": 96,
+        "label": "Mass media technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Mass_media_technology",
+        "score": 0.4245,
+        "wikidataId": "Q16876751"
+      },
+      {
+        "id": 97,
+        "label": "Computing platforms",
+        "wikiLink": "http://en.wikipedia.org/Category:Computing_platforms",
+        "score": 0.4206,
+        "wikidataId": "Q241317"
+      },
+      {
+        "id": 98,
+        "label": "Programming paradigms",
+        "wikiLink": "http://en.wikipedia.org/Category:Programming_paradigms",
+        "score": 0.4195,
+        "wikidataId": "Q188267"
+      },
+      {
+        "id": 99,
+        "label": "Design",
+        "wikiLink": "http://en.wikipedia.org/Category:Design",
+        "score": 0.4102,
+        "wikidataId": "Q1519454"
+      },
+      {
+        "id": 100,
+        "label": "Science",
+        "wikiLink": "http://en.wikipedia.org/Science",
+        "score": 0.3966,
+        "wikidataId": "Q336"
+      },
+      {
+        "id": 101,
+        "label": "Wilfrid Laurier University",
+        "wikiLink": "http://en.wikipedia.org/Wilfrid_Laurier_University",
+        "score": 0.3886,
+        "wikidataId": "Q2166701"
+      },
+      {
+        "id": 102,
+        "label": "Robustness (computer science)",
+        "wikiLink": "http://en.wikipedia.org/Robustness_(computer_science)",
+        "score": 0.3877,
+        "wikidataId": "Q2524240"
+      },
+      {
+        "id": 103,
+        "label": "Online services",
+        "wikiLink": "http://en.wikipedia.org/Category:Online_services",
+        "score": 0.3873,
+        "wikidataId": "Q19967801"
+      },
+      {
+        "id": 104,
+        "label": "Downtime",
+        "wikiLink": "http://en.wikipedia.org/Downtime",
+        "score": 0.3844,
+        "wikidataId": "Q1253369"
+      },
+      {
+        "id": 105,
+        "label": "User experience",
+        "wikiLink": "http://en.wikipedia.org/User_experience",
+        "score": 0.3788,
+        "wikidataId": "Q1047808"
+      },
+      {
+        "id": 106,
+        "label": "Robot",
+        "wikiLink": "http://en.wikipedia.org/Robot",
+        "score": 0.3732,
+        "wikidataId": "Q11012"
+      },
+      {
+        "id": 107,
+        "label": "Methodology",
+        "wikiLink": "http://en.wikipedia.org/Methodology",
+        "score": 0.3714,
+        "wikidataId": "Q185698"
+      },
+      {
+        "id": 108,
+        "label": "Databases",
+        "wikiLink": "http://en.wikipedia.org/Category:Databases",
+        "score": 0.368,
+        "wikidataId": "Q8513"
+      },
+      {
+        "id": 109,
+        "label": "Collective intelligence",
+        "wikiLink": "http://en.wikipedia.org/Category:Collective_intelligence",
+        "score": 0.3643,
+        "wikidataId": "Q432197"
+      },
+      {
+        "id": 110,
+        "label": "Data management software",
+        "wikiLink": "http://en.wikipedia.org/Category:Data_management_software",
+        "score": 0.3613,
+        "wikidataId": "Q15618637"
+      },
+      {
+        "id": 111,
+        "label": "Architect",
+        "wikiLink": "http://en.wikipedia.org/Architect",
+        "score": 0.3604,
+        "wikidataId": "Q42973"
+      },
+      {
+        "id": 112,
+        "label": "Computer industry",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_industry",
+        "score": 0.3593,
+        "wikidataId": "Q1067601"
+      },
+      {
+        "id": 113,
+        "label": "Network architecture",
+        "wikiLink": "http://en.wikipedia.org/Category:Network_architecture",
+        "score": 0.3504,
+        "wikidataId": "Q639681"
+      },
+      {
+        "id": 114,
+        "label": "Web technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Web_technology",
+        "score": 0.3497,
+        "wikidataId": "Q6968066"
+      },
+      {
+        "id": 115,
+        "label": "Applied mathematics",
+        "wikiLink": "http://en.wikipedia.org/Category:Applied_mathematics",
+        "score": 0.3459,
+        "wikidataId": "Q33521"
+      },
+      {
+        "id": 116,
+        "label": "Interactive media",
+        "wikiLink": "http://en.wikipedia.org/Category:Interactive_media",
+        "score": 0.3431,
+        "wikidataId": "Q1186952"
+      },
+      {
+        "id": 117,
+        "label": "Human communication",
+        "wikiLink": "http://en.wikipedia.org/Category:Human_communication",
+        "score": 0.3416,
+        "wikidataId": "Q1066689"
+      },
+      {
+        "id": 118,
+        "label": "Graph (abstract data type)",
+        "wikiLink": "http://en.wikipedia.org/Graph_(abstract_data_type)",
+        "score": 0.337,
+        "wikidataId": "Q2479726"
+      },
+      {
+        "id": 119,
+        "label": "Branches of science",
+        "wikiLink": "http://en.wikipedia.org/Category:Branches_of_science",
+        "score": 0.337,
+        "wikidataId": "Q84592442"
+      },
+      {
+        "id": 120,
+        "label": "Concurrent computing",
+        "wikiLink": "http://en.wikipedia.org/Category:Concurrent_computing",
+        "score": 0.3353,
+        "wikidataId": "Q128392"
+      },
+      {
+        "id": 121,
+        "label": "Web software",
+        "wikiLink": "http://en.wikipedia.org/Category:Web_software",
+        "score": 0.3339,
+        "wikidataId": "Q6936081"
+      },
+      {
+        "id": 122,
+        "label": "Computer libraries",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_libraries",
+        "score": 0.33,
+        "wikidataId": "Q188860"
+      },
+      {
+        "id": 123,
+        "label": "Interfaces",
+        "wikiLink": "http://en.wikipedia.org/Category:Interfaces",
+        "score": 0.3267,
+        "wikidataId": "Q23808"
+      },
+      {
+        "id": 124,
+        "label": "Free software",
+        "wikiLink": "http://en.wikipedia.org/Category:Free_software",
+        "score": 0.3235,
+        "wikidataId": "Q341"
+      },
+      {
+        "id": 125,
+        "label": "Internet ages",
+        "wikiLink": "http://en.wikipedia.org/Category:Internet_ages",
+        "score": 0.3185,
+        "wikidataId": "Q8551594"
+      },
+      {
+        "id": 126,
+        "label": "Information Age",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_Age",
+        "score": 0.3183,
+        "wikidataId": "Q956129"
+      },
+      {
+        "id": 127,
+        "label": "Unix software",
+        "wikiLink": "http://en.wikipedia.org/Category:Unix_software",
+        "score": 0.3124,
+        "wikidataId": "Q6351297"
+      },
+      {
+        "id": 128,
+        "label": "System software",
+        "wikiLink": "http://en.wikipedia.org/Category:System_software",
+        "score": 0.3122,
+        "wikidataId": "Q676202"
+      },
+      {
+        "id": 129,
+        "label": "Product",
+        "wikiLink": "http://en.wikipedia.org/Category:Product",
+        "score": 0.306,
+        "wikidataId": "Q49670595"
+      },
+      {
+        "id": 130,
+        "label": "Key (cryptography)",
+        "wikiLink": "http://en.wikipedia.org/Key_(cryptography)",
+        "score": 0.3047,
+        "wikidataId": "Q471771"
+      },
+      {
+        "id": 131,
+        "label": "Multimedia",
+        "wikiLink": "http://en.wikipedia.org/Category:Multimedia",
+        "score": 0.3017,
+        "wikidataId": "Q131765"
+      },
+      {
+        "id": 132,
+        "label": "Client (computing)",
+        "wikiLink": "http://en.wikipedia.org/Client_(computing)",
+        "score": 0.297,
+        "wikidataId": "Q528166"
+      },
+      {
+        "id": 133,
+        "label": "Open-source movement",
+        "wikiLink": "http://en.wikipedia.org/Category:Open-source_movement",
+        "score": 0.2952,
+        "wikidataId": "Q9467529"
+      },
+      {
+        "id": 134,
+        "label": "Parallel computing",
+        "wikiLink": "http://en.wikipedia.org/Category:Parallel_computing",
+        "score": 0.2939,
+        "wikidataId": "Q232661"
+      },
+      {
+        "id": 135,
+        "label": "Computer companies",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_companies",
+        "score": 0.2899,
+        "wikidataId": "Q7049602"
+      },
+      {
+        "id": 136,
+        "label": "Physical sciences",
+        "wikiLink": "http://en.wikipedia.org/Category:Physical_sciences",
+        "score": 0.288,
+        "wikidataId": "Q14632398"
+      },
+      {
+        "id": 137,
+        "label": "Social information processing",
+        "wikiLink": "http://en.wikipedia.org/Category:Social_information_processing",
+        "score": 0.2803,
+        "wikidataId": "Q7551183"
+      },
+      {
+        "id": 138,
+        "label": "Language",
+        "wikiLink": "http://en.wikipedia.org/Language",
+        "score": 0.2729,
+        "wikidataId": "Q315"
+      },
+      {
+        "id": 139,
+        "label": "Data transmission",
+        "wikiLink": "http://en.wikipedia.org/Category:Data_transmission",
+        "score": 0.2707,
+        "wikidataId": "Q389772"
+      },
+      {
+        "id": 140,
+        "label": "Electronic publishing",
+        "wikiLink": "http://en.wikipedia.org/Category:Electronic_publishing",
+        "score": 0.262,
+        "wikidataId": "Q1196904"
+      },
+      {
+        "id": 141,
+        "label": "Social skills",
+        "wikiLink": "http://en.wikipedia.org/Social_skills",
+        "score": 0.2617,
+        "wikidataId": "Q1413287"
+      },
+      {
+        "id": 142,
+        "label": "Computer ethics",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_ethics",
+        "score": 0.2595,
+        "wikidataId": "Q1122446"
+      },
+      {
+        "id": 143,
+        "label": "Economy",
+        "wikiLink": "http://en.wikipedia.org/Category:Economy",
+        "score": 0.2514,
+        "wikidataId": "Q159810"
+      },
+      {
+        "id": 144,
+        "label": "Interoperability",
+        "wikiLink": "http://en.wikipedia.org/Category:Interoperability",
+        "score": 0.2481,
+        "wikidataId": "Q749647"
+      },
+      {
+        "id": 145,
+        "label": "Industries (economics)",
+        "wikiLink": "http://en.wikipedia.org/Category:Industries_(economics)",
+        "score": 0.2479,
+        "wikidataId": "Q268592"
+      },
+      {
+        "id": 146,
+        "label": "Solution stack",
+        "wikiLink": "http://en.wikipedia.org/Solution_stack",
+        "score": 0.2478,
+        "wikidataId": "Q7558983"
+      },
+      {
+        "id": 147,
+        "label": "Office equipment",
+        "wikiLink": "http://en.wikipedia.org/Category:Office_equipment",
+        "score": 0.2453,
+        "wikidataId": "Q2383811"
+      },
+      {
+        "id": 148,
+        "label": "Test case",
+        "wikiLink": "http://en.wikipedia.org/Test_case",
+        "score": 0.2452,
+        "wikidataId": "Q1568346"
+      },
+      {
+        "id": 149,
+        "label": "Technological change",
+        "wikiLink": "http://en.wikipedia.org/Category:Technological_change",
+        "score": 0.2416,
+        "wikidataId": "Q762702"
+      },
+      {
+        "id": 150,
+        "label": "Cross-platform software",
+        "wikiLink": "http://en.wikipedia.org/Category:Cross-platform_software",
+        "score": 0.2402,
+        "wikidataId": "Q56842894"
+      },
+      {
+        "id": 151,
+        "label": "Cognitive science",
+        "wikiLink": "http://en.wikipedia.org/Category:Cognitive_science",
+        "score": 0.2395,
+        "wikidataId": "Q147638"
+      },
+      {
+        "id": 152,
+        "label": "Free content",
+        "wikiLink": "http://en.wikipedia.org/Category:Free_content",
+        "score": 0.2343,
+        "wikidataId": "Q14075"
+      },
+      {
+        "id": 153,
+        "label": "Microcomputer software",
+        "wikiLink": "http://en.wikipedia.org/Category:Microcomputer_software",
+        "score": 0.2289,
+        "wikidataId": "Q7455652"
+      },
+      {
+        "id": 154,
+        "label": "Electrical engineering",
+        "wikiLink": "http://en.wikipedia.org/Category:Electrical_engineering",
+        "score": 0.224,
+        "wikidataId": "Q43035"
+      },
+      {
+        "id": 155,
+        "label": "Standards",
+        "wikiLink": "http://en.wikipedia.org/Category:Standards",
+        "score": 0.2214,
+        "wikidataId": "Q317623"
+      },
+      {
+        "id": 156,
+        "label": "Culture",
+        "wikiLink": "http://en.wikipedia.org/Culture",
+        "score": 0.2205,
+        "wikidataId": "Q11042"
+      },
+      {
+        "id": 157,
+        "label": "Operating system families",
+        "wikiLink": "http://en.wikipedia.org/Category:Operating_system_families",
+        "score": 0.22,
+        "wikidataId": "Q7034362"
+      },
+      {
+        "id": 158,
+        "label": "Tool",
+        "wikiLink": "http://en.wikipedia.org/Tool",
+        "score": 0.2187,
+        "wikidataId": "Q39546"
+      },
+      {
+        "id": 159,
+        "label": "Business software",
+        "wikiLink": "http://en.wikipedia.org/Category:Business_software",
+        "score": 0.2178,
+        "wikidataId": "Q1391080"
+      },
+      {
+        "id": 160,
+        "label": "Programming tools",
+        "wikiLink": "http://en.wikipedia.org/Category:Programming_tools",
+        "score": 0.2152,
+        "wikidataId": "Q1077784"
+      },
+      {
+        "id": 161,
+        "label": "Written communication",
+        "wikiLink": "http://en.wikipedia.org/Category:Written_communication",
+        "score": 0.2099,
+        "wikidataId": "Q11499915"
+      },
+      {
+        "id": 162,
+        "label": "Infrastructure",
+        "wikiLink": "http://en.wikipedia.org/Category:Infrastructure",
+        "score": 0.2085,
+        "wikidataId": "Q121359"
+      },
+      {
+        "id": 163,
+        "label": "Cloud infrastructure",
+        "wikiLink": "http://en.wikipedia.org/Category:Cloud_infrastructure",
+        "score": 0.2078,
+        "wikidataId": "Q8383751"
+      },
+      {
+        "id": 164,
+        "label": "User interfaces",
+        "wikiLink": "http://en.wikipedia.org/Category:User_interfaces",
+        "score": 0.2034,
+        "wikidataId": "Q47146"
+      },
+      {
+        "id": 165,
+        "label": "Object-oriented programming",
+        "wikiLink": "http://en.wikipedia.org/Category:Object-oriented_programming",
+        "score": 0.197,
+        "wikidataId": "Q79872"
+      },
+      {
+        "id": 166,
+        "label": "Linux",
+        "wikiLink": "http://en.wikipedia.org/Category:Linux",
+        "score": 0.1959,
+        "wikidataId": "Q388"
+      },
+      {
+        "id": 167,
+        "label": "Experience",
+        "wikiLink": "http://en.wikipedia.org/Experience",
+        "score": 0.185,
+        "wikidataId": "Q164359"
+      },
+      {
+        "id": 168,
+        "label": "Web applications",
+        "wikiLink": "http://en.wikipedia.org/Category:Web_applications",
+        "score": 0.183,
+        "wikidataId": "Q189210"
+      },
+      {
+        "id": 169,
+        "label": "Bachelor of Science",
+        "wikiLink": "http://en.wikipedia.org/Bachelor_of_Science",
+        "score": 0.1792,
+        "wikidataId": "Q787674"
+      },
+      {
+        "id": 170,
+        "label": "World Wide Web Consortium standards",
+        "wikiLink": "http://en.wikipedia.org/Category:World_Wide_Web_Consortium_standards",
+        "score": 0.179,
+        "wikidataId": "Q2661442"
+      },
+      {
+        "id": 171,
+        "label": "Cultural globalization",
+        "wikiLink": "http://en.wikipedia.org/Category:Cultural_globalization",
+        "score": 0.1746,
+        "wikidataId": "Q5193359"
+      },
+      {
+        "id": 172,
+        "label": "Models of computation",
+        "wikiLink": "http://en.wikipedia.org/Category:Models_of_computation",
+        "score": 0.1708,
+        "wikidataId": "Q2651576"
+      },
+      {
+        "id": 173,
+        "label": "Electronics industry",
+        "wikiLink": "http://en.wikipedia.org/Category:Electronics_industry",
+        "score": 0.1669,
+        "wikidataId": "Q5358497"
+      },
+      {
+        "id": 174,
+        "label": "Cognition",
+        "wikiLink": "http://en.wikipedia.org/Category:Cognition",
+        "score": 0.1661,
+        "wikidataId": "Q2200417"
+      },
+      {
+        "id": 175,
+        "label": "Open content",
+        "wikiLink": "http://en.wikipedia.org/Category:Open_content",
+        "score": 0.1653,
+        "wikidataId": "Q1293664"
+      },
+      {
+        "id": 176,
+        "label": "Information technology companies",
+        "wikiLink": "http://en.wikipedia.org/Category:Information_technology_companies",
+        "score": 0.1647,
+        "wikidataId": "Q7049395"
+      },
+      {
+        "id": 177,
+        "label": "Innovation",
+        "wikiLink": "http://en.wikipedia.org/Category:Innovation",
+        "score": 0.1583,
+        "wikidataId": "Q174165"
+      },
+      {
+        "id": 178,
+        "label": "Mass media",
+        "wikiLink": "http://en.wikipedia.org/Category:Mass_media",
+        "score": 0.1572,
+        "wikidataId": "Q11033"
+      },
+      {
+        "id": 179,
+        "label": "Personal information managers",
+        "wikiLink": "http://en.wikipedia.org/Category:Personal_information_managers",
+        "score": 0.1564,
+        "wikidataId": "Q1568118"
+      },
+      {
+        "id": 180,
+        "label": "Religion",
+        "wikiLink": "http://en.wikipedia.org/Religion",
+        "score": 0.1549,
+        "wikidataId": "Q9174"
+      },
+      {
+        "id": 181,
+        "label": "Data processing",
+        "wikiLink": "http://en.wikipedia.org/Category:Data_processing",
+        "score": 0.1544,
+        "wikidataId": "Q6661985"
+      },
+      {
+        "id": 182,
+        "label": "Scientific modelling",
+        "wikiLink": "http://en.wikipedia.org/Category:Scientific_modelling",
+        "score": 0.1526,
+        "wikidataId": "Q1116876"
+      },
+      {
+        "id": 183,
+        "label": "Linux software",
+        "wikiLink": "http://en.wikipedia.org/Category:Linux_software",
+        "score": 0.15,
+        "wikidataId": "Q7032182"
+      },
+      {
+        "id": 184,
+        "label": "Intelligence",
+        "wikiLink": "http://en.wikipedia.org/Category:Intelligence",
+        "score": 0.1498,
+        "wikidataId": "Q83500"
+      },
+      {
+        "id": 185,
+        "label": "Internet Protocol based network software",
+        "wikiLink": "http://en.wikipedia.org/Category:Internet_Protocol_based_network_software",
+        "score": 0.1488,
+        "wikidataId": "Q7032339"
+      },
+      {
+        "id": 186,
+        "label": "Efficiency",
+        "wikiLink": "http://en.wikipedia.org/Efficiency",
+        "score": 0.1481,
+        "wikidataId": "Q1034411"
+      },
+      {
+        "id": 187,
+        "label": "Operating system technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Operating_system_technology",
+        "score": 0.1448,
+        "wikidataId": "Q9135"
+      },
+      {
+        "id": 188,
+        "label": "Software quality",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_quality",
+        "score": 0.1396,
+        "wikidataId": "Q1412670"
+      },
+      {
+        "id": 189,
+        "label": "Web services",
+        "wikiLink": "http://en.wikipedia.org/Category:Web_services",
+        "score": 0.1384,
+        "wikidataId": "Q193424"
+      },
+      {
+        "id": 190,
+        "label": "Utility software",
+        "wikiLink": "http://en.wikipedia.org/Category:Utility_software",
+        "score": 0.1374,
+        "wikidataId": "Q312466"
+      },
+      {
+        "id": 191,
+        "label": "Human–computer interaction",
+        "wikiLink": "http://en.wikipedia.org/Category:Human–computer_interaction",
+        "score": 0.1354,
+        "wikidataId": "Q207434"
+      },
+      {
+        "id": 192,
+        "label": "Unix",
+        "wikiLink": "http://en.wikipedia.org/Category:Unix",
+        "score": 0.131,
+        "wikidataId": "Q11368"
+      },
+      {
+        "id": 193,
+        "label": "People in information technology",
+        "wikiLink": "http://en.wikipedia.org/Category:People_in_information_technology",
+        "score": 0.1304,
+        "wikidataId": "Q6819560"
+      },
+      {
+        "id": 194,
+        "label": "Sociology of technology",
+        "wikiLink": "http://en.wikipedia.org/Category:Sociology_of_technology",
+        "score": 0.1289,
+        "wikidataId": "Q110721762"
+      },
+      {
+        "id": 195,
+        "label": "Classes of computers",
+        "wikiLink": "http://en.wikipedia.org/Category:Classes_of_computers",
+        "score": 0.1279,
+        "wikidataId": "Q716676"
+      },
+      {
+        "id": 196,
+        "label": "Learning",
+        "wikiLink": "http://en.wikipedia.org/Category:Learning",
+        "score": 0.1274,
+        "wikidataId": "Q133500"
+      },
+      {
+        "id": 197,
+        "label": "Productivity software",
+        "wikiLink": "http://en.wikipedia.org/Category:Productivity_software",
+        "score": 0.1269,
+        "wikidataId": "Q7247856"
+      },
+      {
+        "id": 198,
+        "label": "Graphical user interfaces",
+        "wikiLink": "http://en.wikipedia.org/Category:Graphical_user_interfaces",
+        "score": 0.1262,
+        "wikidataId": "Q782543"
+      },
+      {
+        "id": 199,
+        "label": "Minicomputers",
+        "wikiLink": "http://en.wikipedia.org/Category:Minicomputers",
+        "score": 0.1215,
+        "wikidataId": "Q185131"
+      },
+      {
+        "id": 200,
+        "label": "Collaboration",
+        "wikiLink": "http://en.wikipedia.org/Category:Collaboration",
+        "score": 0.1195,
+        "wikidataId": "Q1145523"
+      },
+      {
+        "id": 201,
+        "label": "Notation",
+        "wikiLink": "http://en.wikipedia.org/Category:Notation",
+        "score": 0.1176,
+        "wikidataId": "Q2001982"
+      },
+      {
+        "id": 202,
+        "label": "Software companies of the United States",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_companies_of_the_United_States",
+        "score": 0.1157,
+        "wikidataId": "Q7048866"
+      },
+      {
+        "id": 203,
+        "label": "Communications protocols",
+        "wikiLink": "http://en.wikipedia.org/Category:Communications_protocols",
+        "score": 0.1151,
+        "wikidataId": "Q132364"
+      },
+      {
+        "id": 204,
+        "label": "Network service",
+        "wikiLink": "http://en.wikipedia.org/Category:Network_service",
+        "score": 0.1134,
+        "wikidataId": "Q1640628"
+      },
+      {
+        "id": 205,
+        "label": "Cloud computing providers",
+        "wikiLink": "http://en.wikipedia.org/Category:Cloud_computing_providers",
+        "score": 0.1116,
+        "wikidataId": "Q483639"
+      },
+      {
+        "id": 206,
+        "label": "Leadership",
+        "wikiLink": "http://en.wikipedia.org/Category:Leadership",
+        "score": 0.1064,
+        "wikidataId": "Q484275"
+      },
+      {
+        "id": 207,
+        "label": "Object (computer science)",
+        "wikiLink": "http://en.wikipedia.org/Category:Object_(computer_science)",
+        "score": 0.1056,
+        "wikidataId": "Q216601"
+      },
+      {
+        "id": 208,
+        "label": "Product lifecycle management",
+        "wikiLink": "http://en.wikipedia.org/Category:Product_lifecycle_management",
+        "score": 0.1037,
+        "wikidataId": "Q1054011"
+      },
+      {
+        "id": 209,
+        "label": "Microsoft Windows",
+        "wikiLink": "http://en.wikipedia.org/Category:Microsoft_Windows",
+        "score": 0.1014,
+        "wikidataId": "Q1406"
+      },
+      {
+        "id": 210,
+        "label": "Library and information science",
+        "wikiLink": "http://en.wikipedia.org/Category:Library_and_information_science",
+        "score": 0.09955,
+        "wikidataId": "Q112109925"
+      },
+      {
+        "id": 211,
+        "label": "Electronics",
+        "wikiLink": "http://en.wikipedia.org/Category:Electronics",
+        "score": 0.09933,
+        "wikidataId": "Q11650"
+      },
+      {
+        "id": 212,
+        "label": "Open source",
+        "wikiLink": "http://en.wikipedia.org/Category:Open_source",
+        "score": 0.09869,
+        "wikidataId": "Q39162"
+      },
+      {
+        "id": 213,
+        "label": "Formal methods",
+        "wikiLink": "http://en.wikipedia.org/Category:Formal_methods",
+        "score": 0.09856,
+        "wikidataId": "Q1049183"
+      },
+      {
+        "id": 214,
+        "label": "Mathematical modeling",
+        "wikiLink": "http://en.wikipedia.org/Category:Mathematical_modeling",
+        "score": 0.09691,
+        "wikidataId": "Q12121859"
+      },
+      {
+        "id": 215,
+        "label": "Technical communication",
+        "wikiLink": "http://en.wikipedia.org/Category:Technical_communication",
+        "score": 0.09442,
+        "wikidataId": "Q1132530"
+      },
+      {
+        "id": 216,
+        "label": "Computer security",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_security",
+        "score": 0.09422,
+        "wikidataId": "Q3510521"
+      },
+      {
+        "id": 217,
+        "label": "Macintosh software",
+        "wikiLink": "http://en.wikipedia.org/Category:Macintosh_software",
+        "score": 0.09421,
+        "wikidataId": "Q105605019"
+      },
+      {
+        "id": 218,
+        "label": "International standards",
+        "wikiLink": "http://en.wikipedia.org/Category:International_standards",
+        "score": 0.09232,
+        "wikidataId": "Q1334738"
+      },
+      {
+        "id": 219,
+        "label": "Primate behavior",
+        "wikiLink": "http://en.wikipedia.org/Category:Primate_behavior",
+        "score": 0.09158,
+        "wikidataId": "Q25329866"
+      },
+      {
+        "id": 220,
+        "label": "Data modeling",
+        "wikiLink": "http://en.wikipedia.org/Category:Data_modeling",
+        "score": 0.09109,
+        "wikidataId": "Q367664"
+      },
+      {
+        "id": 221,
+        "label": "Prototype-based programming",
+        "wikiLink": "http://en.wikipedia.org/Category:Prototype-based_programming",
+        "score": 0.08979,
+        "wikidataId": "Q180868"
+      },
+      {
+        "id": 222,
+        "label": "Technology companies",
+        "wikiLink": "http://en.wikipedia.org/Category:Technology_companies",
+        "score": 0.08879,
+        "wikidataId": "Q18388277"
+      },
+      {
+        "id": 223,
+        "label": "Web standards",
+        "wikiLink": "http://en.wikipedia.org/Category:Web_standards",
+        "score": 0.08816,
+        "wikidataId": "Q1153289"
+      },
+      {
+        "id": 224,
+        "label": "Network software",
+        "wikiLink": "http://en.wikipedia.org/Category:Network_software",
+        "score": 0.08666,
+        "wikidataId": "Q25326109"
+      },
+      {
+        "id": 225,
+        "label": "Software frameworks",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_frameworks",
+        "score": 0.0849,
+        "wikidataId": "Q271680"
+      },
+      {
+        "id": 226,
+        "label": "Scientific method",
+        "wikiLink": "http://en.wikipedia.org/Category:Scientific_method",
+        "score": 0.08333,
+        "wikidataId": "Q46857"
+      },
+      {
+        "id": 227,
+        "label": "Computer workstations",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_workstations",
+        "score": 0.08156,
+        "wikidataId": "Q192525"
+      },
+      {
+        "id": 228,
+        "label": "Services sector of the economy",
+        "wikiLink": "http://en.wikipedia.org/Category:Services_sector_of_the_economy",
+        "score": 0.08139,
+        "wikidataId": "Q8398664"
+      },
+      {
+        "id": 229,
+        "label": "Software using the MIT license",
+        "wikiLink": "http://en.wikipedia.org/Category:Software_using_the_MIT_license",
+        "score": 0.07894,
+        "wikidataId": "Q7455262"
+      },
+      {
+        "id": 230,
+        "label": "Telecommunications engineering",
+        "wikiLink": "http://en.wikipedia.org/Category:Telecommunications_engineering",
+        "score": 0.07818,
+        "wikidataId": "Q1061219"
+      },
+      {
+        "id": 231,
+        "label": "Emerging technologies",
+        "wikiLink": "http://en.wikipedia.org/Category:Emerging_technologies",
+        "score": 0.07745,
+        "wikidataId": "Q120208"
+      },
+      {
+        "id": 232,
+        "label": "Storage media",
+        "wikiLink": "http://en.wikipedia.org/Category:Storage_media",
+        "score": 0.07739,
+        "wikidataId": "Q104450446"
+      },
+      {
+        "id": 233,
+        "label": "Business process",
+        "wikiLink": "http://en.wikipedia.org/Category:Business_process",
+        "score": 0.07586,
+        "wikidataId": "Q851587"
+      },
+      {
+        "id": 234,
+        "label": "Intellectual works",
+        "wikiLink": "http://en.wikipedia.org/Category:Intellectual_works",
+        "score": 0.07569,
+        "wikidataId": "Q15621286"
+      },
+      {
+        "id": 235,
+        "label": "Proprietary software",
+        "wikiLink": "http://en.wikipedia.org/Category:Proprietary_software",
+        "score": 0.07556,
+        "wikidataId": "Q218616"
+      },
+      {
+        "id": 236,
+        "label": "Social influence",
+        "wikiLink": "http://en.wikipedia.org/Category:Social_influence",
+        "score": 0.07422,
+        "wikidataId": "Q16812617"
+      },
+      {
+        "id": 237,
+        "label": "JavaScript libraries",
+        "wikiLink": "http://en.wikipedia.org/Category:JavaScript_libraries",
+        "score": 0.07418,
+        "wikidataId": "Q783866"
+      },
+      {
+        "id": 238,
+        "label": "World Wide Web Consortium",
+        "wikiLink": "http://en.wikipedia.org/Category:World_Wide_Web_Consortium",
+        "score": 0.07407,
+        "wikidataId": "Q37033"
+      },
+      {
+        "id": 239,
+        "label": "Cloud platforms",
+        "wikiLink": "http://en.wikipedia.org/Category:Cloud_platforms",
+        "score": 0.07396,
+        "wikidataId": "Q7191517"
+      },
+      {
+        "id": 240,
+        "label": "Analysis",
+        "wikiLink": "http://en.wikipedia.org/Category:Analysis",
+        "score": 0.07343,
+        "wikidataId": "Q217602"
+      },
+      {
+        "id": 241,
+        "label": "Computer companies of the United States",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_companies_of_the_United_States",
+        "score": 0.07147,
+        "wikidataId": "Q7049651"
+      },
+      {
+        "id": 242,
+        "label": "Secure communication",
+        "wikiLink": "http://en.wikipedia.org/Category:Secure_communication",
+        "score": 0.06931,
+        "wikidataId": "Q7444868"
+      },
+      {
+        "id": 243,
+        "label": "Theoretical computer science",
+        "wikiLink": "http://en.wikipedia.org/Category:Theoretical_computer_science",
+        "score": 0.06813,
+        "wikidataId": "Q2878974"
+      },
+      {
+        "id": 244,
+        "label": "Computer-mediated communication",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer-mediated_communication",
+        "score": 0.06757,
+        "wikidataId": "Q796573"
+      },
+      {
+        "id": 245,
+        "label": "Production and manufacturing",
+        "wikiLink": "http://en.wikipedia.org/Category:Production_and_manufacturing",
+        "score": 0.06472,
+        "wikidataId": "Q739302"
+      },
+      {
+        "id": 246,
+        "label": "Application layer protocols",
+        "wikiLink": "http://en.wikipedia.org/Category:Application_layer_protocols",
+        "score": 0.06452,
+        "wikidataId": "Q189768"
+      },
+      {
+        "id": 247,
+        "label": "Computer hardware",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_hardware",
+        "score": 0.06409,
+        "wikidataId": "Q3966"
+      },
+      {
+        "id": 248,
+        "label": "Unix variants",
+        "wikiLink": "http://en.wikipedia.org/Category:Unix_variants",
+        "score": 0.06343,
+        "wikidataId": "Q14656"
+      },
+      {
+        "id": 249,
+        "label": "Companies",
+        "wikiLink": "http://en.wikipedia.org/Category:Companies",
+        "score": 0.06318,
+        "wikidataId": "Q783794"
+      },
+      {
+        "id": 250,
+        "label": "Computer standards",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_standards",
+        "score": 0.06201,
+        "wikidataId": "Q6378466"
+      },
+      {
+        "id": 251,
+        "label": "Product management",
+        "wikiLink": "http://en.wikipedia.org/Category:Product_management",
+        "score": 0.06195,
+        "wikidataId": "Q7467662"
+      },
+      {
+        "id": 252,
+        "label": "Cyberwarfare",
+        "wikiLink": "http://en.wikipedia.org/Category:Cyberwarfare",
+        "score": 0.06185,
+        "wikidataId": "Q849340"
+      },
+      {
+        "id": 253,
+        "label": "Computer networks",
+        "wikiLink": "http://en.wikipedia.org/Category:Computer_networks",
+        "score": 0.0618,
+        "wikidataId": "Q1301371"
+      },
+      {
+        "id": 254,
+        "label": "Conceptual models",
+        "wikiLink": "http://en.wikipedia.org/Category:Conceptual_models",
+        "score": 0.06127,
+        "wikidataId": "Q7210514"
+      },
+      {
+        "id": 255,
+        "label": "Concurrency (computer science)",
+        "wikiLink": "http://en.wikipedia.org/Category:Concurrency_(computer_science)",
+        "score": 0.06125,
+        "wikidataId": "Q1414548"
+      },
+      {
+        "id": 256,
+        "label": "Research and development",
+        "wikiLink": "http://en.wikipedia.org/Category:Research_and_development",
+        "score": 0.06087,
+        "wikidataId": "Q276099"
+      },
+      {
+        "id": 257,
+        "label": "Electronic documents",
+        "wikiLink": "http://en.wikipedia.org/Category:Electronic_documents",
+        "score": 0.06014,
+        "wikidataId": "Q694975"
+      },
+      {
+        "id": 258,
+        "label": "Alternate reality",
+        "wikiLink": "http://en.wikipedia.org/Category:Alternate_reality",
+        "score": 0.06002,
+        "wikidataId": "Q4736396"
+      },
+      {
+        "id": 259,
+        "label": "Microsoft",
+        "wikiLink": "http://en.wikipedia.org/Category:Microsoft",
+        "score": 0.05904,
+        "wikidataId": "Q2283"
+      },
+      {
+        "id": 260,
+        "label": "Security engineering",
+        "wikiLink": "http://en.wikipedia.org/Category:Security_engineering",
+        "score": 0.05729,
+        "wikidataId": "Q804165"
+      },
+      {
+        "id": 261,
+        "label": "XML-based standards",
+        "wikiLink": "http://en.wikipedia.org/Category:XML-based_standards",
+        "score": 0.05485,
+        "wikidataId": "Q20155966"
+      },
+      {
+        "id": 262,
+        "label": "Communication software",
+        "wikiLink": "http://en.wikipedia.org/Category:Communication_software",
+        "score": 0.05331,
+        "wikidataId": "Q3635085"
+      },
+      {
+        "id": 263,
+        "label": "Business intelligence",
+        "wikiLink": "http://en.wikipedia.org/Category:Business_intelligence",
+        "score": 0.05095,
+        "wikidataId": "Q3353185"
+      },
+      {
+        "id": 264,
+        "label": "Java platform",
+        "wikiLink": "http://en.wikipedia.org/Category:Java_platform",
+        "score": 0.0505,
+        "wikidataId": "Q1713118"
+      }
+    ],
+    "entities": [
+      {
+        "id": 0,
+        "type": [
+          "Agent",
+          "Organisation",
+          "Company"
+        ],
+        "matchingTokens": [
+          472
+        ],
+        "entityId": "Amazon (company)",
+        "freebaseTypes": [
+          "/organization/organization",
+          "/award/ranked_item",
+          "/organization/organization_founder",
+          "/venture_capital/venture_investor",
+          "/business/employer",
+          "/music/record_label",
+          "/computer/computer_manufacturer_brand",
+          "/conferences/conference_sponsor",
+          "/organization/organization_member",
+          "/award/award_winner",
+          "/venture_capital/venture_funded_company",
+          "/tv/tv_network",
+          "/organization/organization_partnership",
+          "/film/film_distributor",
+          "/book/book_subject",
+          "/computer/software_developer",
+          "/law/patent_assignee",
+          "/award/award_nominee",
+          "/internet/website_owner",
+          "/book/publishing_company",
+          "/location/location",
+          "/business/business_operation",
+          "/business/consumer_company",
+          "/organization/organization",
+          "/business/customer",
+          "/business/issuer"
+        ],
+        "confidenceScore": 9.664,
+        "wikiLink": "http://en.wikipedia.org/wiki/Amazon_(company)",
+        "matchedText": "Amazon",
+        "freebaseId": "/m/0mgkg",
+        "relevanceScore": 0.4781,
+        "entityEnglishId": "Amazon (company)",
+        "startingPos": 2856,
+        "endingPos": 2862,
+        "wikidataId": "Q3884",
+        "crunchbaseId": "amazon",
+        "lei": "ZXTILKJKG63JELOEG630",
+        "figi": "BBG001S5PQL7",
+        "permid": "4295905494"
+      },
+      {
+        "id": 1,
+        "matchingTokens": [
+          473
+        ],
+        "entityId": "World Wide Web",
+        "freebaseTypes": [
+          "/law/invention",
+          "/location/location",
+          "/visual_art/visual_art_medium",
+          "/computer/protocol_provider",
+          "/organization/organization_sector",
+          "/periodicals/newspaper_circulation_area",
+          "/dataworld/information_source",
+          "/cvg/cvg_platform"
+        ],
+        "confidenceScore": 2.222,
+        "wikiLink": "http://en.wikipedia.org/wiki/World_Wide_Web",
+        "matchedText": "Web",
+        "freebaseId": "/m/0828v",
+        "relevanceScore": 0.5918,
+        "entityEnglishId": "World Wide Web",
+        "startingPos": 2863,
+        "endingPos": 2866,
+        "wikidataId": "Q466"
+      },
+      {
+        "id": 2,
+        "matchingTokens": [
+          473,
+          474
+        ],
+        "entityId": "Web service",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/organization/organization_sector",
+          "/computer/software_genre",
+          "/internet/website_category",
+          "/organization/organization_type",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 5.321,
+        "wikiLink": "http://en.wikipedia.org/wiki/Web_service",
+        "matchedText": "Web Services",
+        "freebaseId": "/m/0n5rs",
+        "relevanceScore": 0.6162,
+        "entityEnglishId": "Web service",
+        "startingPos": 2863,
+        "endingPos": 2875,
+        "wikidataId": "Q193424"
+      },
+      {
+        "id": 3,
+        "matchingTokens": [
+          477
+        ],
+        "entityId": "Cloud computing",
+        "freebaseTypes": [
+          "/organization/organization_sector",
+          "/business/business_location",
+          "/business/consumer_product",
+          "/book/book_subject",
+          "/internet/website_category",
+          "/business/industry",
+          "/business/employer",
+          "/business/competitive_space",
+          "/organization/organization_type",
+          "/computer/software_genre"
+        ],
+        "confidenceScore": 7.093,
+        "wikiLink": "http://en.wikipedia.org/wiki/Cloud_computing",
+        "matchedText": "Cloud",
+        "freebaseId": "/m/02y_9m3",
+        "relevanceScore": 0.8814,
+        "entityEnglishId": "Cloud computing",
+        "startingPos": 2887,
+        "endingPos": 2892,
+        "wikidataId": "Q483639"
+      },
+      {
+        "id": 4,
+        "type": [
+          "Agent",
+          "Organisation",
+          "Company"
+        ],
+        "matchingTokens": [
+          50
+        ],
+        "entityId": "OpenText",
+        "freebaseTypes": [
+          "/business/business_operation",
+          "/organization/organization",
+          "/business/employer",
+          "/business/business_operation",
+          "/organization/organization",
+          "/business/employer",
+          "/business/issuer",
+          "/business/business_operation",
+          "/business/employer",
+          "/organization/organization"
+        ],
+        "confidenceScore": 10.3,
+        "wikiLink": "http://en.wikipedia.org/wiki/OpenText",
+        "matchedText": "OpenText",
+        "freebaseId": "/m/03ctsj",
+        "relevanceScore": 0.4795,
+        "entityEnglishId": "OpenText",
+        "startingPos": 319,
+        "endingPos": 327,
+        "wikidataId": "Q2025791",
+        "crunchbaseId": "open-text",
+        "lei": "549300HP7ONDQODZJV16",
+        "figi": "BBG001SBS5H2",
+        "permid": "5067943747"
+      },
+      {
+        "id": 5,
+        "matchingTokens": [
+          95,
+          96
+        ],
+        "entityId": "Key (cryptography)",
+        "confidenceScore": 3.39,
+        "wikiLink": "http://en.wikipedia.org/wiki/Key_(cryptography)",
+        "matchedText": "Encryption Keys",
+        "freebaseId": "/m/0dxyr",
+        "relevanceScore": 0.2048,
+        "entityEnglishId": "Key (cryptography)",
+        "startingPos": 591,
+        "endingPos": 606,
+        "wikidataId": "Q471771"
+      },
+      {
+        "id": 6,
+        "type": [
+          "Work",
+          "Website",
+          "Software"
+        ],
+        "matchingTokens": [
+          472,
+          473,
+          474
+        ],
+        "entityId": "Amazon Web Services",
+        "freebaseTypes": [
+          "/computer/software",
+          "/internet/website",
+          "/organization/organization"
+        ],
+        "confidenceScore": 24.06,
+        "wikiLink": "http://en.wikipedia.org/wiki/Amazon_Web_Services",
+        "matchedText": "Amazon Web Services",
+        "freebaseId": "/m/0gfjm_p",
+        "relevanceScore": 0.7575,
+        "entityEnglishId": "Amazon Web Services",
+        "startingPos": 2856,
+        "endingPos": 2875,
+        "wikidataId": "Q456157",
+        "crunchbaseId": "amazon-web-services",
+        "permid": "5038056692"
+      },
+      {
+        "id": 7,
+        "type": [
+          "ProgrammingLanguage"
+        ],
+        "matchingTokens": [
+          416
+        ],
+        "entityId": "Java (programming language)",
+        "freebaseTypes": [
+          "/education/school_category",
+          "/computer/programming_language",
+          "/event/speech_topic",
+          "/law/invention",
+          "/interests/interest",
+          "/interests/hobby",
+          "/book/book_subject",
+          "/computer/programming_language"
+        ],
+        "confidenceScore": 26.74,
+        "wikiLink": "http://en.wikipedia.org/wiki/Java_(programming_language)",
+        "matchedText": "Java",
+        "freebaseId": "/m/04j9ppb",
+        "relevanceScore": 0.5562,
+        "entityEnglishId": "Java (programming language)",
+        "startingPos": 2611,
+        "endingPos": 2615,
+        "wikidataId": "Q251"
+      },
+      {
+        "id": 8,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          451
+        ],
+        "entityId": "MongoDB",
+        "freebaseTypes": [
+          "/influence/influence_node",
+          "/book/book_subject",
+          "/computer/software"
+        ],
+        "confidenceScore": 18.95,
+        "wikiLink": "http://en.wikipedia.org/wiki/MongoDB",
+        "matchedText": "MongoDB",
+        "freebaseId": "/m/05z_r2n",
+        "relevanceScore": 0.5254,
+        "entityEnglishId": "MongoDB",
+        "startingPos": 2741,
+        "endingPos": 2748,
+        "wikidataId": "Q1165204"
+      },
+      {
+        "id": 9,
+        "matchingTokens": [
+          447,
+          448
+        ],
+        "entityId": "Representational state transfer",
+        "freebaseTypes": [
+          "/computer/protocol_provider",
+          "/internet/protocol",
+          "/computer/file_format",
+          "/computer/software_genre",
+          "/computer/internet_protocol",
+          "/book/book_subject",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 6.495,
+        "wikiLink": "http://en.wikipedia.org/wiki/Representational_state_transfer",
+        "matchedText": "RESTful API",
+        "freebaseId": "/m/03nsxd",
+        "relevanceScore": 0.6753,
+        "entityEnglishId": "Representational state transfer",
+        "startingPos": 2726,
+        "endingPos": 2737,
+        "wikidataId": "Q749568"
+      },
+      {
+        "id": 10,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          437
+        ],
+        "entityId": "Node.js",
+        "freebaseTypes": [
+          "/computer/software_developer",
+          "/computer/software"
+        ],
+        "confidenceScore": 3.217,
+        "wikiLink": "http://en.wikipedia.org/wiki/Node.js",
+        "matchedText": "Node",
+        "freebaseId": "/m/0bbxf89",
+        "relevanceScore": 0.8911,
+        "entityEnglishId": "Node.js",
+        "startingPos": 2700,
+        "endingPos": 2704,
+        "wikidataId": "Q756100"
+      },
+      {
+        "id": 11,
+        "matchingTokens": [
+          425
+        ],
+        "entityId": "CSS",
+        "freebaseTypes": [
+          "/education/school_category",
+          "/computer/programming_language"
+        ],
+        "confidenceScore": 11.88,
+        "wikiLink": "http://en.wikipedia.org/wiki/CSS",
+        "matchedText": "CSS",
+        "freebaseId": "/m/015tjh",
+        "relevanceScore": 0.4465,
+        "entityEnglishId": "CSS",
+        "startingPos": 2647,
+        "endingPos": 2650,
+        "wikidataId": "Q46441"
+      },
+      {
+        "id": 12,
+        "type": [
+          "Work"
+        ],
+        "matchingTokens": [
+          423
+        ],
+        "entityId": "HTML",
+        "freebaseTypes": [
+          "/computer/programming_language",
+          "/visual_art/visual_art_medium",
+          "/language/human_language",
+          "/organization/organization_sector",
+          "/law/invention"
+        ],
+        "confidenceScore": 20.15,
+        "wikiLink": "http://en.wikipedia.org/wiki/HTML",
+        "matchedText": "HTML",
+        "freebaseId": "/m/03g20",
+        "relevanceScore": 0.3969,
+        "entityEnglishId": "HTML",
+        "startingPos": 2641,
+        "endingPos": 2645,
+        "wikidataId": "Q8811"
+      },
+      {
+        "id": 13,
+        "matchingTokens": [
+          325,
+          326
+        ],
+        "entityId": "Computer science",
+        "freebaseTypes": [
+          "/education/educational_degree",
+          "/education/field_of_study",
+          "/media_common/media_genre",
+          "/award/award_discipline",
+          "/atom/feed_category",
+          "/education/school_category",
+          "/conferences/conference_subject",
+          "/book/book_subject",
+          "/book/periodical_subject",
+          "/media_common/literary_genre",
+          "/award/ranked_item",
+          "/organization/organization_sector",
+          "/media_common/quotation_subject",
+          "/business/industry"
+        ],
+        "confidenceScore": 25.38,
+        "wikiLink": "http://en.wikipedia.org/wiki/Computer_science",
+        "matchedText": "Computer Science",
+        "freebaseId": "/m/01mkq",
+        "relevanceScore": 0.5492,
+        "entityEnglishId": "Computer science",
+        "startingPos": 2115,
+        "endingPos": 2131,
+        "wikidataId": "Q21198"
+      },
+      {
+        "id": 14,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          455
+        ],
+        "entityId": "Amazon Elastic Compute Cloud",
+        "freebaseTypes": [
+          "/computer/software",
+          "/computer/operating_system"
+        ],
+        "confidenceScore": 5.409,
+        "wikiLink": "http://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud",
+        "matchedText": "EC2",
+        "freebaseId": "/m/02rkll_",
+        "relevanceScore": 0.6678,
+        "entityEnglishId": "Amazon Elastic Compute Cloud",
+        "startingPos": 2758,
+        "endingPos": 2761,
+        "wikidataId": "Q2072356"
+      },
+      {
+        "id": 15,
+        "matchingTokens": [
+          345,
+          346
+        ],
+        "entityId": "Web application",
+        "freebaseTypes": [
+          "/computer/software_genre",
+          "/business/industry",
+          "/book/book_subject",
+          "/projects/project_focus",
+          "/media_common/media_genre",
+          "/computer/software_genre",
+          "/business/industry",
+          "/book/book_subject",
+          "/cvg/cvg_genre",
+          "/computer/software_license",
+          "/internet/website_category",
+          "/business/consumer_product",
+          "/organization/organization_type"
+        ],
+        "confidenceScore": 12.77,
+        "wikiLink": "http://en.wikipedia.org/wiki/Web_application",
+        "matchedText": "web application",
+        "freebaseId": "/m/01qb67",
+        "relevanceScore": 0.6659,
+        "entityEnglishId": "Web application",
+        "startingPos": 2235,
+        "endingPos": 2250,
+        "wikidataId": "Q189210"
+      },
+      {
+        "id": 16,
+        "matchingTokens": [
+          373
+        ],
+        "entityId": "Frontend and backend",
+        "confidenceScore": 5.69,
+        "wikiLink": "http://en.wikipedia.org/wiki/Frontend_and_backend",
+        "matchedText": "front-end",
+        "freebaseId": "/m/027c9k",
+        "relevanceScore": 0.5804,
+        "entityEnglishId": "Frontend and backend",
+        "startingPos": 2377,
+        "endingPos": 2386,
+        "wikidataId": "Q620167"
+      },
+      {
+        "id": 17,
+        "matchingTokens": [
+          448,
+          449
+        ],
+        "entityId": "API",
+        "freebaseTypes": [
+          "/book/book_subject"
+        ],
+        "confidenceScore": 23.3,
+        "wikiLink": "http://en.wikipedia.org/wiki/API",
+        "matchedText": "API’s",
+        "freebaseId": "/m/0z5n",
+        "relevanceScore": 0.6273,
+        "entityEnglishId": "API",
+        "startingPos": 2734,
+        "endingPos": 2739,
+        "wikidataId": "Q165194"
+      },
+      {
+        "id": 18,
+        "type": [
+          "Agent",
+          "Organisation",
+          "Company"
+        ],
+        "matchingTokens": [
+          453
+        ],
+        "entityId": "Oracle Corporation",
+        "freebaseTypes": [
+          "/business/employer",
+          "/business/employer",
+          "/business/business_operation",
+          "/organization/organization",
+          "/book/book_subject",
+          "/organization/organization_partnership",
+          "/business/issuer",
+          "/venture_capital/venture_funded_company",
+          "/computer/programming_language_designer",
+          "/business/sponsor",
+          "/law/litigant",
+          "/business/employer",
+          "/award/ranked_item",
+          "/conferences/conference_sponsor",
+          "/organization/organization",
+          "/business/consumer_company",
+          "/organization/organization_member",
+          "/projects/project_participant",
+          "/business/business_operation",
+          "/computer/software_developer",
+          "/venture_capital/venture_investor"
+        ],
+        "confidenceScore": 3.741,
+        "wikiLink": "http://en.wikipedia.org/wiki/Oracle_Corporation",
+        "matchedText": "Oracle",
+        "freebaseId": "/m/05njw",
+        "relevanceScore": 0.5782,
+        "entityEnglishId": "Oracle Corporation",
+        "startingPos": 2750,
+        "endingPos": 2756,
+        "wikidataId": "Q19900",
+        "crunchbaseId": "oracle",
+        "lei": "1Z4GXXU7ZHVWFCD8TV52",
+        "figi": "BBG001S5SJG6",
+        "permid": "4295907485"
+      },
+      {
+        "id": 19,
+        "type": [
+          "Agent",
+          "Organisation",
+          "Company"
+        ],
+        "matchingTokens": [
+          463
+        ],
+        "entityId": "Amazon (company)",
+        "freebaseTypes": [
+          "/organization/organization",
+          "/award/ranked_item",
+          "/organization/organization_founder",
+          "/venture_capital/venture_investor",
+          "/business/employer",
+          "/music/record_label",
+          "/computer/computer_manufacturer_brand",
+          "/conferences/conference_sponsor",
+          "/organization/organization_member",
+          "/award/award_winner",
+          "/venture_capital/venture_funded_company",
+          "/tv/tv_network",
+          "/organization/organization_partnership",
+          "/film/film_distributor",
+          "/book/book_subject",
+          "/computer/software_developer",
+          "/law/patent_assignee",
+          "/award/award_nominee",
+          "/internet/website_owner",
+          "/book/publishing_company",
+          "/location/location",
+          "/business/business_operation",
+          "/business/consumer_company",
+          "/organization/organization",
+          "/business/customer",
+          "/business/issuer"
+        ],
+        "confidenceScore": 9.664,
+        "wikiLink": "http://en.wikipedia.org/wiki/Amazon_(company)",
+        "matchedText": "Amazon",
+        "freebaseId": "/m/0mgkg",
+        "relevanceScore": 0.4781,
+        "entityEnglishId": "Amazon (company)",
+        "startingPos": 2794,
+        "endingPos": 2800,
+        "wikidataId": "Q3884",
+        "crunchbaseId": "amazon",
+        "lei": "ZXTILKJKG63JELOEG630",
+        "figi": "BBG001S5PQL7",
+        "permid": "4295905494"
+      },
+      {
+        "id": 20,
+        "matchingTokens": [
+          464
+        ],
+        "entityId": "World Wide Web",
+        "freebaseTypes": [
+          "/law/invention",
+          "/location/location",
+          "/visual_art/visual_art_medium",
+          "/computer/protocol_provider",
+          "/organization/organization_sector",
+          "/periodicals/newspaper_circulation_area",
+          "/dataworld/information_source",
+          "/cvg/cvg_platform"
+        ],
+        "confidenceScore": 2.222,
+        "wikiLink": "http://en.wikipedia.org/wiki/World_Wide_Web",
+        "matchedText": "Web",
+        "freebaseId": "/m/0828v",
+        "relevanceScore": 0.5918,
+        "entityEnglishId": "World Wide Web",
+        "startingPos": 2801,
+        "endingPos": 2804,
+        "wikidataId": "Q466"
+      },
+      {
+        "id": 21,
+        "type": [
+          "Work",
+          "Website",
+          "Software"
+        ],
+        "matchingTokens": [
+          463,
+          464,
+          465
+        ],
+        "entityId": "Amazon Web Services",
+        "freebaseTypes": [
+          "/computer/software",
+          "/internet/website",
+          "/organization/organization"
+        ],
+        "confidenceScore": 24.06,
+        "wikiLink": "http://en.wikipedia.org/wiki/Amazon_Web_Services",
+        "matchedText": "Amazon Web Services",
+        "freebaseId": "/m/0gfjm_p",
+        "relevanceScore": 0.7575,
+        "entityEnglishId": "Amazon Web Services",
+        "startingPos": 2794,
+        "endingPos": 2813,
+        "wikidataId": "Q456157",
+        "crunchbaseId": "amazon-web-services",
+        "permid": "5038056692"
+      },
+      {
+        "id": 22,
+        "matchingTokens": [
+          464,
+          465
+        ],
+        "entityId": "Web service",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/organization/organization_sector",
+          "/computer/software_genre",
+          "/internet/website_category",
+          "/organization/organization_type",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 5.321,
+        "wikiLink": "http://en.wikipedia.org/wiki/Web_service",
+        "matchedText": "Web Services",
+        "freebaseId": "/m/0n5rs",
+        "relevanceScore": 0.6162,
+        "entityEnglishId": "Web service",
+        "startingPos": 2801,
+        "endingPos": 2813,
+        "wikidataId": "Q193424"
+      },
+      {
+        "id": 23,
+        "matchingTokens": [
+          469
+        ],
+        "entityId": "Architect",
+        "freebaseTypes": [
+          "/people/profession",
+          "/projects/project_role",
+          "/business/industry",
+          "/fictional_universe/character_occupation",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 2.819,
+        "wikiLink": "http://en.wikipedia.org/wiki/Architect",
+        "matchedText": "Architect",
+        "freebaseId": "/m/0mn6",
+        "relevanceScore": 0.3191,
+        "entityEnglishId": "Architect",
+        "startingPos": 2835,
+        "endingPos": 2844,
+        "wikidataId": "Q42973"
+      },
+      {
+        "id": 24,
+        "matchingTokens": [
+          346
+        ],
+        "entityId": "Application software",
+        "freebaseTypes": [
+          "/education/field_of_study",
+          "/computer/software_genre",
+          "/business/product_category",
+          "/business/industry",
+          "/organization/organization_type",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 1.721,
+        "wikiLink": "http://en.wikipedia.org/wiki/Application_software",
+        "matchedText": "application",
+        "freebaseId": "/m/02bj4k",
+        "relevanceScore": 0.5043,
+        "entityEnglishId": "Application software",
+        "startingPos": 2239,
+        "endingPos": 2250,
+        "wikidataId": "Q166142"
+      },
+      {
+        "id": 25,
+        "matchingTokens": [
+          364
+        ],
+        "entityId": "Integrated development environment",
+        "freebaseTypes": [
+          "/computer/software_genre"
+        ],
+        "confidenceScore": 10.08,
+        "wikiLink": "http://en.wikipedia.org/wiki/Integrated_development_environment",
+        "matchedText": "IDE",
+        "freebaseId": "/m/0ddhcw9",
+        "relevanceScore": 0.4858,
+        "entityEnglishId": "Integrated development environment",
+        "startingPos": 2343,
+        "endingPos": 2346,
+        "wikidataId": "Q13741"
+      },
+      {
+        "id": 26,
+        "type": [
+          "Work"
+        ],
+        "matchingTokens": [
+          366
+        ],
+        "entityId": "HTML",
+        "freebaseTypes": [
+          "/computer/programming_language",
+          "/visual_art/visual_art_medium",
+          "/language/human_language",
+          "/organization/organization_sector",
+          "/law/invention"
+        ],
+        "confidenceScore": 20.15,
+        "wikiLink": "http://en.wikipedia.org/wiki/HTML",
+        "matchedText": "HTML",
+        "freebaseId": "/m/03g20",
+        "relevanceScore": 0.3969,
+        "entityEnglishId": "HTML",
+        "startingPos": 2348,
+        "endingPos": 2352,
+        "wikidataId": "Q8811"
+      },
+      {
+        "id": 27,
+        "matchingTokens": [
+          368
+        ],
+        "entityId": "CSS",
+        "freebaseTypes": [
+          "/education/school_category",
+          "/computer/programming_language"
+        ],
+        "confidenceScore": 11.88,
+        "wikiLink": "http://en.wikipedia.org/wiki/CSS",
+        "matchedText": "CSS",
+        "freebaseId": "/m/015tjh",
+        "relevanceScore": 0.4465,
+        "entityEnglishId": "CSS",
+        "startingPos": 2354,
+        "endingPos": 2357,
+        "wikidataId": "Q46441"
+      },
+      {
+        "id": 28,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          371
+        ],
+        "entityId": "Bootstrap (front-end framework)",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/computer/software"
+        ],
+        "confidenceScore": 3.973,
+        "wikiLink": "http://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)",
+        "matchedText": "Bootstrap",
+        "freebaseId": "/m/0j671ln",
+        "relevanceScore": 0.5305,
+        "entityEnglishId": "Bootstrap (front-end framework)",
+        "startingPos": 2363,
+        "endingPos": 2372,
+        "wikidataId": "Q893195"
+      },
+      {
+        "id": 29,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          385
+        ],
+        "entityId": "Node.js",
+        "freebaseTypes": [
+          "/computer/software_developer",
+          "/computer/software"
+        ],
+        "confidenceScore": 3.217,
+        "wikiLink": "http://en.wikipedia.org/wiki/Node.js",
+        "matchedText": "Node",
+        "freebaseId": "/m/0bbxf89",
+        "relevanceScore": 0.8911,
+        "entityEnglishId": "Node.js",
+        "startingPos": 2451,
+        "endingPos": 2455,
+        "wikidataId": "Q756100"
+      },
+      {
+        "id": 30,
+        "matchingTokens": [
+          392
+        ],
+        "entityId": "Frontend and backend",
+        "confidenceScore": 7.028,
+        "wikiLink": "http://en.wikipedia.org/wiki/Frontend_and_backend",
+        "matchedText": "backend",
+        "freebaseId": "/m/027c9k",
+        "relevanceScore": 0.4683,
+        "entityEnglishId": "Frontend and backend",
+        "startingPos": 2480,
+        "endingPos": 2487,
+        "wikidataId": "Q620167"
+      },
+      {
+        "id": 31,
+        "matchingTokens": [
+          395,
+          396
+        ],
+        "entityId": "Representational state transfer",
+        "freebaseTypes": [
+          "/computer/protocol_provider",
+          "/internet/protocol",
+          "/computer/file_format",
+          "/computer/software_genre",
+          "/computer/internet_protocol",
+          "/book/book_subject",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 6.495,
+        "wikiLink": "http://en.wikipedia.org/wiki/Representational_state_transfer",
+        "matchedText": "RESTful API",
+        "freebaseId": "/m/03nsxd",
+        "relevanceScore": 0.6753,
+        "entityEnglishId": "Representational state transfer",
+        "startingPos": 2499,
+        "endingPos": 2510,
+        "wikidataId": "Q749568"
+      },
+      {
+        "id": 32,
+        "matchingTokens": [
+          396
+        ],
+        "entityId": "API",
+        "freebaseTypes": [
+          "/book/book_subject"
+        ],
+        "confidenceScore": 23,
+        "wikiLink": "http://en.wikipedia.org/wiki/API",
+        "matchedText": "API",
+        "freebaseId": "/m/0z5n",
+        "relevanceScore": 0.6273,
+        "entityEnglishId": "API",
+        "startingPos": 2507,
+        "endingPos": 2510,
+        "wikidataId": "Q165194"
+      },
+      {
+        "id": 33,
+        "matchingTokens": [
+          397
+        ],
+        "entityId": "Design",
+        "freebaseTypes": [
+          "/education/field_of_study",
+          "/education/school_category",
+          "/business/industry",
+          "/award/award_discipline",
+          "/exhibitions/exhibition_subject",
+          "/architecture/architectural_style",
+          "/projects/project_focus",
+          "/internet/website_category",
+          "/book/book_subject",
+          "/book/periodical_subject",
+          "/organization/organization_sector",
+          "/media_common/quotation_subject"
+        ],
+        "confidenceScore": 1.236,
+        "wikiLink": "http://en.wikipedia.org/wiki/Design",
+        "matchedText": "design",
+        "freebaseId": "/m/02cwm",
+        "relevanceScore": 0.2903,
+        "entityEnglishId": "Design",
+        "startingPos": 2511,
+        "endingPos": 2517,
+        "wikidataId": "Q82604"
+      },
+      {
+        "id": 34,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          400
+        ],
+        "entityId": "MongoDB",
+        "freebaseTypes": [
+          "/influence/influence_node",
+          "/book/book_subject",
+          "/computer/software"
+        ],
+        "confidenceScore": 18.95,
+        "wikiLink": "http://en.wikipedia.org/wiki/MongoDB",
+        "matchedText": "MongoDB",
+        "freebaseId": "/m/05z_r2n",
+        "relevanceScore": 0.5254,
+        "entityEnglishId": "MongoDB",
+        "startingPos": 2533,
+        "endingPos": 2540,
+        "wikidataId": "Q1165204"
+      },
+      {
+        "id": 35,
+        "matchingTokens": [
+          403
+        ],
+        "entityId": "Database",
+        "freebaseTypes": [
+          "/computer/file_format_genre",
+          "/organization/organization_sector",
+          "/dataworld/information_source",
+          "/business/industry",
+          "/internet/website_category",
+          "/computer/software_genre",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 18.51,
+        "wikiLink": "http://en.wikipedia.org/wiki/Database",
+        "matchedText": "database",
+        "freebaseId": "/m/02bc6",
+        "relevanceScore": 0.7033,
+        "entityEnglishId": "Database",
+        "startingPos": 2548,
+        "endingPos": 2556,
+        "wikidataId": "Q8513"
+      },
+      {
+        "id": 36,
+        "matchingTokens": [
+          410
+        ],
+        "entityId": "Language",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/internet/website_category",
+          "/broadcast/genre",
+          "/media_common/quotation_subject",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 1.099,
+        "wikiLink": "http://en.wikipedia.org/wiki/Language",
+        "matchedText": "Languages",
+        "freebaseId": "/m/04g7d",
+        "relevanceScore": 0.2416,
+        "entityEnglishId": "Language",
+        "startingPos": 2586,
+        "endingPos": 2595,
+        "wikidataId": "Q315"
+      },
+      {
+        "id": 37,
+        "type": [
+          "ProgrammingLanguage"
+        ],
+        "matchingTokens": [
+          412
+        ],
+        "entityId": "Java (programming language)",
+        "freebaseTypes": [
+          "/education/school_category",
+          "/computer/programming_language",
+          "/event/speech_topic",
+          "/law/invention",
+          "/interests/interest",
+          "/interests/hobby",
+          "/book/book_subject",
+          "/computer/programming_language"
+        ],
+        "confidenceScore": 26.74,
+        "wikiLink": "http://en.wikipedia.org/wiki/Java_(programming_language)",
+        "matchedText": "Java",
+        "freebaseId": "/m/04j9ppb",
+        "relevanceScore": 0.5562,
+        "entityEnglishId": "Java (programming language)",
+        "startingPos": 2597,
+        "endingPos": 2601,
+        "wikidataId": "Q251"
+      },
+      {
+        "id": 38,
+        "type": [
+          "ProgrammingLanguage"
+        ],
+        "matchingTokens": [
+          416,
+          417
+        ],
+        "entityId": "JavaScript",
+        "freebaseTypes": [
+          "/internet/api",
+          "/visual_art/visual_art_medium",
+          "/book/book_subject",
+          "/education/school_category",
+          "/computer/programming_language"
+        ],
+        "confidenceScore": 1.616,
+        "wikiLink": "http://en.wikipedia.org/wiki/JavaScript",
+        "matchedText": "Java Script",
+        "freebaseId": "/m/07d0kt",
+        "relevanceScore": 0.674,
+        "entityEnglishId": "JavaScript",
+        "startingPos": 2611,
+        "endingPos": 2622,
+        "wikidataId": "Q2005"
+      },
+      {
+        "id": 39,
+        "matchingTokens": [
+          417
+        ],
+        "entityId": "Scripting language",
+        "freebaseTypes": [
+          "/computer/file_format_genre",
+          "/computer/software_genre"
+        ],
+        "confidenceScore": 0.9861,
+        "wikiLink": "http://en.wikipedia.org/wiki/Scripting_language",
+        "matchedText": "Script",
+        "freebaseId": "/m/079mz",
+        "relevanceScore": 0.6182,
+        "entityEnglishId": "Scripting language",
+        "startingPos": 2616,
+        "endingPos": 2622,
+        "wikidataId": "Q187432"
+      },
+      {
+        "id": 40,
+        "type": [
+          "ProgrammingLanguage"
+        ],
+        "matchingTokens": [
+          419
+        ],
+        "entityId": "TypeScript",
+        "freebaseTypes": [
+          "/computer/programming_language"
+        ],
+        "confidenceScore": 7.988,
+        "wikiLink": "http://en.wikipedia.org/wiki/TypeScript",
+        "matchedText": "Typescript",
+        "freebaseId": "/m/0n50hxv",
+        "relevanceScore": 0.4985,
+        "entityEnglishId": "TypeScript",
+        "startingPos": 2624,
+        "endingPos": 2634,
+        "wikidataId": "Q978185"
+      },
+      {
+        "id": 41,
+        "type": [
+          "ProgrammingLanguage",
+          "Work"
+        ],
+        "matchingTokens": [
+          421
+        ],
+        "entityId": "Visual Basic for Applications",
+        "confidenceScore": 5.324,
+        "wikiLink": "http://en.wikipedia.org/wiki/Visual_Basic_for_Applications",
+        "matchedText": "VBA",
+        "freebaseId": "/m/080_2",
+        "relevanceScore": 0.5326,
+        "entityEnglishId": "Visual Basic for Applications",
+        "startingPos": 2636,
+        "endingPos": 2639,
+        "wikidataId": "Q667566"
+      },
+      {
+        "id": 42,
+        "type": [
+          "ProgrammingLanguage"
+        ],
+        "matchingTokens": [
+          427
+        ],
+        "entityId": "SQL",
+        "freebaseTypes": [
+          "/computer/programming_language"
+        ],
+        "confidenceScore": 16.96,
+        "wikiLink": "http://en.wikipedia.org/wiki/SQL",
+        "matchedText": "SQL",
+        "freebaseId": "/m/075st",
+        "relevanceScore": 0.4628,
+        "entityEnglishId": "SQL",
+        "startingPos": 2652,
+        "endingPos": 2655,
+        "wikidataId": "Q47607"
+      },
+      {
+        "id": 43,
+        "matchingTokens": [
+          429
+        ],
+        "entityId": "Technology",
+        "freebaseTypes": [
+          "/organization/organization_sector",
+          "/film/film_subject",
+          "/interests/interest",
+          "/media_common/netflix_genre",
+          "/book/periodical_subject",
+          "/exhibitions/exhibition_subject",
+          "/conferences/conference_subject",
+          "/media_common/media_genre",
+          "/tv/tv_subject",
+          "/people/profession",
+          "/award/award_discipline",
+          "/book/book_subject",
+          "/people/professional_field",
+          "/media_common/literary_genre",
+          "/education/field_of_study",
+          "/business/industry",
+          "/business/competitive_space",
+          "/interests/hobby",
+          "/award/award_category",
+          "/broadcast/genre",
+          "/internet/website_category",
+          "/media_common/quotation_subject"
+        ],
+        "confidenceScore": 1.336,
+        "wikiLink": "http://en.wikipedia.org/wiki/Technology",
+        "matchedText": "Technologies",
+        "freebaseId": "/m/07c1v",
+        "relevanceScore": 0.3231,
+        "entityEnglishId": "Technology",
+        "startingPos": 2657,
+        "endingPos": 2669,
+        "wikidataId": "Q11016"
+      },
+      {
+        "id": 44,
+        "matchingTokens": [
+          431
+        ],
+        "entityId": "Software framework",
+        "freebaseTypes": [
+          "/computer/software_genre",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 1.064,
+        "wikiLink": "http://en.wikipedia.org/wiki/Software_framework",
+        "matchedText": "Frameworks",
+        "freebaseId": "/m/039w_d",
+        "relevanceScore": 0.5666,
+        "entityEnglishId": "Software framework",
+        "startingPos": 2672,
+        "endingPos": 2682,
+        "wikidataId": "Q271680"
+      },
+      {
+        "id": 45,
+        "type": [
+          "Work",
+          "WrittenWork"
+        ],
+        "matchingTokens": [
+          435
+        ],
+        "entityId": "Robot",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/business/product_category",
+          "/fictional_universe/character_species",
+          "/film/film_subject",
+          "/interests/collection_category",
+          "/exhibitions/exhibition_subject"
+        ],
+        "confidenceScore": 3.377,
+        "wikiLink": "http://en.wikipedia.org/wiki/Robot",
+        "matchedText": "Robot",
+        "freebaseId": "/m/06fgw",
+        "relevanceScore": 0.3304,
+        "entityEnglishId": "Robot",
+        "startingPos": 2693,
+        "endingPos": 2698,
+        "wikidataId": "Q11012"
+      },
+      {
+        "id": 46,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          445
+        ],
+        "entityId": "Git",
+        "freebaseTypes": [
+          "/computer/software",
+          "/business/sponsored_recipient",
+          "/computer/software_developer",
+          "/people/person"
+        ],
+        "confidenceScore": 8.055,
+        "wikiLink": "http://en.wikipedia.org/wiki/Git",
+        "matchedText": "Git",
+        "freebaseId": "/m/02z5mtk",
+        "relevanceScore": 0.4406,
+        "entityEnglishId": "Git",
+        "startingPos": 2721,
+        "endingPos": 2724,
+        "wikidataId": "Q186055"
+      },
+      {
+        "id": 47,
+        "matchingTokens": [
+          217
+        ],
+        "entityId": "Scalability",
+        "confidenceScore": 7.341,
+        "wikiLink": "http://en.wikipedia.org/wiki/Scalability",
+        "matchedText": "scalability",
+        "freebaseId": "/m/019c4v",
+        "relevanceScore": 0.4663,
+        "entityEnglishId": "Scalability",
+        "startingPos": 1364,
+        "endingPos": 1375,
+        "wikidataId": "Q727490"
+      },
+      {
+        "id": 48,
+        "matchingTokens": [
+          162
+        ],
+        "entityId": "Cloud computing",
+        "freebaseTypes": [
+          "/organization/organization_sector",
+          "/business/business_location",
+          "/business/consumer_product",
+          "/book/book_subject",
+          "/internet/website_category",
+          "/business/industry",
+          "/business/employer",
+          "/business/competitive_space",
+          "/organization/organization_type",
+          "/computer/software_genre"
+        ],
+        "confidenceScore": 7.093,
+        "wikiLink": "http://en.wikipedia.org/wiki/Cloud_computing",
+        "matchedText": "Cloud",
+        "freebaseId": "/m/02y_9m3",
+        "relevanceScore": 0.8814,
+        "entityEnglishId": "Cloud computing",
+        "startingPos": 1020,
+        "endingPos": 1025,
+        "wikidataId": "Q483639"
+      },
+      {
+        "id": 49,
+        "type": [
+          "ProgrammingLanguage"
+        ],
+        "matchingTokens": [
+          414
+        ],
+        "entityId": "Python (programming language)",
+        "freebaseTypes": [
+          "/interests/hobbyist",
+          "/conferences/conference_subject",
+          "/people/person",
+          "/symbols/namesake",
+          "/business/brand",
+          "/internet/api",
+          "/computer/programming_language",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 21.76,
+        "wikiLink": "http://en.wikipedia.org/wiki/Python_(programming_language)",
+        "matchedText": "Python",
+        "freebaseId": "/m/05z1_",
+        "relevanceScore": 0.5464,
+        "entityEnglishId": "Python (programming language)",
+        "startingPos": 2603,
+        "endingPos": 2609,
+        "wikidataId": "Q28865"
+      },
+      {
+        "id": 50,
+        "matchingTokens": [
+          202
+        ],
+        "entityId": "Software",
+        "freebaseTypes": [
+          "/education/school_category",
+          "/broadcast/genre",
+          "/media_common/quotation_subject",
+          "/business/consumer_product",
+          "/business/product_category",
+          "/organization/organization_sector",
+          "/computer/software_genre",
+          "/business/industry",
+          "/internet/website_category",
+          "/media_common/media_genre",
+          "/business/competitive_space",
+          "/book/book_subject",
+          "/organization/organization"
+        ],
+        "confidenceScore": 21.2,
+        "wikiLink": "http://en.wikipedia.org/wiki/Software",
+        "matchedText": "software",
+        "freebaseId": "/m/01mf0",
+        "relevanceScore": 0.5897,
+        "entityEnglishId": "Software",
+        "startingPos": 1259,
+        "endingPos": 1267,
+        "wikidataId": "Q7397"
+      },
+      {
+        "id": 51,
+        "matchingTokens": [
+          142
+        ],
+        "entityId": "API",
+        "freebaseTypes": [
+          "/book/book_subject"
+        ],
+        "confidenceScore": 23.3,
+        "wikiLink": "http://en.wikipedia.org/wiki/API",
+        "matchedText": "API",
+        "freebaseId": "/m/0z5n",
+        "relevanceScore": 0.6273,
+        "entityEnglishId": "API",
+        "startingPos": 889,
+        "endingPos": 892,
+        "wikidataId": "Q165194"
+      },
+      {
+        "id": 52,
+        "matchingTokens": [
+          221,
+          222
+        ],
+        "entityId": "User experience",
+        "confidenceScore": 3.159,
+        "wikiLink": "http://en.wikipedia.org/wiki/User_experience",
+        "matchedText": "user experience",
+        "freebaseId": "/m/011b99nt",
+        "relevanceScore": 0.3354,
+        "entityEnglishId": "User experience",
+        "startingPos": 1394,
+        "endingPos": 1409,
+        "wikidataId": "Q1047808"
+      },
+      {
+        "id": 53,
+        "matchingTokens": [
+          222
+        ],
+        "entityId": "Experience",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/media_common/quotation_subject"
+        ],
+        "confidenceScore": 2.194,
+        "wikiLink": "http://en.wikipedia.org/wiki/Experience",
+        "matchedText": "experience",
+        "freebaseId": "/m/01rhgl",
+        "relevanceScore": 0.1638,
+        "entityEnglishId": "Experience",
+        "startingPos": 1399,
+        "endingPos": 1409,
+        "wikidataId": "Q164359"
+      },
+      {
+        "id": 54,
+        "matchingTokens": [
+          226
+        ],
+        "entityId": "Communication",
+        "freebaseTypes": [
+          "/media_common/quotation_subject",
+          "/education/field_of_study",
+          "/business/industry",
+          "/computer/software_genre",
+          "/book/book_subject",
+          "/organization/organization_sector",
+          "/internet/website_category",
+          "/organization/contact_category"
+        ],
+        "confidenceScore": 6.071,
+        "wikiLink": "http://en.wikipedia.org/wiki/Communication",
+        "matchedText": "communication",
+        "freebaseId": "/m/0n4bkm2",
+        "relevanceScore": 0.4324,
+        "entityEnglishId": "Communication",
+        "startingPos": 1435,
+        "endingPos": 1448,
+        "wikidataId": "Q11024"
+      },
+      {
+        "id": 55,
+        "matchingTokens": [
+          228,
+          229
+        ],
+        "entityId": "Social skills",
+        "confidenceScore": 3.73,
+        "wikiLink": "http://en.wikipedia.org/wiki/Social_skills",
+        "matchedText": "interpersonal skills",
+        "freebaseId": "/m/03jrhy",
+        "relevanceScore": 0.2317,
+        "entityEnglishId": "Social skills",
+        "startingPos": 1453,
+        "endingPos": 1473,
+        "wikidataId": "Q1413287"
+      },
+      {
+        "id": 56,
+        "matchingTokens": [
+          240
+        ],
+        "entityId": "Client (computing)",
+        "confidenceScore": 3.023,
+        "wikiLink": "http://en.wikipedia.org/wiki/Client_(computing)",
+        "matchedText": "client",
+        "freebaseId": "/m/03190p",
+        "relevanceScore": 0.263,
+        "entityEnglishId": "Client (computing)",
+        "startingPos": 1553,
+        "endingPos": 1559,
+        "wikidataId": "Q528166"
+      },
+      {
+        "id": 57,
+        "matchingTokens": [
+          272
+        ],
+        "entityId": "Company",
+        "freebaseTypes": [
+          "/dataworld/information_source",
+          "/internet/website_category",
+          "/fictional_universe/fictional_organization_type",
+          "/organization/organization_type"
+        ],
+        "confidenceScore": 1.961,
+        "wikiLink": "http://en.wikipedia.org/wiki/Company",
+        "matchedText": "company",
+        "freebaseId": "/m/03bxgrp",
+        "relevanceScore": 0.03553,
+        "entityEnglishId": "Company",
+        "startingPos": 1762,
+        "endingPos": 1769,
+        "wikidataId": "Q783794"
+      },
+      {
+        "id": 58,
+        "matchingTokens": [
+          283
+        ],
+        "entityId": "Education",
+        "freebaseTypes": [
+          "/business/customer",
+          "/film/film_genre",
+          "/games/game_genre",
+          "/tv/tv_genre",
+          "/organization/organization_sector",
+          "/architecture/building_complex_function",
+          "/media_common/media_genre",
+          "/book/book_subject",
+          "/people/professional_field",
+          "/government/government_service",
+          "/media_common/quotation_subject",
+          "/organization/contact_category",
+          "/book/periodical_subject",
+          "/business/competitive_space",
+          "/cvg/cvg_genre",
+          "/business/brand",
+          "/conferences/conference_subject",
+          "/media_common/literary_genre",
+          "/broadcast/genre",
+          "/award/award_discipline",
+          "/internet/website_category",
+          "/education/field_of_study",
+          "/atom/feed_category",
+          "/business/industry",
+          "/organization/organization_type",
+          "/film/film_subject"
+        ],
+        "confidenceScore": 3.079,
+        "wikiLink": "http://en.wikipedia.org/wiki/Education",
+        "matchedText": "EDUCATION",
+        "freebaseId": "/m/0vpr1nh",
+        "relevanceScore": 0.4865,
+        "entityEnglishId": "Education",
+        "startingPos": 1832,
+        "endingPos": 1841,
+        "wikidataId": "Q8434"
+      },
+      {
+        "id": 59,
+        "type": [
+          "Agent",
+          "Organisation",
+          "EducationalInstitution",
+          "University"
+        ],
+        "matchingTokens": [
+          285,
+          286,
+          287
+        ],
+        "entityId": "Wilfrid Laurier University",
+        "freebaseTypes": [
+          "/organization/organization",
+          "/education/student_organization",
+          "/organization/organization",
+          "/location/location",
+          "/business/employer",
+          "/organization/organization",
+          "/education/university",
+          "/business/employer",
+          "/organization/endowed_organization",
+          "/symbols/namesake",
+          "/education/educational_institution",
+          "/education/educational_institution_campus",
+          "/location/location"
+        ],
+        "confidenceScore": 8.646,
+        "wikiLink": "http://en.wikipedia.org/wiki/Wilfrid_Laurier_University",
+        "matchedText": "Wilfrid Laurier University",
+        "freebaseId": "/m/0gvyzm",
+        "relevanceScore": 0.3441,
+        "entityEnglishId": "Wilfrid Laurier University",
+        "startingPos": 1847,
+        "endingPos": 1873,
+        "wikidataId": "Q2166701",
+        "crunchbaseId": "laurier-inc",
+        "lei": "549300Q81KPFEBUIIF35",
+        "permid": "4296215023"
+      },
+      {
+        "id": 60,
+        "matchingTokens": [
+          295,
+          296,
+          297
+        ],
+        "entityId": "Bachelor of Science",
+        "freebaseTypes": [
+          "/education/school_category",
+          "/education/educational_degree",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 5.242,
+        "wikiLink": "http://en.wikipedia.org/wiki/Bachelor_of_Science",
+        "matchedText": "Bachelor of Science",
+        "freebaseId": "/m/02h4rq6",
+        "relevanceScore": 0.1587,
+        "entityEnglishId": "Bachelor of Science",
+        "startingPos": 1944,
+        "endingPos": 1963,
+        "wikidataId": "Q787674"
+      },
+      {
+        "id": 61,
+        "matchingTokens": [
+          297
+        ],
+        "entityId": "Science",
+        "freebaseTypes": [
+          "/award/award_discipline",
+          "/radio/radio_subject",
+          "/book/periodical_subject",
+          "/media_common/quotation_subject",
+          "/internet/website_category",
+          "/education/field_of_study",
+          "/theater/theater_genre",
+          "/organization/organization_sector",
+          "/book/book_subject",
+          "/media_common/literary_genre",
+          "/film/film_genre",
+          "/media_common/netflix_genre",
+          "/film/film_subject",
+          "/broadcast/genre",
+          "/tv/tv_subject",
+          "/tv/tv_genre",
+          "/media_common/media_genre"
+        ],
+        "confidenceScore": 2.209,
+        "wikiLink": "http://en.wikipedia.org/wiki/Science",
+        "matchedText": "Science",
+        "freebaseId": "/m/06mq7",
+        "relevanceScore": 0.2666,
+        "entityEnglishId": "Science",
+        "startingPos": 1956,
+        "endingPos": 1963,
+        "wikidataId": "Q336"
+      },
+      {
+        "id": 62,
+        "matchingTokens": [
+          302
+        ],
+        "entityId": "Computer",
+        "freebaseTypes": [
+          "/music/instrument",
+          "/music/performance_role",
+          "/education/field_of_study",
+          "/organization/organization_sector",
+          "/media_common/quotation_subject",
+          "/award/award_discipline",
+          "/business/industry",
+          "/book/book_subject",
+          "/fictional_universe/character_species",
+          "/education/school_category"
+        ],
+        "confidenceScore": 17.2,
+        "wikiLink": "http://en.wikipedia.org/wiki/Computer",
+        "matchedText": "Computer",
+        "freebaseId": "/m/01m3v",
+        "relevanceScore": 0.3702,
+        "entityEnglishId": "Computer",
+        "startingPos": 1977,
+        "endingPos": 1985,
+        "wikidataId": "Q68"
+      },
+      {
+        "id": 63,
+        "matchingTokens": [
+          302,
+          303
+        ],
+        "entityId": "Computer science",
+        "freebaseTypes": [
+          "/education/educational_degree",
+          "/education/field_of_study",
+          "/media_common/media_genre",
+          "/award/award_discipline",
+          "/atom/feed_category",
+          "/education/school_category",
+          "/conferences/conference_subject",
+          "/book/book_subject",
+          "/book/periodical_subject",
+          "/media_common/literary_genre",
+          "/award/ranked_item",
+          "/organization/organization_sector",
+          "/media_common/quotation_subject",
+          "/business/industry"
+        ],
+        "confidenceScore": 25.38,
+        "wikiLink": "http://en.wikipedia.org/wiki/Computer_science",
+        "matchedText": "Computer Science",
+        "freebaseId": "/m/01mkq",
+        "relevanceScore": 0.5492,
+        "entityEnglishId": "Computer science",
+        "startingPos": 1977,
+        "endingPos": 1993,
+        "wikidataId": "Q21198"
+      },
+      {
+        "id": 64,
+        "matchingTokens": [
+          303
+        ],
+        "entityId": "Science",
+        "freebaseTypes": [
+          "/award/award_discipline",
+          "/radio/radio_subject",
+          "/book/periodical_subject",
+          "/media_common/quotation_subject",
+          "/internet/website_category",
+          "/education/field_of_study",
+          "/theater/theater_genre",
+          "/organization/organization_sector",
+          "/book/book_subject",
+          "/media_common/literary_genre",
+          "/film/film_genre",
+          "/media_common/netflix_genre",
+          "/film/film_subject",
+          "/broadcast/genre",
+          "/tv/tv_subject",
+          "/tv/tv_genre",
+          "/media_common/media_genre"
+        ],
+        "confidenceScore": 2.209,
+        "wikiLink": "http://en.wikipedia.org/wiki/Science",
+        "matchedText": "Science",
+        "freebaseId": "/m/06mq7",
+        "relevanceScore": 0.2666,
+        "entityEnglishId": "Science",
+        "startingPos": 1986,
+        "endingPos": 1993,
+        "wikidataId": "Q336"
+      },
+      {
+        "id": 65,
+        "matchingTokens": [
+          311,
+          312,
+          313
+        ],
+        "entityId": "Big data",
+        "freebaseTypes": [
+          "/organization/organization_sector",
+          "/business/industry",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 1.046,
+        "wikiLink": "http://en.wikipedia.org/wiki/Big_data",
+        "matchedText": "Big Data Systems",
+        "freebaseId": "/m/0bs2j8q",
+        "relevanceScore": 0.6629,
+        "entityEnglishId": "Big data",
+        "startingPos": 2039,
+        "endingPos": 2055,
+        "wikidataId": "Q858810"
+      },
+      {
+        "id": 66,
+        "matchingTokens": [
+          317
+        ],
+        "entityId": "Religion",
+        "freebaseTypes": [
+          "/media_common/quotation_subject",
+          "/time/holiday_category",
+          "/broadcast/content",
+          "/tv/tv_subject",
+          "/film/film_subject",
+          "/conferences/conference_subject",
+          "/education/field_of_study",
+          "/broadcast/radio_format",
+          "/film/film_genre",
+          "/award/award_discipline",
+          "/media_common/literary_genre",
+          "/book/magazine_genre",
+          "/tv/tv_genre",
+          "/media_common/media_genre",
+          "/book/book_subject",
+          "/radio/radio_subject",
+          "/law/legal_subject"
+        ],
+        "confidenceScore": 1.683,
+        "wikiLink": "http://en.wikipedia.org/wiki/Religion",
+        "matchedText": "Religion",
+        "freebaseId": "/m/06bvp",
+        "relevanceScore": 0.1372,
+        "entityEnglishId": "Religion",
+        "startingPos": 2067,
+        "endingPos": 2075,
+        "wikidataId": "Q9174"
+      },
+      {
+        "id": 67,
+        "matchingTokens": [
+          319
+        ],
+        "entityId": "Culture",
+        "freebaseTypes": [
+          "/book/periodical_subject",
+          "/organization/organization_type",
+          "/exhibitions/exhibition_subject",
+          "/organization/organization_sector",
+          "/media_common/quotation_subject",
+          "/projects/project_focus",
+          "/media_common/media_genre",
+          "/internet/website_category",
+          "/organization/club_interest",
+          "/book/book_subject",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 1.552,
+        "wikiLink": "http://en.wikipedia.org/wiki/Culture",
+        "matchedText": "Culture",
+        "freebaseId": "/m/01ws5",
+        "relevanceScore": 0.1952,
+        "entityEnglishId": "Culture",
+        "startingPos": 2080,
+        "endingPos": 2087,
+        "wikidataId": "Q11042"
+      },
+      {
+        "id": 68,
+        "matchingTokens": [
+          325
+        ],
+        "entityId": "Computer",
+        "freebaseTypes": [
+          "/music/instrument",
+          "/music/performance_role",
+          "/education/field_of_study",
+          "/organization/organization_sector",
+          "/media_common/quotation_subject",
+          "/award/award_discipline",
+          "/business/industry",
+          "/book/book_subject",
+          "/fictional_universe/character_species",
+          "/education/school_category"
+        ],
+        "confidenceScore": 16.9,
+        "wikiLink": "http://en.wikipedia.org/wiki/Computer",
+        "matchedText": "Computer",
+        "freebaseId": "/m/01m3v",
+        "relevanceScore": 0.3702,
+        "entityEnglishId": "Computer",
+        "startingPos": 2115,
+        "endingPos": 2123,
+        "wikidataId": "Q68"
+      },
+      {
+        "id": 69,
+        "matchingTokens": [
+          335
+        ],
+        "entityId": "Automated teller machine",
+        "freebaseTypes": [
+          "/business/product_category",
+          "/law/invention",
+          "/travel/accommodation_feature",
+          "/business/product_category"
+        ],
+        "confidenceScore": 4.31,
+        "wikiLink": "http://en.wikipedia.org/wiki/Automated_teller_machine",
+        "matchedText": "ATM",
+        "freebaseId": "/m/0cldt",
+        "relevanceScore": 0.4838,
+        "entityEnglishId": "Automated teller machine",
+        "startingPos": 2176,
+        "endingPos": 2179,
+        "wikidataId": "Q81235"
+      },
+      {
+        "id": 70,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          344
+        ],
+        "entityId": "Solution stack",
+        "confidenceScore": 3.395,
+        "wikiLink": "http://en.wikipedia.org/wiki/Solution_stack",
+        "matchedText": "full-stack",
+        "freebaseId": "/m/03c8whr",
+        "relevanceScore": 0.2194,
+        "entityEnglishId": "Solution stack",
+        "startingPos": 2224,
+        "endingPos": 2234,
+        "wikidataId": "Q7558983"
+      },
+      {
+        "id": 71,
+        "matchingTokens": [
+          345
+        ],
+        "entityId": "World Wide Web",
+        "freebaseTypes": [
+          "/law/invention",
+          "/location/location",
+          "/visual_art/visual_art_medium",
+          "/computer/protocol_provider",
+          "/organization/organization_sector",
+          "/periodicals/newspaper_circulation_area",
+          "/dataworld/information_source",
+          "/cvg/cvg_platform"
+        ],
+        "confidenceScore": 2.322,
+        "wikiLink": "http://en.wikipedia.org/wiki/World_Wide_Web",
+        "matchedText": "web",
+        "freebaseId": "/m/0828v",
+        "relevanceScore": 0.5918,
+        "entityEnglishId": "World Wide Web",
+        "startingPos": 2235,
+        "endingPos": 2238,
+        "wikidataId": "Q466"
+      },
+      {
+        "id": 72,
+        "matchingTokens": [
+          84
+        ],
+        "entityId": "Traceability",
+        "confidenceScore": 2.388,
+        "wikiLink": "http://en.wikipedia.org/wiki/Traceability",
+        "matchedText": "traceability",
+        "freebaseId": "/m/0119kg_4",
+        "relevanceScore": 0.3958,
+        "entityEnglishId": "Traceability",
+        "startingPos": 528,
+        "endingPos": 540,
+        "wikidataId": "Q899704"
+      },
+      {
+        "id": 73,
+        "matchingTokens": [
+          88
+        ],
+        "entityId": "Patch (computing)",
+        "freebaseTypes": [
+          "/internet/website_category"
+        ],
+        "confidenceScore": 2.71,
+        "wikiLink": "http://en.wikipedia.org/wiki/Patch_(computing)",
+        "matchedText": "patch",
+        "freebaseId": "/m/06b1tj",
+        "relevanceScore": 0.5157,
+        "entityEnglishId": "Patch (computing)",
+        "startingPos": 551,
+        "endingPos": 556,
+        "wikidataId": "Q208218"
+      },
+      {
+        "id": 74,
+        "matchingTokens": [
+          89
+        ],
+        "entityId": "API",
+        "freebaseTypes": [
+          "/book/book_subject"
+        ],
+        "confidenceScore": 23.3,
+        "wikiLink": "http://en.wikipedia.org/wiki/API",
+        "matchedText": "API",
+        "freebaseId": "/m/0z5n",
+        "relevanceScore": 0.6273,
+        "entityEnglishId": "API",
+        "startingPos": 557,
+        "endingPos": 560,
+        "wikidataId": "Q165194"
+      },
+      {
+        "id": 75,
+        "matchingTokens": [
+          95
+        ],
+        "entityId": "Encryption",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/organization/organization_sector",
+          "/business/industry",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 7.866,
+        "wikiLink": "http://en.wikipedia.org/wiki/Encryption",
+        "matchedText": "Encryption",
+        "freebaseId": "/m/02spk",
+        "relevanceScore": 0.4227,
+        "entityEnglishId": "Encryption",
+        "startingPos": 591,
+        "endingPos": 601,
+        "wikidataId": "Q141090"
+      },
+      {
+        "id": 76,
+        "matchingTokens": [
+          106
+        ],
+        "entityId": "Downtime",
+        "confidenceScore": 2.185,
+        "wikiLink": "http://en.wikipedia.org/wiki/Downtime",
+        "matchedText": "downtime",
+        "freebaseId": "/m/026nc4f",
+        "relevanceScore": 0.3404,
+        "entityEnglishId": "Downtime",
+        "startingPos": 672,
+        "endingPos": 680,
+        "wikidataId": "Q1253369"
+      },
+      {
+        "id": 77,
+        "matchingTokens": [
+          114,
+          115
+        ],
+        "entityId": "Test case",
+        "confidenceScore": 1.526,
+        "wikiLink": "http://en.wikipedia.org/wiki/Test_case",
+        "matchedText": "test cases",
+        "freebaseId": "/m/04vbl2",
+        "relevanceScore": 0.2171,
+        "entityEnglishId": "Test case",
+        "startingPos": 735,
+        "endingPos": 745,
+        "wikidataId": "Q1568346"
+      },
+      {
+        "id": 78,
+        "matchingTokens": [
+          130
+        ],
+        "entityId": "Robustness (computer science)",
+        "confidenceScore": 1.702,
+        "wikiLink": "http://en.wikipedia.org/wiki/Robustness_(computer_science)",
+        "matchedText": "robustness",
+        "freebaseId": "/m/0bwl1vp",
+        "relevanceScore": 0.3432,
+        "entityEnglishId": "Robustness (computer science)",
+        "startingPos": 817,
+        "endingPos": 827,
+        "wikidataId": "Q2524240"
+      },
+      {
+        "id": 79,
+        "type": [
+          "ProgrammingLanguage"
+        ],
+        "matchingTokens": [
+          134
+        ],
+        "entityId": "Python (programming language)",
+        "freebaseTypes": [
+          "/interests/hobbyist",
+          "/conferences/conference_subject",
+          "/people/person",
+          "/symbols/namesake",
+          "/business/brand",
+          "/internet/api",
+          "/computer/programming_language",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 21.76,
+        "wikiLink": "http://en.wikipedia.org/wiki/Python_(programming_language)",
+        "matchedText": "Python",
+        "freebaseId": "/m/05z1_",
+        "relevanceScore": 0.5464,
+        "entityEnglishId": "Python (programming language)",
+        "startingPos": 841,
+        "endingPos": 847,
+        "wikidataId": "Q28865"
+      },
+      {
+        "id": 80,
+        "matchingTokens": [
+          135
+        ],
+        "entityId": "Tool",
+        "freebaseTypes": [
+          "/media_common/quotation_subject",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 2.584,
+        "wikiLink": "http://en.wikipedia.org/wiki/Tool",
+        "matchedText": "tool",
+        "freebaseId": "/m/07k1x",
+        "relevanceScore": 0.1936,
+        "entityEnglishId": "Tool",
+        "startingPos": 848,
+        "endingPos": 852,
+        "wikidataId": "Q39546"
+      },
+      {
+        "id": 81,
+        "matchingTokens": [
+          137
+        ],
+        "entityId": "Automation",
+        "freebaseTypes": [
+          "/education/field_of_study",
+          "/book/book_subject",
+          "/business/industry",
+          "/organization/organization_sector",
+          "/conferences/conference_subject"
+        ],
+        "confidenceScore": 1.089,
+        "wikiLink": "http://en.wikipedia.org/wiki/Automation",
+        "matchedText": "automate",
+        "freebaseId": "/m/02_84y",
+        "relevanceScore": 0.553,
+        "entityEnglishId": "Automation",
+        "startingPos": 856,
+        "endingPos": 864,
+        "wikidataId": "Q184199"
+      },
+      {
+        "id": 82,
+        "matchingTokens": [
+          149
+        ],
+        "entityId": "Efficiency",
+        "confidenceScore": 1.031,
+        "wikiLink": "http://en.wikipedia.org/wiki/Efficiency",
+        "matchedText": "efficiency",
+        "freebaseId": "/m/0119nfsk",
+        "relevanceScore": 0.1311,
+        "entityEnglishId": "Efficiency",
+        "startingPos": 932,
+        "endingPos": 942,
+        "wikidataId": "Q1034411"
+      },
+      {
+        "id": 83,
+        "matchingTokens": [
+          163,
+          164
+        ],
+        "entityId": "Systems engineering",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 2.898,
+        "wikiLink": "http://en.wikipedia.org/wiki/Systems_engineering",
+        "matchedText": "Systems Engineer",
+        "freebaseId": "/m/05h24tg",
+        "relevanceScore": 0.4296,
+        "entityEnglishId": "Systems engineering",
+        "startingPos": 1026,
+        "endingPos": 1042,
+        "wikidataId": "Q682496"
+      },
+      {
+        "id": 84,
+        "matchingTokens": [
+          164
+        ],
+        "entityId": "Engineer",
+        "freebaseTypes": [
+          "/fictional_universe/fictional_job_title",
+          "/projects/project_role",
+          "/fictional_universe/character_occupation",
+          "/business/job_title",
+          "/people/profession"
+        ],
+        "confidenceScore": 4.28,
+        "wikiLink": "http://en.wikipedia.org/wiki/Engineer",
+        "matchedText": "Engineer",
+        "freebaseId": "/m/09j9h",
+        "relevanceScore": 0.423,
+        "entityEnglishId": "Engineer",
+        "startingPos": 1034,
+        "endingPos": 1042,
+        "wikidataId": "Q81096"
+      },
+      {
+        "id": 85,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          174
+        ],
+        "entityId": "React (JavaScript library)",
+        "freebaseTypes": [
+          "/computer/software"
+        ],
+        "confidenceScore": 2.515,
+        "wikiLink": "http://en.wikipedia.org/wiki/React_(JavaScript_library)",
+        "matchedText": "React",
+        "freebaseId": "/m/012l1vxv",
+        "relevanceScore": 0.6155,
+        "entityEnglishId": "React (JavaScript library)",
+        "startingPos": 1100,
+        "endingPos": 1105,
+        "wikidataId": ""
+      },
+      {
+        "id": 86,
+        "matchingTokens": [
+          175
+        ],
+        "entityId": "Frontend and backend",
+        "confidenceScore": 5.69,
+        "wikiLink": "http://en.wikipedia.org/wiki/Frontend_and_backend",
+        "matchedText": "front-end",
+        "freebaseId": "/m/027c9k",
+        "relevanceScore": 0.5804,
+        "entityEnglishId": "Frontend and backend",
+        "startingPos": 1106,
+        "endingPos": 1115,
+        "wikidataId": "Q620167"
+      },
+      {
+        "id": 87,
+        "matchingTokens": [
+          178
+        ],
+        "entityId": "Frontend and backend",
+        "confidenceScore": 6.117,
+        "wikiLink": "http://en.wikipedia.org/wiki/Frontend_and_backend",
+        "matchedText": "back-end",
+        "freebaseId": "/m/027c9k",
+        "relevanceScore": 0.5917,
+        "entityEnglishId": "Frontend and backend",
+        "startingPos": 1127,
+        "endingPos": 1135,
+        "wikidataId": "Q620167"
+      },
+      {
+        "id": 88,
+        "matchingTokens": [
+          179
+        ],
+        "entityId": "World Wide Web",
+        "freebaseTypes": [
+          "/law/invention",
+          "/location/location",
+          "/visual_art/visual_art_medium",
+          "/computer/protocol_provider",
+          "/organization/organization_sector",
+          "/periodicals/newspaper_circulation_area",
+          "/dataworld/information_source",
+          "/cvg/cvg_platform"
+        ],
+        "confidenceScore": 2.322,
+        "wikiLink": "http://en.wikipedia.org/wiki/World_Wide_Web",
+        "matchedText": "web",
+        "freebaseId": "/m/0828v",
+        "relevanceScore": 0.5918,
+        "entityEnglishId": "World Wide Web",
+        "startingPos": 1136,
+        "endingPos": 1139,
+        "wikidataId": "Q466"
+      },
+      {
+        "id": 89,
+        "matchingTokens": [
+          179,
+          180
+        ],
+        "entityId": "Web application",
+        "freebaseTypes": [
+          "/computer/software_genre",
+          "/business/industry",
+          "/book/book_subject",
+          "/projects/project_focus",
+          "/media_common/media_genre",
+          "/computer/software_genre",
+          "/business/industry",
+          "/book/book_subject",
+          "/cvg/cvg_genre",
+          "/computer/software_license",
+          "/internet/website_category",
+          "/business/consumer_product",
+          "/organization/organization_type"
+        ],
+        "confidenceScore": 12.77,
+        "wikiLink": "http://en.wikipedia.org/wiki/Web_application",
+        "matchedText": "web application",
+        "freebaseId": "/m/01qb67",
+        "relevanceScore": 0.6659,
+        "entityEnglishId": "Web application",
+        "startingPos": 1136,
+        "endingPos": 1151,
+        "wikidataId": "Q189210"
+      },
+      {
+        "id": 90,
+        "matchingTokens": [
+          180
+        ],
+        "entityId": "Application software",
+        "freebaseTypes": [
+          "/education/field_of_study",
+          "/computer/software_genre",
+          "/business/product_category",
+          "/business/industry",
+          "/organization/organization_type",
+          "/book/book_subject"
+        ],
+        "confidenceScore": 1.693,
+        "wikiLink": "http://en.wikipedia.org/wiki/Application_software",
+        "matchedText": "application",
+        "freebaseId": "/m/02bj4k",
+        "relevanceScore": 0.5043,
+        "entityEnglishId": "Application software",
+        "startingPos": 1140,
+        "endingPos": 1151,
+        "wikidataId": "Q166142"
+      },
+      {
+        "id": 91,
+        "type": [
+          "Work",
+          "Website",
+          "Software"
+        ],
+        "matchingTokens": [
+          183
+        ],
+        "entityId": "Amazon Web Services",
+        "freebaseTypes": [
+          "/computer/software",
+          "/internet/website",
+          "/organization/organization"
+        ],
+        "confidenceScore": 6.333,
+        "wikiLink": "http://en.wikipedia.org/wiki/Amazon_Web_Services",
+        "matchedText": "AWS",
+        "freebaseId": "/m/0gfjm_p",
+        "relevanceScore": 0.7253,
+        "entityEnglishId": "Amazon Web Services",
+        "startingPos": 1164,
+        "endingPos": 1167,
+        "wikidataId": "Q456157",
+        "crunchbaseId": "amazon-web-services",
+        "permid": "5038056692"
+      },
+      {
+        "id": 92,
+        "type": [
+          "Work",
+          "Software"
+        ],
+        "matchingTokens": [
+          186
+        ],
+        "entityId": "Amazon Elastic Compute Cloud",
+        "freebaseTypes": [
+          "/computer/software",
+          "/computer/operating_system"
+        ],
+        "confidenceScore": 5.409,
+        "wikiLink": "http://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud",
+        "matchedText": "EC2",
+        "freebaseId": "/m/02rkll_",
+        "relevanceScore": 0.6678,
+        "entityEnglishId": "Amazon Elastic Compute Cloud",
+        "startingPos": 1178,
+        "endingPos": 1181,
+        "wikidataId": "Q2072356"
+      },
+      {
+        "id": 93,
+        "type": [
+          "Person"
+        ],
+        "matchingTokens": [
+          166
+        ],
+        "entityId": "Niagara",
+        "freebaseTypes": [
+          "/people/person"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Niagara",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1063,
+        "endingPos": 1070
+      },
+      {
+        "id": 94,
+        "type": [
+          "Person"
+        ],
+        "matchingTokens": [
+          0,
+          1
+        ],
+        "entityId": "Emmanuel Akinlosotu",
+        "freebaseTypes": [
+          "/people/person"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Emmanuel Akinlosotu",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 0,
+        "endingPos": 19
+      },
+      {
+        "id": 95,
+        "type": [
+          "Email"
+        ],
+        "matchingTokens": [
+          3
+        ],
+        "entityId": "akin8780@mylaurier.ca",
+        "freebaseTypes": [
+          ""
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "akin8780@mylaurier.ca",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 22,
+        "endingPos": 43
+      },
+      {
+        "id": 96,
+        "type": [
+          "Place"
+        ],
+        "matchingTokens": [
+          11
+        ],
+        "entityId": "Waterloo",
+        "freebaseTypes": [
+          "/location/location"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Waterloo",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 66,
+        "endingPos": 74
+      },
+      {
+        "id": 97,
+        "type": [
+          "Company"
+        ],
+        "matchingTokens": [
+          46,
+          47,
+          48
+        ],
+        "entityId": "Key Mediation Service",
+        "freebaseTypes": [
+          "/organization/organization"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Key Mediation Service",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 293,
+        "endingPos": 314
+      },
+      {
+        "id": 98,
+        "type": [
+          "Company"
+        ],
+        "matchingTokens": [
+          177
+        ],
+        "entityId": "Strapi",
+        "freebaseTypes": [
+          "/organization/organization"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Strapi",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1120,
+        "endingPos": 1126,
+        "crunchbaseId": "strapi",
+        "permid": "5071139727"
+      },
+      {
+        "id": 99,
+        "type": [
+          "Company"
+        ],
+        "matchingTokens": [
+          247,
+          248
+        ],
+        "entityId": "Neo Financial",
+        "freebaseTypes": [
+          "/organization/organization"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Neo Financial",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1609,
+        "endingPos": 1622
+      },
+      {
+        "id": 100,
+        "matchingTokens": [
+          33
+        ],
+        "entityId": "Engineer",
+        "freebaseTypes": [
+          "/fictional_universe/fictional_job_title",
+          "/projects/project_role",
+          "/fictional_universe/character_occupation",
+          "/business/job_title",
+          "/people/profession"
+        ],
+        "confidenceScore": 1.301,
+        "wikiLink": "http://en.wikipedia.org/wiki/Engineer",
+        "matchedText": "Engineer",
+        "freebaseId": "/m/09j9h",
+        "relevanceScore": 0.423,
+        "entityEnglishId": "Engineer",
+        "startingPos": 205,
+        "endingPos": 213,
+        "wikidataId": "Q81096"
+      },
+      {
+        "id": 101,
+        "matchingTokens": [
+          40,
+          41
+        ],
+        "entityId": "Agile software development",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/business/industry"
+        ],
+        "confidenceScore": 2.775,
+        "wikiLink": "http://en.wikipedia.org/wiki/Agile_software_development",
+        "matchedText": "agile methodologies",
+        "freebaseId": "/m/02zhbn",
+        "relevanceScore": 0.648,
+        "entityEnglishId": "Agile software development",
+        "startingPos": 252,
+        "endingPos": 271,
+        "wikidataId": "Q30232"
+      },
+      {
+        "id": 102,
+        "matchingTokens": [
+          41
+        ],
+        "entityId": "Methodology",
+        "freebaseTypes": [
+          "/book/book_subject"
+        ],
+        "confidenceScore": 2.713,
+        "wikiLink": "http://en.wikipedia.org/wiki/Methodology",
+        "matchedText": "methodologies",
+        "freebaseId": "/m/02xgdd",
+        "relevanceScore": 0.3288,
+        "entityEnglishId": "Methodology",
+        "startingPos": 258,
+        "endingPos": 271,
+        "wikidataId": "Q185698"
+      },
+      {
+        "id": 103,
+        "type": [
+          "Time"
+        ],
+        "matchingTokens": [
+          254,
+          255
+        ],
+        "entityId": "2022-09-01T00:00:00.000+00:00",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Sept. 2022",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1653,
+        "endingPos": 1663
+      },
+      {
+        "id": 104,
+        "type": [
+          "Company"
+        ],
+        "matchingTokens": [
+          265,
+          266
+        ],
+        "entityId": "Neo Financial",
+        "freebaseTypes": [
+          "/organization/organization"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Neo Financial",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1723,
+        "endingPos": 1736
+      },
+      {
+        "id": 105,
+        "type": [
+          "Place"
+        ],
+        "matchingTokens": [
+          35
+        ],
+        "entityId": "Waterloo",
+        "freebaseTypes": [
+          "/location/location"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Waterloo",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 229,
+        "endingPos": 237
+      },
+      {
+        "id": 106,
+        "type": [
+          "Place"
+        ],
+        "matchingTokens": [
+          260
+        ],
+        "entityId": "Waterloo",
+        "freebaseTypes": [
+          "/location/location"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Waterloo",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1697,
+        "endingPos": 1705
+      },
+      {
+        "id": 107,
+        "type": [
+          "Place"
+        ],
+        "matchingTokens": [
+          305
+        ],
+        "entityId": "Waterloo",
+        "freebaseTypes": [
+          "/location/location"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Waterloo",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 2008,
+        "endingPos": 2016
+      },
+      {
+        "id": 108,
+        "matchingTokens": [
+          53
+        ],
+        "entityId": "Computer network",
+        "freebaseTypes": [
+          "/education/field_of_study",
+          "/book/book_subject",
+          "/business/industry"
+        ],
+        "confidenceScore": 1.516,
+        "wikiLink": "http://en.wikipedia.org/wiki/Computer_network",
+        "matchedText": "network",
+        "freebaseId": "/m/025szts",
+        "relevanceScore": 0.5846,
+        "entityEnglishId": "Computer network",
+        "startingPos": 339,
+        "endingPos": 346,
+        "wikidataId": "Q1301371"
+      },
+      {
+        "id": 109,
+        "matchingTokens": [
+          70
+        ],
+        "entityId": "Data science",
+        "freebaseTypes": [
+          "/people/profession"
+        ],
+        "confidenceScore": 2.919,
+        "wikiLink": "http://en.wikipedia.org/wiki/Data_science",
+        "matchedText": "data-driven",
+        "freebaseId": "/m/0jt3_q3",
+        "relevanceScore": 0.4337,
+        "entityEnglishId": "Data science",
+        "startingPos": 430,
+        "endingPos": 441,
+        "wikidataId": "Q2374463"
+      },
+      {
+        "id": 110,
+        "matchingTokens": [
+          71,
+          72
+        ],
+        "entityId": "Directed graph",
+        "confidenceScore": 5.746,
+        "wikiLink": "http://en.wikipedia.org/wiki/Directed_graph",
+        "matchedText": "directed graph",
+        "freebaseId": "/m/04m_mb4",
+        "relevanceScore": 0.07441,
+        "entityEnglishId": "Directed graph",
+        "startingPos": 442,
+        "endingPos": 456,
+        "wikidataId": "Q1137726"
+      },
+      {
+        "id": 111,
+        "matchingTokens": [
+          72
+        ],
+        "entityId": "Graph (abstract data type)",
+        "confidenceScore": 1.826,
+        "wikiLink": "http://en.wikipedia.org/wiki/Graph_(abstract_data_type)",
+        "matchedText": "graph",
+        "freebaseId": "/m/02pvwf",
+        "relevanceScore": 0.2984,
+        "entityEnglishId": "Graph (abstract data type)",
+        "startingPos": 451,
+        "endingPos": 456,
+        "wikidataId": "Q2479726"
+      },
+      {
+        "id": 112,
+        "matchingTokens": [
+          79
+        ],
+        "entityId": "Encryption",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/organization/organization_sector",
+          "/business/industry",
+          "/education/field_of_study"
+        ],
+        "confidenceScore": 9.393,
+        "wikiLink": "http://en.wikipedia.org/wiki/Encryption",
+        "matchedText": "encryption",
+        "freebaseId": "/m/02spk",
+        "relevanceScore": 0.4227,
+        "entityEnglishId": "Encryption",
+        "startingPos": 494,
+        "endingPos": 504,
+        "wikidataId": "Q141090"
+      },
+      {
+        "id": 113,
+        "matchingTokens": [
+          79,
+          80
+        ],
+        "entityId": "Key (cryptography)",
+        "confidenceScore": 3.39,
+        "wikiLink": "http://en.wikipedia.org/wiki/Key_(cryptography)",
+        "matchedText": "encryption keys",
+        "freebaseId": "/m/0dxyr",
+        "relevanceScore": 0.2048,
+        "entityEnglishId": "Key (cryptography)",
+        "startingPos": 494,
+        "endingPos": 509,
+        "wikidataId": "Q471771"
+      },
+      {
+        "id": 114,
+        "type": [
+          "Place"
+        ],
+        "matchingTokens": [
+          119,
+          120
+        ],
+        "entityId": "Key States",
+        "freebaseTypes": [
+          "/location/location"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Key States",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 759,
+        "endingPos": 769
+      },
+      {
+        "id": 115,
+        "type": [
+          "Time"
+        ],
+        "matchingTokens": [
+          28,
+          29
+        ],
+        "entityId": "2023-12-01T00:00:00.000+00:00",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Dec. 2023",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 173,
+        "endingPos": 182
+      },
+      {
+        "id": 116,
+        "type": [
+          "Work",
+          "Agent",
+          "Website",
+          "Organisation",
+          "Company"
+        ],
+        "matchingTokens": [
+          15
+        ],
+        "entityId": "LinkedIn",
+        "freebaseTypes": [
+          "/book/book_subject",
+          "/business/customer",
+          "/dataworld/data_provider",
+          "/dataworld/information_source",
+          "/internet/website"
+        ],
+        "confidenceScore": 8.275,
+        "wikiLink": "http://en.wikipedia.org/wiki/LinkedIn",
+        "matchedText": "LinkedIn",
+        "freebaseId": "/m/03vgrr",
+        "relevanceScore": 0.484,
+        "entityEnglishId": "LinkedIn",
+        "startingPos": 81,
+        "endingPos": 89,
+        "wikidataId": "Q213660",
+        "crunchbaseId": "linkedin",
+        "lei": "5493001S6ND3ULAKYF67",
+        "permid": "4296977663"
+      },
+      {
+        "id": 117,
+        "type": [
+          "Work",
+          "Website"
+        ],
+        "matchingTokens": [
+          17
+        ],
+        "entityId": "GitHub",
+        "freebaseTypes": [
+          "/internet/website"
+        ],
+        "confidenceScore": 29.3,
+        "wikiLink": "http://en.wikipedia.org/wiki/GitHub",
+        "matchedText": "GitHub",
+        "freebaseId": "/m/04g0kcw",
+        "relevanceScore": 0.4666,
+        "entityEnglishId": "GitHub",
+        "startingPos": 92,
+        "endingPos": 98,
+        "wikidataId": "Q364",
+        "crunchbaseId": "github",
+        "permid": "5037097726"
+      },
+      {
+        "id": 118,
+        "type": [
+          "Agent",
+          "Organisation",
+          "Company"
+        ],
+        "matchingTokens": [
+          22
+        ],
+        "entityId": "OpenText",
+        "freebaseTypes": [
+          "/business/business_operation",
+          "/organization/organization",
+          "/business/employer",
+          "/business/business_operation",
+          "/organization/organization",
+          "/business/employer",
+          "/business/issuer",
+          "/business/business_operation",
+          "/business/employer",
+          "/organization/organization"
+        ],
+        "confidenceScore": 10.3,
+        "wikiLink": "http://en.wikipedia.org/wiki/OpenText",
+        "matchedText": "OpenText",
+        "freebaseId": "/m/03ctsj",
+        "relevanceScore": 0.4795,
+        "entityEnglishId": "OpenText",
+        "startingPos": 122,
+        "endingPos": 130,
+        "wikidataId": "Q2025791",
+        "crunchbaseId": "open-text",
+        "lei": "549300HP7ONDQODZJV16",
+        "figi": "BBG001SBS5H2",
+        "permid": "5067943747"
+      },
+      {
+        "id": 119,
+        "matchingTokens": [
+          31
+        ],
+        "entityId": "Software",
+        "freebaseTypes": [
+          "/education/school_category",
+          "/broadcast/genre",
+          "/media_common/quotation_subject",
+          "/business/consumer_product",
+          "/business/product_category",
+          "/organization/organization_sector",
+          "/computer/software_genre",
+          "/business/industry",
+          "/internet/website_category",
+          "/media_common/media_genre",
+          "/business/competitive_space",
+          "/book/book_subject",
+          "/organization/organization"
+        ],
+        "confidenceScore": 21.2,
+        "wikiLink": "http://en.wikipedia.org/wiki/Software",
+        "matchedText": "Software",
+        "freebaseId": "/m/01mf0",
+        "relevanceScore": 0.5897,
+        "entityEnglishId": "Software",
+        "startingPos": 184,
+        "endingPos": 192,
+        "wikidataId": "Q7397"
+      },
+      {
+        "id": 120,
+        "matchingTokens": [
+          31,
+          32
+        ],
+        "entityId": "Software development",
+        "freebaseTypes": [
+          "/organization/role",
+          "/book/book_subject",
+          "/business/employer",
+          "/people/profession",
+          "/business/job_title",
+          "/film/film_job",
+          "/organization/contact_category",
+          "/projects/project_role",
+          "/computer/software_genre",
+          "/internet/website_category",
+          "/award/award_discipline",
+          "/people/profession",
+          "/media_common/quotation_subject",
+          "/organization/organization_type",
+          "/conferences/conference_subject",
+          "/organization/organization_sector",
+          "/business/brand",
+          "/organization/contact_category",
+          "/business/industry",
+          "/business/consumer_product",
+          "/education/field_of_study",
+          "/award/competition_type"
+        ],
+        "confidenceScore": 11.08,
+        "wikiLink": "http://en.wikipedia.org/wiki/Software_development",
+        "matchedText": "Software Development",
+        "freebaseId": "/m/025sbhf",
+        "relevanceScore": 0.5361,
+        "entityEnglishId": "Software development",
+        "startingPos": 184,
+        "endingPos": 204,
+        "wikidataId": "Q638608"
+      },
+      {
+        "id": 121,
+        "type": [
+          "Company"
+        ],
+        "matchingTokens": [
+          324,
+          325,
+          326,
+          327
+        ],
+        "entityId": "Laurier Computer Science Club",
+        "freebaseTypes": [
+          "/organization/organization"
+        ],
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Laurier Computer Science Club",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 2107,
+        "endingPos": 2136
+      },
+      {
+        "id": 122,
+        "type": [
+          "Time"
+        ],
+        "matchingTokens": [
+          159,
+          160
+        ],
+        "entityId": "2022-12-01T00:00:00.000+00:00",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Dec. 2022",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1009,
+        "endingPos": 1018
+      },
+      {
+        "id": 123,
+        "type": [
+          "Number"
+        ],
+        "matchingTokens": [
+          189
+        ],
+        "entityId": "53",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "53",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1189,
+        "endingPos": 1191
+      },
+      {
+        "id": 124,
+        "type": [
+          "Time"
+        ],
+        "matchingTokens": [
+          252
+        ],
+        "entityId": "2022-01-01T00:00:00.000+00:00",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "2022",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1646,
+        "endingPos": 1650
+      },
+      {
+        "id": 125,
+        "type": [
+          "Time"
+        ],
+        "matchingTokens": [
+          292,
+          293
+        ],
+        "entityId": "2024-08-01T00:00:00.000+00:00",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Aug. 2024",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1933,
+        "endingPos": 1942
+      },
+      {
+        "id": 126,
+        "type": [
+          "Number"
+        ],
+        "matchingTokens": [
+          5
+        ],
+        "entityId": "1",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "+1",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 46,
+        "endingPos": 48,
+        "unit": "Number"
+      },
+      {
+        "id": 127,
+        "type": [
+          "Number"
+        ],
+        "matchingTokens": [
+          151
+        ],
+        "entityId": "30",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "30",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 946,
+        "endingPos": 948,
+        "unit": "Number"
+      },
+      {
+        "id": 128,
+        "type": [
+          "Time"
+        ],
+        "matchingTokens": [
+          26
+        ],
+        "entityId": "2023-01-01T00:00:00.000+00:00",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "2023",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 166,
+        "endingPos": 170
+      },
+      {
+        "id": 129,
+        "type": [
+          "Phone"
+        ],
+        "matchingTokens": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "entityId": "(+1) 9053246652",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "+1 (905) 324-6652",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 46,
+        "endingPos": 63
+      },
+      {
+        "id": 130,
+        "type": [
+          "Number"
+        ],
+        "matchingTokens": [
+          290
+        ],
+        "entityId": "2020",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "2020",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 1926,
+        "endingPos": 1930,
+        "unit": "Number"
+      },
+      {
+        "id": 131,
+        "type": [
+          "Time"
+        ],
+        "matchingTokens": [
+          156,
+          157
+        ],
+        "entityId": "2022-09-01T00:00:00.000+00:00",
+        "confidenceScore": 0.5,
+        "wikiLink": "",
+        "matchedText": "Sept. 2022",
+        "relevanceScore": 0,
+        "entityEnglishId": "",
+        "startingPos": 996,
+        "endingPos": 1006
+      }
+    ]
+  },
+  "time": 0.1121,
+  "ok": true
+}

@@ -24,7 +24,7 @@ router.post('/login', async (req: Request, res: Response, next: NextFunction) =>
         return next(err);
     }
         
-    const token = jwt.sign({ imgUrl: user.profile_picture, email, first_name: user.first_name, last_name: user.last_name, userId: user._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
+    const token = jwt.sign({ resumeUrl: user.resume, imgUrl: user.profile_picture, email, first_name: user.first_name, last_name: user.last_name, userId: user._id }, process.env.JWT_KEY!, { expiresIn: '1h' })
 
     res.status(200).send({ user, token })
 

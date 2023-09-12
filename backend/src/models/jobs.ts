@@ -37,7 +37,8 @@ const JobSchema = new mongoose.Schema({
         people_also_viewed: [CoreJobSchema], 
         description: String,
         requirements: String
-    }
+    },
+    tokens: {}
 });
 
 export const Job = mongoose.model('Job', JobSchema, 'jobs_collection');

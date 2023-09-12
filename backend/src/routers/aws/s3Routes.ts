@@ -23,7 +23,7 @@ router.get('/generate-presigned-url', async (req: Request, res: Response, next: 
     params.ContentType = req.query.filetype as string;
   }
 
-  s3.getSignedUrl('putObject', params, (err, url) => {
+  s3.getSignedUrl(operation, params, (err, url) => {
     if (err) {
       console.error("Error generating presigned URL:", err);
       return res.status(500).send(err.message); 
@@ -32,5 +32,23 @@ router.get('/generate-presigned-url', async (req: Request, res: Response, next: 
   });
 
 });
+
+router.delete('/delete-object', async (req: Request, res: Response, next: NextFunction) => {
+  const fileName: string = req.query.filename as string;
+  
+  const params = {
+      Bucket: 'intern-sync-bucket',
+      Key: fileName
+  };
+
+  s3.deleteObject(params, (err, data) => {
+      if (err) {
+          console.error("Error deleting object from S3:", err);
+          return res.status(500).send(err.message); 
+      }
+      res.json({ message: "Object deleted successfully" });
+  });
+});
+
 
 export { router as s3Router }

@@ -1,7 +1,7 @@
 <div class="menu">
     <div class="user-info" (click)="toggleDropdown()">
         <h2>{{ name }}</h2>
-        <img class="profile-picture" src="assets/Portrait_Placeholder.png" alt="profile pic"> 
+        <img class="profile-picture" [src]="profilePicUrl" alt="profile pic"> 
     </div>
     <div class="dropdown" *ngIf="isDropdownVisible">
         <a class="menu-link">Settings</a>

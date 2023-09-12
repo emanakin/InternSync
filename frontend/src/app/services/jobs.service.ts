@@ -3,8 +3,10 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, catchError, map, throwError } from 'rxjs';
 import { Job } from '../dto/job.model';
 import { AuthService } from './auth.service';
-import { JwtPayload } from 'jwt-decode';
 import { FilterObj } from '../dto/filterProps.model';
+import { environment } from 'src/enviroments/environment';
+
+const apiEndpoint = environment.apiEndpoint;
 
 @Injectable({
   providedIn: 'root'
@@ -28,7 +30,7 @@ export class JobsService {
       });
     });
     
-    return this.http.get<Job>('http://localhost:3000/api/jobs', { headers, params })
+    return this.http.get<Job>('${apiEndpoint}api/jobs', { headers, params })
       .pipe(
           catchError(errorRes => {
               let errorMessage = 'An unknown error occurred!';
@@ -48,7 +50,7 @@ export class JobsService {
         'Authorization': `Bearer ${token}`
     });
 
-    return this.http.get<{ totalJobs: number }>('http://localhost:3000/api/jobs/count', { headers })
+    return this.http.get<{ totalJobs: number }>('${apiEndpoint}api/jobs/count', { headers })
       .pipe(
         map(response => response.totalJobs),
         catchError(error => {
@@ -66,7 +68,7 @@ export class JobsService {
     });
 
     return this.http.get<{ topLocations: string[], topCompanies: string[] }>(
-      'http://localhost:3000/api/jobs/topData', { headers })
+      '${apiEndpoint}api/jobs/topData', { headers })
       .pipe(
         catchError(error => {
           console.error("Error fetching top data:", error);

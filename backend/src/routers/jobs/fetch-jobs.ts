@@ -3,10 +3,18 @@ import { Job } from "../../models/jobs";
 import { currentUser } from "../../../common";
 import { requireAuth } from "../../../common";
 import { JobOverview, JobSortOverview } from "../../dto/jobs";
+import { User } from "../../models/user";
+import { UserScores } from "../../models/scores";
+import mongoose from "mongoose";
+import { computeScoresForAllJobs } from "../../algo/score";
 
 const router = Router()
 
 router.get('/api/jobs', currentUser, requireAuth, async (req: Request, res: Response, next: NextFunction) => {
+    if (!req.currentUser?.email) {
+        return next(new Error("User not logged in"));
+    }
+
     try {
         const page = parseInt(req.query.page as string) || 1;
         const limit = 10;
@@ -21,10 +29,7 @@ router.get('/api/jobs', currentUser, requireAuth, async (req: Request, res: Resp
 
         let query: Partial<JobOverview> = {};
 
-        // Resume filter (TBD)
-        // if (filter.Resume.length > 0) {
-        //     query['Resume'] = { $in: filter.Resume };
-        // }
+        const sortByResume = Array.isArray(req.query.Resume) && req.query.Resume[0] === 'Resume';
 
         // Location filter
         const locationFilter: string[] = filter.Location.map(String);
@@ -47,7 +52,21 @@ router.get('/api/jobs', currentUser, requireAuth, async (req: Request, res: Resp
             sortQuery['job_posting_date'] = 1;
         }
 
-        const jobs = await Job.find(query).sort(sortQuery).skip(skip).limit(limit);
+        let jobs = await Job.find(query).sort(sortQuery).skip(skip).limit(limit);
+
+        if (sortByResume) {
+            if (!req.currentUser?.email) return next(new Error("User not logged in"));
+
+            const userScores = await UserScores.findOne({ userId: req.currentUser.email });
+
+            if (!userScores) {
+                const scores = await computeScoresForAllJobs(req.currentUser.email);
+                const newUserScores = new UserScores({ userId: req.currentUser.email, scores });
+                await newUserScores.save();
+            } else {
+
+            }
+        }
 
         res.json({ success: true, data: jobs });
     } catch (error) {

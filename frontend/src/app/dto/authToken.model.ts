@@ -5,5 +5,6 @@ export interface AuthToken {
     userId: string;
     first_name: string;
     last_name: string;
-    imgUrl: string
+    imgUrl: string;
+    resumeUrl: string;
 }

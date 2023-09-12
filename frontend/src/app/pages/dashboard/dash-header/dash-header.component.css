@@ -13,3 +13,9 @@ h2 {
     font-weight: 600;
     margin-bottom: 0;
 }
+
+.resume-upload {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

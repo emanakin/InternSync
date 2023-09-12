@@ -14,6 +14,7 @@ export interface JobOverview {
     job_posting_date?: Date | JobQueryCriteria;
     job_company?: string;
     job_details?: {}; 
+    resume?: string | JobQueryCriteria;
 }
   
 export type SortOrder = 1 | -1;
@@ -27,4 +28,5 @@ export  interface JobSortOverview {
   job_posting_date?: SortOrder;
   job_company?: SortOrder;
   job_details?: SortOrder;
+  resume?: SortOrder;
 }

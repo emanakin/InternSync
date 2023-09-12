@@ -11,7 +11,7 @@ import { AuthToken } from 'src/app/dto/authToken.model';
 })
 export class UserMenuComponent {
   isDropdownVisible: boolean = false;
-  profilePicUrl: string;
+  profilePicUrl: string = "assets/Portrait_Placeholder.png";
   name: string;
   
   constructor(
@@ -22,6 +22,7 @@ export class UserMenuComponent {
   ngOnInit(){
     const token: AuthToken = this.authService.getDecodedToken()
     this.name = token.first_name + ' ' + token.last_name
+    this.getProfilePictureUrl(token.imgUrl);
   }
 
   onSignOut(): void {
@@ -31,7 +32,7 @@ export class UserMenuComponent {
 
   getProfilePictureUrl(imageUrl: string): void {
     this.s3Service.getAccessPresignedUrl(imageUrl).subscribe(data => {
-        this.profilePicUrl = data.url;
+      this.profilePicUrl = data.url;
     });
   }
 

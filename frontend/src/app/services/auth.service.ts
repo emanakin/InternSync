@@ -5,10 +5,14 @@ import { Router } from '@angular/router';
 import { User } from "../dto/user.model";
 import jwt_decode from 'jwt-decode';
 import { AuthToken } from "../dto/authToken.model";
+import { environment } from "src/enviroments/environment";
+
+const apiEndpoint = environment.apiEndpoint;
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  constructor(private http: HttpClient, private router: Router) {}
+    
+    constructor(private http: HttpClient, private router: Router) {}
 
     /**
      *   Sends a signup request to the backend to create a new user account.
@@ -25,7 +29,7 @@ export class AuthService {
      */
     signup(user: User) {
         return this.http.post<User>(
-        'http://localhost:3000/signup', { user })
+            '${apiEndpoint}signup', { user })
         .pipe(  
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';
@@ -54,7 +58,7 @@ export class AuthService {
     login(user: User) {
         console.log('user in auth service', user)
         return this.http.post<User>(
-        'http://localhost:3000/login',{ user })
+        '${apiEndpoint}login',{ user })
         .pipe(
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';
@@ -92,6 +96,16 @@ export class AuthService {
         const decodedToken: AuthToken = jwt_decode(token);
         console.log('token fetched:', decodedToken)
         return decodedToken;
+    }
+
+    getEmail() {
+        let token: AuthToken = this.getDecodedToken()
+        return token.email
+    }
+
+    getResumeRef() {
+        let token: AuthToken = this.getDecodedToken();
+        return token.resumeUrl;
     }
 }
 
