@@ -69,7 +69,8 @@ const start = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URL)
     } catch (err) {
-        throw new Error('Database connection rror')
+        console.error("Database connection failed:", err);
+        throw new Error('Database connection error')
     }
 
     const PORT = process.env.PORT || 3000;
