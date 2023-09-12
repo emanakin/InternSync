@@ -92,7 +92,6 @@ const start = () => __awaiter(void 0, void 0, void 0, function* () {
         throw new Error('AWS_ACCESS_KEY required!');
     if (!process.env.AWS_SECRET_ACCESS_KEY)
         throw new Error('AWS_SECRET_ACCESS_KEY required!');
-    console.log(process.env.MONGO_URL);
     try {
         yield mongoose_1.default.connect(process.env.MONGO_URL);
     }
