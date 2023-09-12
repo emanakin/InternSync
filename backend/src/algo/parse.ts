@@ -1,18 +1,33 @@
-import { S3 } from 'aws-sdk';  
+import { s3Client } from '../app';
 import pdf from 'pdf-parse';
 import mammoth from 'mammoth';
+import { GetObjectCommand } from '@aws-sdk/client-s3';
+import { Readable } from 'stream';
+
+function streamToBuffer(stream: Readable): Promise<Buffer> {
+    return new Promise((resolve, reject) => {
+        const chunks: any[] = [];
+        stream.on('data', (chunk) => chunks.push(chunk));
+        stream.on('error', reject);
+        stream.on('end', () => resolve(Buffer.concat(chunks)));
+    });
+}
 
 async function fetchResumeFromS3(reference: string): Promise<Buffer> {
-    const s3 = new S3();  // Initialize with appropriate configurations
-
     const params = {
         Bucket: "intern-sync-bucket",
         Key: reference
     };
 
-    const data = await s3.getObject(params).promise();
+    const command = new GetObjectCommand(params);
 
-    return data.Body as Buffer;
+    try {
+        const data = await s3Client.send(command);
+        return await streamToBuffer(data.Body as Readable);
+    } catch (error) {
+        console.error("Error fetching from S3:", error);
+        throw new Error("No data returned from S3"); 
+    }
 }
 
 export async function parseResume(reference: string): Promise<string> {

@@ -29,7 +29,7 @@ export class AuthService {
      */
     signup(user: User) {
         return this.http.post<User>(
-            '${apiEndpoint}signup', { user })
+            apiEndpoint+'signup', { user })
         .pipe(  
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';
@@ -58,7 +58,7 @@ export class AuthService {
     login(user: User) {
         console.log('user in auth service', user)
         return this.http.post<User>(
-        '${apiEndpoint}login',{ user })
+        apiEndpoint+'login',{ user })
         .pipe(
             catchError(errorRes => {
                 let errorMessage = 'An unknown error occurred!';

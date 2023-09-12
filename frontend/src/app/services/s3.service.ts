@@ -17,14 +17,14 @@ export class S3Service {
           .set('filename', fileName)
           .set('filetype', file.type)
           .set('operation', 'putObject');
-        return this.http.get<{ url: string }>('${apiEndpoint}generate-presigned-url', { params });
+        return this.http.get<{ url: string }>(apiEndpoint+'generate-presigned-url', { params });
     }
     
     getAccessPresignedUrl(fileName: string): Observable<{ url: string }> {
         const params = new HttpParams()
           .set('filename', fileName)
           .set('operation', 'getObject');
-        return this.http.get<{ url: string }>('${apiEndpoint}generate-presigned-url', { params });
+        return this.http.get<{ url: string }>(apiEndpoint+'generate-presigned-url', { params });
     }
     
     uploadFileToS3(presignedUrl: string, file: File): Observable<void> {
@@ -34,7 +34,7 @@ export class S3Service {
     }
     
     deleteObjectFromS3(fileName: string): Observable<any> {
-        return this.http.delete('${apiEndpoint}delete-object', {
+        return this.http.delete(apiEndpoint+'delete-object', {
             params: new HttpParams().set('filename', fileName)
         });
     }

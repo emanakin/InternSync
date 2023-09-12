@@ -30,7 +30,7 @@ export class JobsService {
       });
     });
     
-    return this.http.get<Job>('${apiEndpoint}api/jobs', { headers, params })
+    return this.http.get<Job>(apiEndpoint+'api/jobs', { headers, params })
       .pipe(
           catchError(errorRes => {
               let errorMessage = 'An unknown error occurred!';
@@ -50,7 +50,7 @@ export class JobsService {
         'Authorization': `Bearer ${token}`
     });
 
-    return this.http.get<{ totalJobs: number }>('${apiEndpoint}api/jobs/count', { headers })
+    return this.http.get<{ totalJobs: number }>(apiEndpoint+'api/jobs/count', { headers })
       .pipe(
         map(response => response.totalJobs),
         catchError(error => {
@@ -68,7 +68,7 @@ export class JobsService {
     });
 
     return this.http.get<{ topLocations: string[], topCompanies: string[] }>(
-      '${apiEndpoint}api/jobs/topData', { headers })
+      apiEndpoint+'api/jobs/topData', { headers })
       .pipe(
         catchError(error => {
           console.error("Error fetching top data:", error);
