@@ -13,6 +13,7 @@ export class UserService {
 
     // Update user's resume reference
     updateResumeReference(email: string, resume: string) {
+        console.log(apiEndpoint);
         return this.http.post(
             `${apiEndpoint}update-resume`,
             { email, resume }

@@ -16,6 +16,7 @@ export class JobsService {
   constructor(private http: HttpClient, private authService: AuthService) { }
 
   getJobs(page: number = 1, filter: FilterObj): Observable<any> {
+    console.log('url: ', apiEndpoint);
     const token = this.authService.getToken();
 
     const headers = new HttpHeaders({
@@ -61,6 +62,7 @@ export class JobsService {
   }
 
   getTopLocationAndCompanyData(): Observable<{ topLocations: string[], topCompanies: string[] }> {
+    console.log('url: ', apiEndpoint);
     const token = this.authService.getToken();
 
     const headers = new HttpHeaders({

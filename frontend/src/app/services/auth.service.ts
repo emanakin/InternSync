@@ -28,6 +28,7 @@ export class AuthService {
      *   @throws {string} - Throws an error message if the signup process encounters an error.
      */
     signup(user: User) {
+        console.log('url: ', apiEndpoint);
         return this.http.post<User>(
             apiEndpoint+'signup', { user })
         .pipe(  
@@ -57,6 +58,7 @@ export class AuthService {
      */
     login(user: User) {
         console.log('user in auth service', user)
+        console.log('url: ', apiEndpoint);
         return this.http.post<User>(
         apiEndpoint+'login',{ user })
         .pipe(

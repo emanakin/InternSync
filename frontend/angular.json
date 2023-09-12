@@ -16,7 +16,7 @@
             "allowedCommonJsDependencies": [
               "moment"
             ],
-            "outputPath": "../backend/public",
+            "outputPath": "../backend/dist/src/public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -38,6 +38,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],              
               "budgets": [
                 {
                   "type": "initial",
