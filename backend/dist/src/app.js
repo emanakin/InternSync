@@ -73,9 +73,9 @@ app.use(routers_1.loginRouter);
 app.use(logout_1.logoutRouter);
 app.use(fetch_jobs_1.jobsRouter);
 app.use(resume_1.resumeRouter);
-app.use(express_1.default.static(path_1.default.join(__dirname, './public')));
+app.use(express_1.default.static(path_1.default.join(__dirname, '/public')));
 app.get('*', (req, res) => {
-    res.sendFile(path_1.default.join(__dirname, './public/index.html'));
+    res.sendFile(path_1.default.join(__dirname, '/public/index.html'));
 });
 app.use((error, req, res, next) => {
     if (error.status) {

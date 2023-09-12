@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { User } from "../dto/user.model";
 import jwt_decode from 'jwt-decode';
 import { AuthToken } from "../dto/authToken.model";
-import { environment } from "src/enviroments/environment";
+import { environment } from "src/environments/environment";
 
 const apiEndpoint = environment.apiEndpoint;
 

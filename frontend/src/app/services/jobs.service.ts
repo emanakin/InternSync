@@ -4,7 +4,7 @@ import { Observable, catchError, map, throwError } from 'rxjs';
 import { Job } from '../dto/job.model';
 import { AuthService } from './auth.service';
 import { FilterObj } from '../dto/filterProps.model';
-import { environment } from 'src/enviroments/environment';
+import { environment } from 'src/environments/environment';
 
 const apiEndpoint = environment.apiEndpoint;
 
