@@ -47,9 +47,9 @@ app.use(logoutRouter);
 app.use(jobsRouter);
 app.use(resumeRouter);
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 });  
 
 app.use((error: CustomError, req: Request, res: Response, next: NextFunction) => {
@@ -65,7 +65,7 @@ const start = async () => {
     if (!process.env.JWT_KEY) throw new Error('JWT_KEY required!');
     if (!process.env.AWS_ACCESS_KEY_ID) throw new Error('AWS_ACCESS_KEY required!');
     if (!process.env.AWS_SECRET_ACCESS_KEY) throw new Error('AWS_SECRET_ACCESS_KEY required!');
-    
+    console.log(process.env.MONGO_URL)
     try {
         await mongoose.connect(process.env.MONGO_URL)
     } catch (err) {
