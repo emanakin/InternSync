@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
-import { environment } from 'src/enviroments/environment';
+import { environment } from 'src/environments/environment';
 
 const apiEndpoint = environment.apiEndpoint;
 
@@ -13,6 +13,7 @@ export class UserService {
 
     // Update user's resume reference
     updateResumeReference(email: string, resume: string) {
+        console.log(apiEndpoint);
         return this.http.post(
             `${apiEndpoint}update-resume`,
             { email, resume }

@@ -76,6 +76,7 @@ app.use(resume_1.resumeRouter);
 app.use(express_1.default.static(path_1.default.join(__dirname, 'public')));
 app.get('*', (req, res) => {
     res.sendFile(path_1.default.join(__dirname, 'public/index.html'));
+
 });
 app.use((error, req, res, next) => {
     if (error.status) {
@@ -92,7 +93,7 @@ const start = () => __awaiter(void 0, void 0, void 0, function* () {
         throw new Error('AWS_ACCESS_KEY required!');
     if (!process.env.AWS_SECRET_ACCESS_KEY)
         throw new Error('AWS_SECRET_ACCESS_KEY required!');
-    console.log(process.env.MONGO_URL);
+
     try {
         yield mongoose_1.default.connect(process.env.MONGO_URL);
     }
