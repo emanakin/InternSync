@@ -1,0 +1,16 @@
+<svg width="54" height="53" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="streamline:interface-setting-slider-horizontal-square-adjust-controls-fader-horizontal-settings-slider-square" clip-path="url(#clip0_54_351)">
+<g id="Group">
+<path id="Vector" d="M48.2143 1.89288H5.78571C3.65547 1.89288 1.92857 3.58781 1.92857 5.6786V47.3215C1.92857 49.4122 3.65547 51.1072 5.78571 51.1072H48.2143C50.3445 51.1072 52.0714 49.4122 52.0714 47.3215V5.6786C52.0714 3.58781 50.3445 1.89288 48.2143 1.89288Z" stroke="#F8F8F8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M11.5714 17.0358H30.8571" stroke="#F8F8F8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M36.6429 22.7143C39.8382 22.7143 42.4286 20.1719 42.4286 17.0357C42.4286 13.8996 39.8382 11.3572 36.6429 11.3572C33.4475 11.3572 30.8571 13.8996 30.8571 17.0357C30.8571 20.1719 33.4475 22.7143 36.6429 22.7143Z" stroke="#F8F8F8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M42.4286 35.9644H30.8571M19.2857 35.9644H11.5714" stroke="#F8F8F8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M25.0714 41.6429C28.2668 41.6429 30.8571 39.1005 30.8571 35.9643C30.8571 32.8281 28.2668 30.2858 25.0714 30.2858C21.8761 30.2858 19.2857 32.8281 19.2857 35.9643C19.2857 39.1005 21.8761 41.6429 25.0714 41.6429Z" stroke="#F8F8F8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_54_351">
+<rect width="54" height="53" fill="white"/>
+</clipPath>
+</defs>
+</svg>
